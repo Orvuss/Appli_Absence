@@ -10,7 +10,8 @@ import java.util.ArrayList;
  *
  */
 public class PagePersonnes extends JPanel implements ActionListener {
-	
+	//Pour git
+
 	/**
 	 * Attributs privés de la classe PagePersonnes
 	 */

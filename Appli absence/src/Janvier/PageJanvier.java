@@ -29,6 +29,7 @@ import Personnes.PersonnesProduction;
  *
  */
 public class PageJanvier extends JPanel implements ActionListener{
+	//Pour git
 
 	/**
 	 * Attributs privés de la classe PageJanvier

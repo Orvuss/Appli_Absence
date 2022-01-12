@@ -29,7 +29,7 @@ import Personnes.PersonnesProduction;
  *
  */
 public class Accueil extends JFrame implements ActionListener{
-
+	//Pour git
 	/**
 	 * Attributs privés de la classe Accueil
 	 */

@@ -1,7 +1,8 @@
 package Personnes;
 
 public class Personnes {
-	
+	//Pour git
+
 	private String nomPersonnel;
 	private String prenomPersonnel;
 	private String servicePersonnel;
