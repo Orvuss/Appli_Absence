@@ -22,6 +22,7 @@ import Commentaire.PageJoursFeries;
 import Janvier.PageJanvier;
 import Personnes.PagePersonnes;
 import Personnes.Personnes;
+import Personnes.PersonnesProduction;
 /**
  * Classe Accueil
  * @author ldatchi
@@ -67,7 +68,7 @@ public class Accueil extends JFrame implements ActionListener{
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    this.setSize((int)getToolkit().getScreenSize().getWidth(), ((int)getToolkit().getScreenSize().getHeight() - 40));
 	    this.setLocationRelativeTo(null);
-	    this.setResizable(false);
+	    this.setResizable(true);
 	    
 	    /**
 	     * Instanciation de mes panels "panelAccueil" et "panelMessage"
@@ -216,8 +217,14 @@ public class Accueil extends JFrame implements ActionListener{
 			this.panelAccueil.repaint();
 		}
 		if(e.getSource().equals(jmiJanvier)) {
+			ArrayList<PersonnesProduction> listePersonnesProd;
+			listePersonnesProd = new ArrayList<PersonnesProduction>();
+			listePersonnesProd = Modele.affichagePersonnelProduction();
+			ArrayList<PersonnesProduction> listePersonnesProdCoor;
+			listePersonnesProdCoor = new ArrayList<PersonnesProduction>();
+			listePersonnesProdCoor = Modele.affichagePersonnelCoordinationGlobaleProduction();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageJanvier().getMonPanelPageJanvier());
+			this.panelAccueil.add(new PageJanvier(listePersonnesProd, listePersonnesProdCoor).getMonPanelPageJanvier());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}

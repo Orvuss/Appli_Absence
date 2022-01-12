@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.SystemColor;
+import java.awt.TextArea;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,7 +17,11 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTable;
 import javax.swing.JTextField;
+
+import Personnes.Personnes;
+import Personnes.PersonnesProduction;
 
 /**
  * Classe PageJanvier
@@ -33,13 +38,14 @@ public class PageJanvier extends JPanel implements ActionListener{
 	private JPanel panelPagejanvier;
 	private JPanel panelMessage;
 	private JPanel panelChamps;
-	
+		
 	//Label
 	private JLabel lblMessage;
 	private JLabel lblALire;
+	
 
 	//Constructeur
-	public PageJanvier() {	
+	public PageJanvier(ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor) {	
 	    /**
 	     * Instanciation de mes panels "panelPagejanvier", "panelMessage", "panelBtnQuitter" et "panelChamps"
 	     */
@@ -69,6 +75,25 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    //Instanciation des messages
 	    this.lblMessage = new JLabel("À lire attentivement !");
 	    this.lblMessage.setFont(new Font("Century Gothic", Font.BOLD, 15));
+
+	    /**
+	     * Mise en place de la couleur d'écriture des label "lblMessage", "lblNomCircuit", "lblTailleCircuit" et "lblPaysCircuit"
+	     */
+	    //Couleur de la police
+	    this.lblMessage.setForeground(Color.white);
+	    
+	    
+	    String resultatProd = "";
+        for (PersonnesProduction maPersonneProd: listePersonnesProd) {
+        	resultatProd += maPersonneProd.toString();
+        }
+        String resultatCoor = "";
+        for (PersonnesProduction maPersonneCoor: listePersonnesCoor) {
+        	resultatCoor += maPersonneCoor.toString();
+        }
+        
+        
+        
 	    String texte = "<html>\r\n"
 	    		+ "	<table border=0 align='center'>\r\n"
 	    		+ "		<tr align='center'>\r\n"
@@ -216,7 +241,115 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#1A1680'> </td>\r\n"
 	    		+ "		</tr>\r\n"
 	    		+ "		<tr align='center'>\r\n"
+	    		+ "			<td>" + resultatProd + "</td>\r\n"
 	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "		</tr>"
+	    		+ "		<tr align='center'>\r\n"
+	    		+ "			<td bgcolor='#F6D309' color='black'>Exploitation & Services</td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "			<td> </td>\r\n"
+	    		+ "		</tr>"
+	    		+ "		<tr align='center'>\r\n"
+	    		+ "			<td>" + resultatCoor + "</td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "			<td></td>\r\n"
+	    		+ "		</tr>"
+	    		+ "		<tr align='center'>\r\n"
+	    		+ "			<td>" + resultatCoor + "</td>\r\n"
 	    		+ "			<td></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -253,13 +386,12 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    		+ "		</tr>"
 	    		+ "	</table>\r\n"
 	    		+ "</html>";
+	    
 	    this.lblALire = new JLabel(texte);
 
-	    /**
-	     * Mise en place de la couleur d'écriture des label "lblMessage", "lblNomCircuit", "lblTailleCircuit" et "lblPaysCircuit"
-	     */
-	    //Couleur de la police
-	    this.lblMessage.setForeground(Color.white);
+	    
+	    
+	    
 	    
 	    /**
 	     * Ajout des attributs à mes panels
@@ -271,6 +403,7 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    this.panelMessage.add(lblMessage);
 
 	    this.panelChamps.add(lblALire);
+
 
 	    //Toujours à la fin
   		/**
@@ -287,6 +420,5 @@ public class PageJanvier extends JPanel implements ActionListener{
 	 * Action performed permettant la navigation entre les différentes classe pour permettre l'affichage
 	 */
 	public void actionPerformed(ActionEvent e) {
-        
 	}
 }

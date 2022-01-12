@@ -7,6 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import Personnes.Personnes;
+import Personnes.PersonnesProduction;
 
 public class Modele {
 	
@@ -75,6 +76,37 @@ public class Modele {
         }
         return listePersonnes;
     }
-	
+	public static ArrayList<PersonnesProduction> affichagePersonnelProduction(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesProd;
+        listePersonnesProd = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Production'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesProd.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesProd;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelCoordinationGlobaleProduction(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesProd;
+        listePersonnesProd = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Coordination Globale Production'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesProd.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesProd;
+    }
 	
 }
