@@ -4,8 +4,7 @@ import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 //Pour git
 
 public class Main {
-	public static void main(String[] args) throws UnsupportedLookAndFeelException {
-        UIManager.setLookAndFeel(new NimbusLookAndFeel()); //Design des boutons
+	public static void main(String[] args) {
 		Modele.connexion();
 		Accueil monAccueil = new Accueil();
 		Modele.deconnexion();
