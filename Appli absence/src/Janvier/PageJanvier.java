@@ -24,6 +24,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
 
 import Personnes.Personnes;
 import Personnes.PersonnesProduction;
@@ -43,14 +44,18 @@ public class PageJanvier extends JPanel implements ActionListener{
 	//Panel
 	private JPanel panelPagejanvier;
 	private JPanel panelChamps;
-
-		
+	
 	//Label
 	private JLabel lblALire;
 	
-	private JTable tableau;
-	private JScrollPane scrollPane;
+	private JTextField jtfTest;
 	
+	//JComboBox
+    private JComboBox<String> jcbTest;
+	
+	private JTable tableau;
+	
+	private JScrollPane scrollpane;
 	
 	//Constructeur
 	public PageJanvier(ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor, ArrayList<PersonnesProduction> listePersonnesExplServ, ArrayList<PersonnesProduction> listePersonnesPil, ArrayList<PersonnesProduction> listePersonnesDBA, ArrayList<PersonnesProduction> listePersonnesEdEtArch, ArrayList<PersonnesProduction> listePersonnes3pts, ArrayList<PersonnesProduction> listePersonnesServDesk, ArrayList<PersonnesProduction> listePersonnesChangMEP, ArrayList<PersonnesProduction> listePersonnesInte, ArrayList<PersonnesProduction> listePersonnesInteMF, ArrayList<PersonnesProduction> listePersonnesInteOpen) {	
@@ -61,6 +66,7 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    this.panelPagejanvier = new JPanel();
 	    this.panelChamps = new JPanel();
 
+	   
 	    /**
 	     * Mise en place des background des panels "panelPagejanvier", "panelMessage", "panelBtnQuitter" et "panelChamps"
 	     */
@@ -73,7 +79,16 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    //Disposition des panels
 	    this.panelPagejanvier.setLayout(new BorderLayout());
 	    this.panelChamps.setLayout(new FlowLayout());	    
+	    	    
+	    //Instanciation et remplissage du JComboBox
+	    this.jcbTest = new JComboBox<String>();
+	    for (PersonnesProduction maPersonne: listePersonnesCoor) {
+	    	this.jcbTest.addItem(maPersonne.getNomPersonnel());
+	    }
+		this.jcbTest.setMaximumSize(new Dimension(100,30));
 	    
+	    this.jtfTest = new JTextField();
+		
 	    String resultatProd = "";
         for (PersonnesProduction maPersonneProd: listePersonnesProd) {
         	resultatProd += maPersonneProd.toString();
@@ -689,38 +704,38 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    		+ "		</tr>\r\n"
 	    		+ "		<tr align='center'>\r\n"
 	    		+ "			<td>" + resultatProd + "</td>\r\n"
-	    		+ "			<td></td>\r\n"
+				+ "			<td></td>"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
-	    		+ "			<td></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
-	    		+ "			<td></td>\r\n"
+	    		+ "			<td><input type='text' size='2'></td>\r\n"
 	    		+ "			<td></td>\r\n"
 	    		+ "		</tr>"
 	    		+ "		<tr align='center'>\r\n"
@@ -2098,6 +2113,8 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    
 	    this.lblALire = new JLabel(texte);
 
+	    this.lblALire.setPreferredSize(new Dimension(1500, 1730));
+	    
 	    Object data[][] = new Object[1][1];
 	    int i = 0;
 		data[i ][0] = lblALire.getText();
@@ -2105,20 +2122,22 @@ public class PageJanvier extends JPanel implements ActionListener{
 	            ""
 	        };
         this.tableau = new JTable(data, title);
+        this.tableau.setEnabled(false);
+
         this.tableau.setPreferredScrollableViewportSize(new Dimension(1000, 800));
 
         /**
          * Mise en place de la taille du tableau
          */
         //Taille
-        this.tableau.setRowHeight(1600);
+        this.tableau.setRowHeight(1800);
 
         /**
          * Mise en place de la barre de scroll
          */
         //Barre de scroll
-        this.scrollPane = new JScrollPane(this.tableau);
-        this.panelChamps.add(this.scrollPane);
+        this.scrollpane = new JScrollPane(this.tableau);
+        this.panelChamps.add(this.scrollpane);
 	    
 	    /**
 	     * Ajout des attributs à mes panels
@@ -2128,7 +2147,8 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    
 	    this.panelChamps.add(lblALire);
 
-        this.panelPagejanvier.add(this.scrollPane);
+
+        this.panelPagejanvier.add(this.scrollpane);
 
 	    //Toujours à la fin
   		/**
