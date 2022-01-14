@@ -277,4 +277,228 @@ public class Modele {
         }
         return listePersonnesInteOpen;
     }
+	public static ArrayList<PersonnesProduction> affichagePersonnelFlux(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesFlux;
+        listePersonnesFlux = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Flux' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesFlux.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesFlux;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelSTE(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesSTE;
+        listePersonnesSTE = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'STE' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesSTE.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesSTE;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelSecurite(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesSecurite;
+        listePersonnesSecurite = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Securite' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesSecurite.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesSecurite;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelSECOP(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesSECOP;
+        listePersonnesSECOP = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'SECOP' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesSECOP.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesSECOP;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelRSI(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesRSI;
+        listePersonnesRSI = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'RSI' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesRSI.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesRSI;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelSOC(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesSOC;
+        listePersonnesSOC = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'SOC' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesSOC.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesSOC;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelArchiInfraSys(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesArchiInfraSys;
+        listePersonnesArchiInfraSys = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Architecture Infra & Systeme' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesArchiInfraSys.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesArchiInfraSys;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelArchiTech(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesArchiTech;
+        listePersonnesArchiTech = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Architecture Technique' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesArchiTech.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesArchiTech;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelSysteme(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesSysteme;
+        listePersonnesSysteme = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Systeme' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesSysteme.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesSysteme;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelRSB(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesRSB;
+        listePersonnesRSB = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Reseaux, Serveurs, Bureautique' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesRSB.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesRSB;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelReseaux(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesReseaux;
+        listePersonnesReseaux = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Reseaux' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesReseaux.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesReseaux;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelServBur(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesServBur;
+        listePersonnesServBur = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Serveurs et Bureautique' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesServBur.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesServBur;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelWindows(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesWindows;
+        listePersonnesWindows = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Windows' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesWindows.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesWindows;
+    }
+	public static ArrayList<PersonnesProduction> affichagePersonnelLinux(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listePersonnesLinux;
+        listePersonnesLinux = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Service_p = 'Linux' LIMIT 1");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listePersonnesLinux.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listePersonnesLinux;
+    }
 }
