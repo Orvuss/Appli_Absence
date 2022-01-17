@@ -3,30 +3,15 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.Rectangle;
-import java.awt.SystemColor;
-import java.awt.TextArea;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Properties;
 
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.ScrollPaneConstants;
 
-import Personnes.Personnes;
 import Personnes.PersonnesProduction;
 
 /**
@@ -42,53 +27,41 @@ public class PageAvril extends JPanel implements ActionListener{
 	 */
 	//Attributs privés
 	//Panel
-	private JPanel panelPagejanvier;
+	private JPanel panelPageAvril;
 	private JPanel panelChamps;
 	
 	//Label
-	private JLabel lblALire;
+	private JLabel lblTableauAvril;
 	
-	private JTextField jtfTest;
-	
-	//JComboBox
-    private JComboBox<String> jcbTest;
-	
+	//JTable
 	private JTable tableau;
 	
+	//JScrollPane
 	private JScrollPane scrollpane;
 	
 	//Constructeur
 	public PageAvril(ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor, ArrayList<PersonnesProduction> listePersonnesExplServ, ArrayList<PersonnesProduction> listePersonnesPil, ArrayList<PersonnesProduction> listePersonnesDBA, ArrayList<PersonnesProduction> listePersonnesEdEtArch, ArrayList<PersonnesProduction> listePersonnes3pts, ArrayList<PersonnesProduction> listePersonnesServDesk, ArrayList<PersonnesProduction> listePersonnesChangMEP, ArrayList<PersonnesProduction> listePersonnesInte, ArrayList<PersonnesProduction> listePersonnesInteMF, ArrayList<PersonnesProduction> listePersonnesInteOpen, ArrayList<PersonnesProduction> listePersonnesFlux, ArrayList<PersonnesProduction> listePersonnesSTE, ArrayList<PersonnesProduction> listePersonnesSecurite, ArrayList<PersonnesProduction> listePersonnesSECOP, ArrayList<PersonnesProduction> listePersonnesRSI, ArrayList<PersonnesProduction> listePersonnesSOC, ArrayList<PersonnesProduction> listePersonnesArchiInfraSys, ArrayList<PersonnesProduction> listePersonnesArchiTech, ArrayList<PersonnesProduction> listePersonnesSysteme, ArrayList<PersonnesProduction> listePersonnesRSB, ArrayList<PersonnesProduction> listePersonnesReseaux, ArrayList<PersonnesProduction> listePersonnesServBur, ArrayList<PersonnesProduction> listePersonnesWindows, ArrayList<PersonnesProduction> listePersonnesLinux) {	
 	    /**
-	     * Instanciation de mes panels "panelPagejanvier", "panelMessage", "panelBtnQuitter" et "panelChamps"
+	     * Instanciation de mes panels "panelPageAvril" et "panelChamps"
 	     */
 	    //Instanciation des panels
-	    this.panelPagejanvier = new JPanel();
+	    this.panelPageAvril = new JPanel();
 	    this.panelChamps = new JPanel();
 
 	   
 	    /**
-	     * Mise en place des background des panels "panelPagejanvier", "panelMessage", "panelBtnQuitter" et "panelChamps"
+	     * Mise en place des background des panels "panelPageAvril"et "panelChamps"
 	     */
 	    //Background des panels
-	    this.panelPagejanvier.setBackground(Color.white);
+	    this.panelPageAvril.setBackground(Color.white);
 
 	    /**
-	     * Mise en place des dispositions des panels "panelPagejanvier", "panelMessage", "panelBtnQuitter" et "panelChamps"
+	     * Mise en place des dispositions des panels "panelPageAvril" et "panelChamps"
 	     */
 	    //Disposition des panels
-	    this.panelPagejanvier.setLayout(new BorderLayout());
+	    this.panelPageAvril.setLayout(new BorderLayout());
 	    this.panelChamps.setLayout(new FlowLayout());	    
-	    	    
-	    //Instanciation et remplissage du JComboBox
-	    this.jcbTest = new JComboBox<String>();
-	    for (PersonnesProduction maPersonne: listePersonnesCoor) {
-	    	this.jcbTest.addItem(maPersonne.getNomPersonnel());
-	    }
-		this.jcbTest.setMaximumSize(new Dimension(100,30));
-	    
-	    this.jtfTest = new JTextField();
-		
+
 	    String tdProd = "";
 	    String resultatProd = "";
         for (PersonnesProduction maPersonneProd: listePersonnesProd) {
@@ -2228,15 +2201,13 @@ public class PageAvril extends JPanel implements ActionListener{
 	    		+ "	</table>\r\n"
 	    		+ "</html>";
 	    
-	    
-	    
-	    this.lblALire = new JLabel(texte);
+	    this.lblTableauAvril = new JLabel(texte);
 
-	    this.lblALire.setPreferredSize(new Dimension(1500, 1730));
+	    this.lblTableauAvril.setPreferredSize(new Dimension(1500, 1730));
 	    
 	    Object data[][] = new Object[1][1];
 	    int i = 0;
-		data[i ][0] = lblALire.getText();
+		data[i ][0] = lblTableauAvril.getText();
 	    String[] title = {
 	            ""
 	        };
@@ -2262,11 +2233,11 @@ public class PageAvril extends JPanel implements ActionListener{
 	     * Ajout des attributs à mes panels
 	     */
 	    //Ajout des attributs aux panels
-	    this.panelPagejanvier.add(panelChamps, BorderLayout.CENTER);
+	    this.panelPageAvril.add(panelChamps, BorderLayout.CENTER);
 	    
-	    this.panelChamps.add(lblALire);
+	    this.panelChamps.add(lblTableauAvril);
 
-        this.panelPagejanvier.add(this.scrollpane);
+        this.panelPageAvril.add(this.scrollpane);
 
 	    //Toujours à la fin
   		/**
@@ -2277,7 +2248,7 @@ public class PageAvril extends JPanel implements ActionListener{
 	}
 	
 	public JPanel getMonPanelPageAvril() {
-    	return panelPagejanvier;
+    	return panelPageAvril;
     }
 	
 	/**
