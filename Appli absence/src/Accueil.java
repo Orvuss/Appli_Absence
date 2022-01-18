@@ -20,6 +20,8 @@ import Commentaire.PageJoursFeries;
 import Mois.PageAvril;
 import Mois.PageFevrier;
 import Mois.PageJanvier;
+import Mois.PageJuillet;
+import Mois.PageJuin;
 import Mois.PageMai;
 import Mois.PageMars;
 import Personnes.PagePersonnes;
@@ -47,8 +49,8 @@ public class Accueil extends JFrame implements ActionListener{
 	private JMenu jmMenuMars;
 	private JMenu jmMenuAvril;
 	private JMenu jmMenuMai;
-
-
+	private JMenu jmMenuJuin;
+	private JMenu jmMenuJuillet;
 
 
 	//JMenuBar
@@ -65,6 +67,8 @@ public class Accueil extends JFrame implements ActionListener{
 	private JMenuItem jmiMars;
 	private JMenuItem jmiAvril;
 	private JMenuItem jmiMai;
+	private JMenuItem jmiJuin;
+	private JMenuItem jmiJuillet;
 
 	private JMenuItem jmiQuitter;
 	
@@ -146,6 +150,12 @@ public class Accueil extends JFrame implements ActionListener{
 	    this.jmMenuAvril.setFont(new Font("Century Gothic", Font.PLAIN, 14));
 	    this.jmMenuMai = new JMenu("Mai");
 	    this.jmMenuMai.setFont(new Font("Century Gothic", Font.PLAIN, 14));
+	    this.jmMenuJuin = new JMenu("Juin");
+	    this.jmMenuJuin.setFont(new Font("Century Gothic", Font.PLAIN, 14));
+	    this.jmMenuJuillet = new JMenu("Juillet");
+	    this.jmMenuJuillet.setFont(new Font("Century Gothic", Font.PLAIN, 14));
+	    
+	    
 	    
 	    this.jmiJanvier = new JMenuItem("Janvier");
 	    this.jmiJanvier.setFont(new Font("Century Gothic", Font.PLAIN, 13));
@@ -162,7 +172,12 @@ public class Accueil extends JFrame implements ActionListener{
 	    this.jmiMai = new JMenuItem("Mai");
 	    this.jmiMai.setFont(new Font("Century Gothic", Font.PLAIN, 13));
 	    this.jmiMai.addActionListener(this);
-	    
+	    this.jmiJuin = new JMenuItem("Juin");
+	    this.jmiJuin.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+	    this.jmiJuin.addActionListener(this);
+	    this.jmiJuillet = new JMenuItem("Juillet");
+	    this.jmiJuillet.setFont(new Font("Century Gothic", Font.PLAIN, 13));
+	    this.jmiJuillet.addActionListener(this);
 	    
 	    /**
 	     * Ajout des boutons au menu
@@ -179,6 +194,8 @@ public class Accueil extends JFrame implements ActionListener{
 	    this.jmMenuMars.add(jmiMars);
 	    this.jmMenuAvril.add(jmiAvril);
 	    this.jmMenuMai.add(jmiMai);
+	    this.jmMenuJuin.add(jmiJuin);
+	    this.jmMenuJuillet.add(jmiJuillet);
 
 
 
@@ -190,6 +207,8 @@ public class Accueil extends JFrame implements ActionListener{
 	    this.jmbBarre.add(jmMenuMars);
 	    this.jmbBarre.add(jmMenuAvril);
 	    this.jmbBarre.add(jmMenuMai);
+	    this.jmbBarre.add(jmMenuJuin);
+	    this.jmbBarre.add(jmMenuJuillet);
 
 
 	    this.setJMenuBar(jmbBarre);
@@ -809,6 +828,224 @@ public class Accueil extends JFrame implements ActionListener{
 			listePersonnesLinux = Modele.affichagePersonnelLinux();
 			this.panelAccueil.removeAll();
 			this.panelAccueil.add(new PageMai(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageMai());
+			this.panelAccueil.revalidate();
+			this.panelAccueil.repaint();
+		}
+		if(e.getSource().equals(jmiJuin)) {
+			ArrayList<PersonnesProduction> listePersonnesProd;
+			listePersonnesProd = new ArrayList<PersonnesProduction>();
+			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listePersonnesCoor;
+			listePersonnesCoor = new ArrayList<PersonnesProduction>();
+			listePersonnesCoor = Modele.affichagePersonnelCoordinationGlobaleProduction();
+			
+			ArrayList<PersonnesProduction> listePersonnesExplServ;
+			listePersonnesExplServ = new ArrayList<PersonnesProduction>();
+			listePersonnesExplServ = Modele.affichagePersonnelExploitationServices();
+			
+			ArrayList<PersonnesProduction> listePersonnesPil;
+			listePersonnesPil = new ArrayList<PersonnesProduction>();
+			listePersonnesPil = Modele.affichagePersonnelPilotage();
+			
+			ArrayList<PersonnesProduction> listePersonnesDBA;
+			listePersonnesDBA = new ArrayList<PersonnesProduction>();
+			listePersonnesDBA = Modele.affichagePersonnelDbaMetro();
+			
+			ArrayList<PersonnesProduction> listePersonnesEditiqueEtArch;
+			listePersonnesEditiqueEtArch = new ArrayList<PersonnesProduction>();
+			listePersonnesEditiqueEtArch = Modele.affichagePersonnelEditiqueEtArch();
+			
+			ArrayList<PersonnesProduction> listePersonnes3pts;
+			listePersonnes3pts = new ArrayList<PersonnesProduction>();
+			listePersonnes3pts = Modele.affichagePersonnel3points();
+			
+			ArrayList<PersonnesProduction> listePersonnesServDesk;
+			listePersonnesServDesk = new ArrayList<PersonnesProduction>();
+			listePersonnesServDesk = Modele.affichagePersonnelServDesk();
+			
+			ArrayList<PersonnesProduction> listePersonnesChangMEP;
+			listePersonnesChangMEP = new ArrayList<PersonnesProduction>();
+			listePersonnesChangMEP = Modele.affichagePersonnelChangMEP();
+			
+			ArrayList<PersonnesProduction> listePersonnesInte;
+			listePersonnesInte = new ArrayList<PersonnesProduction>();
+			listePersonnesInte = Modele.affichagePersonnelInte();
+			
+			ArrayList<PersonnesProduction> listePersonnesInteMF;
+			listePersonnesInteMF = new ArrayList<PersonnesProduction>();
+			listePersonnesInteMF = Modele.affichagePersonnelInteMF();
+			
+			ArrayList<PersonnesProduction> listePersonnesInteOpen;
+			listePersonnesInteOpen = new ArrayList<PersonnesProduction>();
+			listePersonnesInteOpen = Modele.affichagePersonnelInteOpen();
+			
+			ArrayList<PersonnesProduction> listePersonnesFlux;
+			listePersonnesFlux = new ArrayList<PersonnesProduction>();
+			listePersonnesFlux = Modele.affichagePersonnelFlux();
+			
+			ArrayList<PersonnesProduction> listePersonnesSTE;
+			listePersonnesSTE = new ArrayList<PersonnesProduction>();
+			listePersonnesSTE = Modele.affichagePersonnelSTE();
+			
+			ArrayList<PersonnesProduction> listePersonnesSecurite;
+			listePersonnesSecurite = new ArrayList<PersonnesProduction>();
+			listePersonnesSecurite = Modele.affichagePersonnelSecurite();
+			
+			ArrayList<PersonnesProduction> listePersonnesSECOP;
+			listePersonnesSECOP = new ArrayList<PersonnesProduction>();
+			listePersonnesSECOP = Modele.affichagePersonnelSECOP();
+			
+			ArrayList<PersonnesProduction> listePersonnesRSI;
+			listePersonnesRSI = new ArrayList<PersonnesProduction>();
+			listePersonnesRSI = Modele.affichagePersonnelRSI();
+			
+			ArrayList<PersonnesProduction> listePersonnesSOC;
+			listePersonnesSOC = new ArrayList<PersonnesProduction>();
+			listePersonnesSOC = Modele.affichagePersonnelSOC();
+			
+			ArrayList<PersonnesProduction> listePersonnesArchiInfraSys;
+			listePersonnesArchiInfraSys = new ArrayList<PersonnesProduction>();
+			listePersonnesArchiInfraSys = Modele.affichagePersonnelArchiInfraSys();
+			
+			ArrayList<PersonnesProduction> listePersonnesArchiTech;
+			listePersonnesArchiTech = new ArrayList<PersonnesProduction>();
+			listePersonnesArchiTech = Modele.affichagePersonnelArchiTech();
+			
+			ArrayList<PersonnesProduction> listePersonnesSysteme;
+			listePersonnesSysteme = new ArrayList<PersonnesProduction>();
+			listePersonnesSysteme = Modele.affichagePersonnelSysteme();
+			
+			ArrayList<PersonnesProduction> listePersonnesRSB;
+			listePersonnesRSB = new ArrayList<PersonnesProduction>();
+			listePersonnesRSB = Modele.affichagePersonnelRSB();
+			
+			ArrayList<PersonnesProduction> listePersonnesReseaux;
+			listePersonnesReseaux = new ArrayList<PersonnesProduction>();
+			listePersonnesReseaux = Modele.affichagePersonnelReseaux();
+			
+			ArrayList<PersonnesProduction> listePersonnesServBur;
+			listePersonnesServBur = new ArrayList<PersonnesProduction>();
+			listePersonnesServBur = Modele.affichagePersonnelServBur();
+			
+			ArrayList<PersonnesProduction> listePersonnesWindows;
+			listePersonnesWindows = new ArrayList<PersonnesProduction>();
+			listePersonnesWindows = Modele.affichagePersonnelWindows();
+			
+			ArrayList<PersonnesProduction> listePersonnesLinux;
+			listePersonnesLinux = new ArrayList<PersonnesProduction>();
+			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			this.panelAccueil.removeAll();
+			this.panelAccueil.add(new PageJuin(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuin());
+			this.panelAccueil.revalidate();
+			this.panelAccueil.repaint();
+		}
+		if(e.getSource().equals(jmiJuillet)) {
+			ArrayList<PersonnesProduction> listePersonnesProd;
+			listePersonnesProd = new ArrayList<PersonnesProduction>();
+			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listePersonnesCoor;
+			listePersonnesCoor = new ArrayList<PersonnesProduction>();
+			listePersonnesCoor = Modele.affichagePersonnelCoordinationGlobaleProduction();
+			
+			ArrayList<PersonnesProduction> listePersonnesExplServ;
+			listePersonnesExplServ = new ArrayList<PersonnesProduction>();
+			listePersonnesExplServ = Modele.affichagePersonnelExploitationServices();
+			
+			ArrayList<PersonnesProduction> listePersonnesPil;
+			listePersonnesPil = new ArrayList<PersonnesProduction>();
+			listePersonnesPil = Modele.affichagePersonnelPilotage();
+			
+			ArrayList<PersonnesProduction> listePersonnesDBA;
+			listePersonnesDBA = new ArrayList<PersonnesProduction>();
+			listePersonnesDBA = Modele.affichagePersonnelDbaMetro();
+			
+			ArrayList<PersonnesProduction> listePersonnesEditiqueEtArch;
+			listePersonnesEditiqueEtArch = new ArrayList<PersonnesProduction>();
+			listePersonnesEditiqueEtArch = Modele.affichagePersonnelEditiqueEtArch();
+			
+			ArrayList<PersonnesProduction> listePersonnes3pts;
+			listePersonnes3pts = new ArrayList<PersonnesProduction>();
+			listePersonnes3pts = Modele.affichagePersonnel3points();
+			
+			ArrayList<PersonnesProduction> listePersonnesServDesk;
+			listePersonnesServDesk = new ArrayList<PersonnesProduction>();
+			listePersonnesServDesk = Modele.affichagePersonnelServDesk();
+			
+			ArrayList<PersonnesProduction> listePersonnesChangMEP;
+			listePersonnesChangMEP = new ArrayList<PersonnesProduction>();
+			listePersonnesChangMEP = Modele.affichagePersonnelChangMEP();
+			
+			ArrayList<PersonnesProduction> listePersonnesInte;
+			listePersonnesInte = new ArrayList<PersonnesProduction>();
+			listePersonnesInte = Modele.affichagePersonnelInte();
+			
+			ArrayList<PersonnesProduction> listePersonnesInteMF;
+			listePersonnesInteMF = new ArrayList<PersonnesProduction>();
+			listePersonnesInteMF = Modele.affichagePersonnelInteMF();
+			
+			ArrayList<PersonnesProduction> listePersonnesInteOpen;
+			listePersonnesInteOpen = new ArrayList<PersonnesProduction>();
+			listePersonnesInteOpen = Modele.affichagePersonnelInteOpen();
+			
+			ArrayList<PersonnesProduction> listePersonnesFlux;
+			listePersonnesFlux = new ArrayList<PersonnesProduction>();
+			listePersonnesFlux = Modele.affichagePersonnelFlux();
+			
+			ArrayList<PersonnesProduction> listePersonnesSTE;
+			listePersonnesSTE = new ArrayList<PersonnesProduction>();
+			listePersonnesSTE = Modele.affichagePersonnelSTE();
+			
+			ArrayList<PersonnesProduction> listePersonnesSecurite;
+			listePersonnesSecurite = new ArrayList<PersonnesProduction>();
+			listePersonnesSecurite = Modele.affichagePersonnelSecurite();
+			
+			ArrayList<PersonnesProduction> listePersonnesSECOP;
+			listePersonnesSECOP = new ArrayList<PersonnesProduction>();
+			listePersonnesSECOP = Modele.affichagePersonnelSECOP();
+			
+			ArrayList<PersonnesProduction> listePersonnesRSI;
+			listePersonnesRSI = new ArrayList<PersonnesProduction>();
+			listePersonnesRSI = Modele.affichagePersonnelRSI();
+			
+			ArrayList<PersonnesProduction> listePersonnesSOC;
+			listePersonnesSOC = new ArrayList<PersonnesProduction>();
+			listePersonnesSOC = Modele.affichagePersonnelSOC();
+			
+			ArrayList<PersonnesProduction> listePersonnesArchiInfraSys;
+			listePersonnesArchiInfraSys = new ArrayList<PersonnesProduction>();
+			listePersonnesArchiInfraSys = Modele.affichagePersonnelArchiInfraSys();
+			
+			ArrayList<PersonnesProduction> listePersonnesArchiTech;
+			listePersonnesArchiTech = new ArrayList<PersonnesProduction>();
+			listePersonnesArchiTech = Modele.affichagePersonnelArchiTech();
+			
+			ArrayList<PersonnesProduction> listePersonnesSysteme;
+			listePersonnesSysteme = new ArrayList<PersonnesProduction>();
+			listePersonnesSysteme = Modele.affichagePersonnelSysteme();
+			
+			ArrayList<PersonnesProduction> listePersonnesRSB;
+			listePersonnesRSB = new ArrayList<PersonnesProduction>();
+			listePersonnesRSB = Modele.affichagePersonnelRSB();
+			
+			ArrayList<PersonnesProduction> listePersonnesReseaux;
+			listePersonnesReseaux = new ArrayList<PersonnesProduction>();
+			listePersonnesReseaux = Modele.affichagePersonnelReseaux();
+			
+			ArrayList<PersonnesProduction> listePersonnesServBur;
+			listePersonnesServBur = new ArrayList<PersonnesProduction>();
+			listePersonnesServBur = Modele.affichagePersonnelServBur();
+			
+			ArrayList<PersonnesProduction> listePersonnesWindows;
+			listePersonnesWindows = new ArrayList<PersonnesProduction>();
+			listePersonnesWindows = Modele.affichagePersonnelWindows();
+			
+			ArrayList<PersonnesProduction> listePersonnesLinux;
+			listePersonnesLinux = new ArrayList<PersonnesProduction>();
+			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			this.panelAccueil.removeAll();
+			this.panelAccueil.add(new PageJuillet(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuillet());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
