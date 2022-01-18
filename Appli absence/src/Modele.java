@@ -10,8 +10,6 @@ import Personnes.Personnes;
 import Personnes.PersonnesProduction;
 
 public class Modele {
-	//Pour git
-
 	/**
 	 * Attributs privés static de la classe Modele
 	 */

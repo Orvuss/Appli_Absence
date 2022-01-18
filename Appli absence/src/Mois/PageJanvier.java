@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -20,8 +21,6 @@ import Personnes.PersonnesProduction;
  *
  */
 public class PageJanvier extends JPanel implements ActionListener{
-	//Pour git
-
 	/**
 	 * Attributs privés de la classe PageJanvier
 	 */
@@ -29,12 +28,16 @@ public class PageJanvier extends JPanel implements ActionListener{
 	//Panel
 	private JPanel panelPageJanvier;
 	private JPanel panelChamps;
-	
+	private JPanel panelBouton;
+
 	//Label
 	private JLabel lblTableauJanvier;
 
 	//JTable
 	private JTable tableau;
+	
+	//JButton
+	private JButton btnTest;
 	
 	//JScrollPane
 	private JScrollPane scrollpane;
@@ -47,7 +50,7 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    //Instanciation des panels
 	    this.panelPageJanvier = new JPanel();
 	    this.panelChamps = new JPanel();
-
+	    this.panelBouton = new JPanel();
 	   
 	    /**
 	     * Mise en place des background des panels "panelPageJanvier" et "panelChamps"
@@ -61,6 +64,7 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    //Disposition des panels
 	    this.panelPageJanvier.setLayout(new BorderLayout());
 	    this.panelChamps.setLayout(new FlowLayout());	    
+	    this.panelBouton.setLayout(new FlowLayout());	    
 
 	    String tdProd = "";
 	    String resultatProd = "";
@@ -2231,14 +2235,19 @@ public class PageJanvier extends JPanel implements ActionListener{
         this.scrollpane = new JScrollPane(this.tableau);
         this.panelChamps.add(this.scrollpane);
 	    
+        this.btnTest = new JButton("Test");
+	    this.btnTest.addActionListener(this);
+
 	    /**
 	     * Ajout des attributs à mes panels
 	     */
 	    //Ajout des attributs aux panels
 	    this.panelPageJanvier.add(panelChamps, BorderLayout.CENTER);
+	    this.panelPageJanvier.add(panelBouton, BorderLayout.SOUTH);
 	    
 	    this.panelChamps.add(lblTableauJanvier);
-
+	    this.panelBouton.add(btnTest);
+	    
         this.panelPageJanvier.add(this.scrollpane);
 
 	    //Toujours à la fin
@@ -2257,5 +2266,8 @@ public class PageJanvier extends JPanel implements ActionListener{
 	 * Action performed permettant la navigation entre les différentes classe pour permettre l'affichage
 	 */
 	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == btnTest) {
+			System.out.println("ça marche bien");
+		}
 	}
 }

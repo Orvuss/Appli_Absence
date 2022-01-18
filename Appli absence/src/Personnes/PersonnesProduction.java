@@ -1,7 +1,6 @@
 package Personnes;
 
 public class PersonnesProduction {
-	//Pour git
 
 	private String nomPersonnel;
 	private String prenomPersonnel;
