@@ -9,14 +9,15 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 import javax.swing.JPanel;
-
+/**
+ * Classe PageAjouter
+ * @author ldatchi
+ *
+ */
 public class PageAjouter extends JFrame implements ActionListener{
 	/**
-	 * Attributs privés de la classe Accueil
+	 * Attributs privés de la classe PageAjouter
 	 */
 	//Attributs privés
 	//Panel
@@ -80,11 +81,12 @@ public class PageAjouter extends JFrame implements ActionListener{
 	    //Couleur de la police
 	    this.lblMessage.setForeground(Color.white);
 	    
-	    
-	    
+	    /**
+	     * Instanciation du bouton "btnQuitter" et écoute du bouton
+	     */
+	    //Instanciation du bouton
 	    this.btnQuitter = new JButton("Quitter");
 	    this.btnQuitter.addActionListener(this);
-	    
 	    
 	    /**
 	     * Ajout des attributs à mes panels
