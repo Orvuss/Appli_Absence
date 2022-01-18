@@ -7,65 +7,59 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import Personnes.PersonnesProduction;
-import Secondaire.PageAjouter;
 
 /**
- * Classe PageJanvier
+ * Classe PageAout
  * @author ldatchi
  *
  */
-public class PageJanvier extends JPanel implements ActionListener{
+public class PageAout extends JPanel implements ActionListener{
+
 	/**
-	 * Attributs privés de la classe PageJanvier
+	 * Attributs privés de la classe PageAout
 	 */
 	//Attributs privés
 	//Panel
-	private JPanel panelPageJanvier;
+	private JPanel panelPageAout;
 	private JPanel panelChamps;
-	private JPanel panelBouton;
-
+	
 	//Label
-	private JLabel lblTableauJanvier;
-
+	private JLabel lblTableauAout;
+	
 	//JTable
 	private JTable tableau;
-	
-	//JButton
-	private JButton btnAjouter;
 	
 	//JScrollPane
 	private JScrollPane scrollpane;
 	
 	//Constructeur
-	public PageJanvier(ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor, ArrayList<PersonnesProduction> listePersonnesExplServ, ArrayList<PersonnesProduction> listePersonnesPil, ArrayList<PersonnesProduction> listePersonnesDBA, ArrayList<PersonnesProduction> listePersonnesEdEtArch, ArrayList<PersonnesProduction> listePersonnes3pts, ArrayList<PersonnesProduction> listePersonnesServDesk, ArrayList<PersonnesProduction> listePersonnesChangMEP, ArrayList<PersonnesProduction> listePersonnesInte, ArrayList<PersonnesProduction> listePersonnesInteMF, ArrayList<PersonnesProduction> listePersonnesInteOpen, ArrayList<PersonnesProduction> listePersonnesFlux, ArrayList<PersonnesProduction> listePersonnesSTE, ArrayList<PersonnesProduction> listePersonnesSecurite, ArrayList<PersonnesProduction> listePersonnesSECOP, ArrayList<PersonnesProduction> listePersonnesRSI, ArrayList<PersonnesProduction> listePersonnesSOC, ArrayList<PersonnesProduction> listePersonnesArchiInfraSys, ArrayList<PersonnesProduction> listePersonnesArchiTech, ArrayList<PersonnesProduction> listePersonnesSysteme, ArrayList<PersonnesProduction> listePersonnesRSB, ArrayList<PersonnesProduction> listePersonnesReseaux, ArrayList<PersonnesProduction> listePersonnesServBur, ArrayList<PersonnesProduction> listePersonnesWindows, ArrayList<PersonnesProduction> listePersonnesLinux) {	
+	public PageAout(ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor, ArrayList<PersonnesProduction> listePersonnesExplServ, ArrayList<PersonnesProduction> listePersonnesPil, ArrayList<PersonnesProduction> listePersonnesDBA, ArrayList<PersonnesProduction> listePersonnesEdEtArch, ArrayList<PersonnesProduction> listePersonnes3pts, ArrayList<PersonnesProduction> listePersonnesServDesk, ArrayList<PersonnesProduction> listePersonnesChangMEP, ArrayList<PersonnesProduction> listePersonnesInte, ArrayList<PersonnesProduction> listePersonnesInteMF, ArrayList<PersonnesProduction> listePersonnesInteOpen, ArrayList<PersonnesProduction> listePersonnesFlux, ArrayList<PersonnesProduction> listePersonnesSTE, ArrayList<PersonnesProduction> listePersonnesSecurite, ArrayList<PersonnesProduction> listePersonnesSECOP, ArrayList<PersonnesProduction> listePersonnesRSI, ArrayList<PersonnesProduction> listePersonnesSOC, ArrayList<PersonnesProduction> listePersonnesArchiInfraSys, ArrayList<PersonnesProduction> listePersonnesArchiTech, ArrayList<PersonnesProduction> listePersonnesSysteme, ArrayList<PersonnesProduction> listePersonnesRSB, ArrayList<PersonnesProduction> listePersonnesReseaux, ArrayList<PersonnesProduction> listePersonnesServBur, ArrayList<PersonnesProduction> listePersonnesWindows, ArrayList<PersonnesProduction> listePersonnesLinux) {	
 	    /**
-	     * Instanciation de mes panels "panelPageJanvier" et "panelChamps"
+	     * Instanciation de mes panels "panelPageAout" et "panelChamps"
 	     */
 	    //Instanciation des panels
-	    this.panelPageJanvier = new JPanel();
+	    this.panelPageAout = new JPanel();
 	    this.panelChamps = new JPanel();
-	    this.panelBouton = new JPanel();
+
 	   
 	    /**
-	     * Mise en place des background des panels "panelPageJanvier" et "panelChamps"
+	     * Mise en place des background des panels "panelPageAout"et "panelChamps"
 	     */
 	    //Background des panels
-	    this.panelPageJanvier.setBackground(Color.white);
+	    this.panelPageAout.setBackground(Color.white);
 
 	    /**
-	     * Mise en place des dispositions des panels "panelPageJanvier" et "panelChamps"
+	     * Mise en place des dispositions des panels "panelPageAout" et "panelChamps"
 	     */
 	    //Disposition des panels
-	    this.panelPageJanvier.setLayout(new BorderLayout());
+	    this.panelPageAout.setLayout(new BorderLayout());
 	    this.panelChamps.setLayout(new FlowLayout());	    
-	    this.panelBouton.setLayout(new FlowLayout());	    
 
 	    String tdProd = "";
 	    String resultatProd = "";
@@ -74,8 +68,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdProd = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatProd + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -90,6 +82,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -99,11 +98,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -116,8 +110,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdCoor = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatCoor + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -132,6 +124,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -141,11 +140,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -158,8 +152,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdExplServ = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatExplServ + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -174,6 +166,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -183,11 +182,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -200,8 +194,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdPil = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatPil + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -216,6 +208,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -225,11 +224,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -242,8 +236,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdDBA = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatDBA + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -258,6 +250,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -267,11 +266,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -284,8 +278,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdEdEtArch = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatEdEtArch + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -300,6 +292,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -309,11 +308,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -326,8 +320,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	td3Pts = "<tr align='center'>\r\n"
         			+ "			<td>" + resultat3Pts + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -342,6 +334,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -351,11 +350,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -368,8 +362,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdServDesk = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatServDesk + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -384,6 +376,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -393,11 +392,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -410,8 +404,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdChangMEP = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatChangMEP + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -426,6 +418,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -435,11 +434,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -452,8 +446,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdInte = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatInte + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -468,6 +460,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -477,11 +476,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -494,8 +488,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdInteMF = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatInteMF + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -510,6 +502,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -519,11 +518,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -536,8 +530,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdInteOpen = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatInteOpen + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -552,6 +544,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -561,11 +560,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -578,8 +572,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdFlux = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatFlux + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -594,6 +586,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -603,11 +602,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -620,8 +614,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdSTE = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatSTE + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -636,6 +628,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -645,11 +644,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -662,8 +656,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdSecurite = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatSecurite + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -678,6 +670,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -687,11 +686,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -704,8 +698,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdSECOP = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatSECOP + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -720,6 +712,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -729,11 +728,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -746,8 +740,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdRSI = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatRSI + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -762,6 +754,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -771,11 +770,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -788,8 +782,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdSOC = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatSOC + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -804,6 +796,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -813,11 +812,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -830,8 +824,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdArchiInfraSys = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatArchiInfraSys + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -846,6 +838,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -855,11 +854,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -872,8 +866,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdArchiTech = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatArchiTech + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -888,6 +880,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -897,11 +896,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -914,8 +908,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdSysteme = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatSysteme + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -930,6 +922,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -939,11 +938,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -956,8 +950,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdRSB = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatRSB + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -972,6 +964,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -981,11 +980,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -998,8 +992,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdReseaux = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatReseaux + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1014,6 +1006,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1023,11 +1022,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -1040,8 +1034,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdServBur = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatServBur + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1056,6 +1048,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1065,11 +1064,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -1082,8 +1076,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdWindows = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatWindows + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1098,6 +1090,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1107,11 +1106,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -1124,8 +1118,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         	tdLinux = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatLinux + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1140,6 +1132,13 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1149,11 +1148,6 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "		</tr>";
@@ -1164,45 +1158,56 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    		+ "		<tr align='center'>\r\n"
 	    		+ "			<th>2022</th>\r\n"
 	    		+ "			<th> </th>\r\n"
-	    		+ "			<th bgcolor='#E5600F'>BC</th>\r\n"
-	    		+ "			<th bgcolor='#E5600F'>BC</th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
-	    		+ "			<th> </th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
+	    		+ "			<th bgcolor=\"#F07D00\">BC</th>\r\n"
 	    		+ "		</tr>\r\n"
 	    		+ "		<tr align='center'>\r\n"
-	    		+ "			<td>Janvier</td>\r\n"
+	    		+ "			<td>Août</td>\r\n"
 	    		+ "			<td> </td>\r\n"
+	    		+ "			<td>Lun</td>\r\n"
+	    		+ "			<td>Mar</td>\r\n"
+	    		+ "			<td>Mer</td>\r\n"
+	    		+ "			<td>Jeu</td>\r\n"
+	    		+ "			<td>Ven</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'>Sam</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'>Dim</td>\r\n"
 	    		+ "			<td>Lun</td>\r\n"
+	    		+ "			<td>Mar</td>\r\n"
+	    		+ "			<td>Mer</td>\r\n"
+	    		+ "			<td>Jeu</td>\r\n"
+	    		+ "			<td>Ven</td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'>Sam</td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'>Dim</td>\r\n"
+	    		+ "			<td bgcolor='#28C7E3'>Lun</td>\r\n"
 	    		+ "			<td>Mar</td>\r\n"
 	    		+ "			<td>Mer</td>\r\n"
 	    		+ "			<td>Jeu</td>\r\n"
@@ -1219,18 +1224,6 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    		+ "			<td>Lun</td>\r\n"
 	    		+ "			<td>Mar</td>\r\n"
 	    		+ "			<td>Mer</td>\r\n"
-	    		+ "			<td>Jeu</td>\r\n"
-	    		+ "			<td>Ven</td>\r\n"
-	    		+ "			<td bgcolor='#28C7E3'>Sam</td>\r\n"
-	    		+ "			<td bgcolor='#28C7E3'>Dim</td>\r\n"
-	    		+ "			<td>Lun</td>\r\n"
-	    		+ "			<td>Mar</td>\r\n"
-	    		+ "			<td>Mer</td>\r\n"
-	    		+ "			<td>Jeu</td>\r\n"
-	    		+ "			<td>Ven</td>\r\n"
-	    		+ "			<td bgcolor='#28C7E3'>Sam</td>\r\n"
-	    		+ "			<td bgcolor='#28C7E3'>Dim</td>\r\n"
-	    		+ "			<td>Lun</td>\r\n"
 	    		+ "			<td> </td>\r\n"
 	    		+ "		</tr>\r\n"
 	    		+ "		<tr align='center'>\r\n"
@@ -2208,13 +2201,13 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    		+ "	</table>\r\n"
 	    		+ "</html>";
 	    
-	    this.lblTableauJanvier = new JLabel(texte);
+	    this.lblTableauAout = new JLabel(texte);
 
-	    this.lblTableauJanvier.setPreferredSize(new Dimension(1500, 1730));
+	    this.lblTableauAout.setPreferredSize(new Dimension(1500, 1730));
 	    
 	    Object data[][] = new Object[1][1];
 	    int i = 0;
-		data[i ][0] = lblTableauJanvier.getText();
+		data[i ][0] = lblTableauAout.getText();
 	    String[] title = {
 	            ""
 	        };
@@ -2236,20 +2229,15 @@ public class PageJanvier extends JPanel implements ActionListener{
         this.scrollpane = new JScrollPane(this.tableau);
         this.panelChamps.add(this.scrollpane);
 	    
-        this.btnAjouter = new JButton("Ajouter");
-	    this.btnAjouter.addActionListener(this);
-
 	    /**
 	     * Ajout des attributs à mes panels
 	     */
 	    //Ajout des attributs aux panels
-	    this.panelPageJanvier.add(panelChamps, BorderLayout.CENTER);
-	    this.panelPageJanvier.add(panelBouton, BorderLayout.SOUTH);
+	    this.panelPageAout.add(panelChamps, BorderLayout.CENTER);
 	    
-	    this.panelChamps.add(lblTableauJanvier);
-	    this.panelBouton.add(btnAjouter);
-	    
-        this.panelPageJanvier.add(this.scrollpane);
+	    this.panelChamps.add(lblTableauAout);
+
+        this.panelPageAout.add(this.scrollpane);
 
 	    //Toujours à la fin
   		/**
@@ -2259,16 +2247,13 @@ public class PageJanvier extends JPanel implements ActionListener{
 
 	}
 	
-	public JPanel getMonPanelPageJanvier() {
-    	return panelPageJanvier;
+	public JPanel getMonPanelPageAout() {
+    	return panelPageAout;
     }
 	
 	/**
 	 * Action performed permettant la navigation entre les différentes classe pour permettre l'affichage
 	 */
 	public void actionPerformed(ActionEvent e) {
-		if(e.getSource() == btnAjouter) {
-			PageAjouter maPageAjout = new PageAjouter();
-		}
 	}
 }
