@@ -125,7 +125,7 @@ public class Accueil extends JFrame implements ActionListener{
 	     * Instanciation du tableau avec les options de réservation
 	     */
 	    //Instanciation 
-	    this.jmMenuCommentaire = new JMenu("Commentaire");
+	    this.jmMenuCommentaire = new JMenu("Commentaires");
 	    this.jmMenuCommentaire.setFont(new Font("Century Gothic", Font.PLAIN, 14));
 	    //Instanciation JMenuBar
 	    this.jmbBarre = new JMenuBar();
@@ -260,7 +260,7 @@ public class Accueil extends JFrame implements ActionListener{
 	     * Instanciation du label "lblMessage"
 	     */
 	    //Instanciation des messages
-	    this.lblMessage = new JLabel("Veuillez choisir une option.");
+	    this.lblMessage = new JLabel("Veuillez choisir une catégorie.");
 	    
 	    /**
 	     * Mise en place de la couleur d'écriture du label "lblMessage"
