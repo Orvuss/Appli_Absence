@@ -1,3 +1,4 @@
+package Primaire;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -17,6 +18,8 @@ import Commentaire.PageALire;
 import Commentaire.PageAffectation;
 import Commentaire.PageCongesScolaires;
 import Commentaire.PageJoursFeries;
+import Mois.Janvier;
+import Mois.Mois;
 import Mois.PageAout;
 import Mois.PageAvril;
 import Mois.PageDecembre;
@@ -433,8 +436,12 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesLinux;
 			listePersonnesLinux = new ArrayList<PersonnesProduction>();
 			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			
+			ArrayList<Janvier> listeJanvier;
+			listeJanvier = new ArrayList<Janvier>();
+			listeJanvier = Modele.afficherAffectationJanvier();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageJanvier(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJanvier());
+			this.panelAccueil.add(new PageJanvier(listeJanvier, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJanvier());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
