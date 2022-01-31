@@ -14,7 +14,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import Personnes.PersonnesProduction;
-import Secondaire.PageAjouter;
+import Secondaire.PageAjouterJanvier;
 
 /**
  * Classe PageJanvier
@@ -2268,7 +2268,7 @@ public class PageJanvier extends JPanel implements ActionListener{
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == btnAjouter) {
-			PageAjouter maPageAjout = new PageAjouter();
+			PageAjouterJanvier maPageAjoutJanvier = new PageAjouterJanvier();
 		}
 	}
 }

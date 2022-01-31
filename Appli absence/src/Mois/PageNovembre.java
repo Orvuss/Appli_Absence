@@ -7,12 +7,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import Personnes.PersonnesProduction;
+import Secondaire.PageAjouterNovembre;
+import Secondaire.PageAjouterOctobre;
 
 /**
  * Classe PageNovembre
@@ -28,12 +31,16 @@ public class PageNovembre extends JPanel implements ActionListener{
 	//Panel
 	private JPanel panelPageNovembre;
 	private JPanel panelChamps;
-	
+	private JPanel panelBouton;
+
 	//Label
 	private JLabel lblTableauNovembre;
 	
 	//JTable
 	private JTable tableau;
+	
+	//JButton
+	private JButton btnAjouter;
 	
 	//JScrollPane
 	private JScrollPane scrollpane;
@@ -46,7 +53,7 @@ public class PageNovembre extends JPanel implements ActionListener{
 	    //Instanciation des panels
 	    this.panelPageNovembre = new JPanel();
 	    this.panelChamps = new JPanel();
-
+	    this.panelBouton = new JPanel();
 	   
 	    /**
 	     * Mise en place des background des panels "panelPageNovembre"et "panelChamps"
@@ -60,6 +67,7 @@ public class PageNovembre extends JPanel implements ActionListener{
 	    //Disposition des panels
 	    this.panelPageNovembre.setLayout(new BorderLayout());
 	    this.panelChamps.setLayout(new FlowLayout());	    
+	    this.panelBouton.setLayout(new FlowLayout());	    
 
 	    String tdProd = "";
 	    String resultatProd = "";
@@ -2201,13 +2209,18 @@ public class PageNovembre extends JPanel implements ActionListener{
         this.scrollpane = new JScrollPane(this.tableau);
         this.panelChamps.add(this.scrollpane);
 	    
+        this.btnAjouter = new JButton("Ajouter");
+	    this.btnAjouter.addActionListener(this);
+        
 	    /**
 	     * Ajout des attributs à mes panels
 	     */
 	    //Ajout des attributs aux panels
 	    this.panelPageNovembre.add(panelChamps, BorderLayout.CENTER);
-	    
+	    this.panelPageNovembre.add(panelBouton, BorderLayout.SOUTH);
+
 	    this.panelChamps.add(lblTableauNovembre);
+	    this.panelBouton.add(btnAjouter);
 
         this.panelPageNovembre.add(this.scrollpane);
 
@@ -2227,5 +2240,8 @@ public class PageNovembre extends JPanel implements ActionListener{
 	 * Action performed permettant la navigation entre les différentes classe pour permettre l'affichage
 	 */
 	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == btnAjouter) {
+			PageAjouterNovembre maPageAjoutNovembre = new PageAjouterNovembre();
+		}
 	}
 }

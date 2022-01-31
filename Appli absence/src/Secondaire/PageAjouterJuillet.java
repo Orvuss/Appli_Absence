@@ -21,17 +21,17 @@ import org.jdatepicker.impl.SqlDateModel;
 
 import Mois.PageJanvier;
 /**
- * Classe PageAjouter
+ * Classe PageAjouterJuillet
  * @author ldatchi
  *
  */
-public class PageAjouter extends JFrame implements ActionListener{
+public class PageAjouterJuillet extends JFrame implements ActionListener{
 	/**
-	 * Attributs privés de la classe PageAjouter
+	 * Attributs privés de la classe PageAjouterJuillet
 	 */
 	//Attributs privés
 	//Panel
-	private JPanel panelPageAjouter;
+	private JPanel panelPageAjouterJuillet;
 	private JPanel panelMessage;
 	private JPanel panelChamps;
 	private JPanel panelBouton;
@@ -57,7 +57,7 @@ public class PageAjouter extends JFrame implements ActionListener{
 	private JButton btnQuitter;
 	
 	//Constructeur
-	public PageAjouter() {
+	public PageAjouterJuillet() {
 		//Configuration
 		/**
 		 * Titre, localisation, taille etc.. indispensable au début de chaque page IHM
@@ -69,26 +69,26 @@ public class PageAjouter extends JFrame implements ActionListener{
 	    this.setResizable(true);
 	    
 	    /**
-	     * Instanciation de mes panels "panelPageAjouter" et "panelMessage"
+	     * Instanciation de mes panels "panelPageAjouterJuillet" et "panelMessage"
 	     */
 	    //Instanciation des panels
-	    this.panelPageAjouter = new JPanel();
+	    this.panelPageAjouterJuillet = new JPanel();
 	    this.panelMessage = new JPanel();
 	    this.panelChamps = new JPanel();
 	    this.panelBouton = new JPanel();
 
 	    /**
-	     * Mise en place des background des panels "panelPageAjouter" et "panelMessage"
+	     * Mise en place des background des panels "panelPageAjouterJuillet" et "panelMessage"
 	     */
 	    //Background des panels
-	    this.panelPageAjouter.setBackground(Color.white);
+	    this.panelPageAjouterJuillet.setBackground(Color.white);
 	    this.panelMessage.setBackground(Color.black);
 	    
 	    /**
-	     * Mise en place des dispositions des panels "panelPageAjouter" et "panelMessage"
+	     * Mise en place des dispositions des panels "panelPageAjouterJuillet" et "panelMessage"
 	     */
 	    //Disposition des panels
-	    this.panelPageAjouter.setLayout(new BorderLayout());
+	    this.panelPageAjouterJuillet.setLayout(new BorderLayout());
 	    this.panelMessage.setLayout(new FlowLayout());
 	    this.panelChamps.setLayout(new FlowLayout());
 	    this.panelBouton.setLayout(new FlowLayout());	    
@@ -190,9 +190,9 @@ public class PageAjouter extends JFrame implements ActionListener{
 	     * Ajout des attributs à mes panels
 	     */
 	    //Ajout des attributs aux panels
-	    this.panelPageAjouter.add(panelMessage, BorderLayout.NORTH);
-	    this.panelPageAjouter.add(panelChamps, BorderLayout.CENTER);
-	    this.panelPageAjouter.add(panelBouton, BorderLayout.SOUTH);
+	    this.panelPageAjouterJuillet.add(panelMessage, BorderLayout.NORTH);
+	    this.panelPageAjouterJuillet.add(panelChamps, BorderLayout.CENTER);
+	    this.panelPageAjouterJuillet.add(panelBouton, BorderLayout.SOUTH);
 	    
 	    this.panelMessage.add(lblMessage);
 	    
@@ -214,12 +214,12 @@ public class PageAjouter extends JFrame implements ActionListener{
   		 * Rendu visible de l'app etc.. toujours à la fin de la classe
   		 */
   		this.setAlwaysOnTop(true);
-  		this.getContentPane().add(panelPageAjouter);
+  		this.getContentPane().add(panelPageAjouterJuillet);
   		this.setVisible(true);
 	}
 	
-	public JPanel getMonPanelPageAjouter() {
-    	return panelPageAjouter;
+	public JPanel getMonPanelPageAjouterJuillet() {
+    	return panelPageAjouterJuillet;
     }
 	
 	/**
@@ -228,8 +228,8 @@ public class PageAjouter extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		String jtfRecupLettre;
 		if(e.getSource() == btnValider) {
-            java.sql.Date uneDateDebut = (java.sql.Date) PageAjouter.this.datePicker1.getModel().getValue();
-            java.sql.Date uneDateFin = (java.sql.Date) PageAjouter.this.datePicker2.getModel().getValue();
+            java.sql.Date uneDateDebut = (java.sql.Date) PageAjouterJuillet.this.datePicker1.getModel().getValue();
+            java.sql.Date uneDateFin = (java.sql.Date) PageAjouterJuillet.this.datePicker2.getModel().getValue();
 //			if(uneDateHeureDebut == "1") {
 //				System.out.println("Premier test");
 //				jtfRecupLettre = jcbLettre.getSelectedItem().toString();

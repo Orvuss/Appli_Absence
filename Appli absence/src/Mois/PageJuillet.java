@@ -7,12 +7,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import Personnes.PersonnesProduction;
+import Secondaire.PageAjouterJuillet;
+import Secondaire.PageAjouterJuin;
 
 /**
  * Classe PageJuillet
@@ -28,12 +31,16 @@ public class PageJuillet extends JPanel implements ActionListener{
 	//Panel
 	private JPanel panelPageJuillet;
 	private JPanel panelChamps;
-	
+	private JPanel panelBouton;
+
 	//Label
 	private JLabel lblTableauJuillet;
 	
 	//JTable
 	private JTable tableau;
+	
+	//JButton
+	private JButton btnAjouter;
 	
 	//JScrollPane
 	private JScrollPane scrollpane;
@@ -46,7 +53,7 @@ public class PageJuillet extends JPanel implements ActionListener{
 	    //Instanciation des panels
 	    this.panelPageJuillet = new JPanel();
 	    this.panelChamps = new JPanel();
-
+	    this.panelBouton = new JPanel();
 	   
 	    /**
 	     * Mise en place des background des panels "panelPageJuillet"et "panelChamps"
@@ -60,6 +67,7 @@ public class PageJuillet extends JPanel implements ActionListener{
 	    //Disposition des panels
 	    this.panelPageJuillet.setLayout(new BorderLayout());
 	    this.panelChamps.setLayout(new FlowLayout());	    
+	    this.panelBouton.setLayout(new FlowLayout());	    
 
 	    String tdProd = "";
 	    String resultatProd = "";
@@ -2229,13 +2237,18 @@ public class PageJuillet extends JPanel implements ActionListener{
         this.scrollpane = new JScrollPane(this.tableau);
         this.panelChamps.add(this.scrollpane);
 	    
+        this.btnAjouter = new JButton("Ajouter");
+	    this.btnAjouter.addActionListener(this);
+        
 	    /**
 	     * Ajout des attributs à mes panels
 	     */
 	    //Ajout des attributs aux panels
 	    this.panelPageJuillet.add(panelChamps, BorderLayout.CENTER);
-	    
+	    this.panelPageJuillet.add(panelBouton, BorderLayout.SOUTH);
+
 	    this.panelChamps.add(lblTableauJuillet);
+	    this.panelBouton.add(btnAjouter);
 
         this.panelPageJuillet.add(this.scrollpane);
 
@@ -2255,5 +2268,8 @@ public class PageJuillet extends JPanel implements ActionListener{
 	 * Action performed permettant la navigation entre les différentes classe pour permettre l'affichage
 	 */
 	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == btnAjouter) {
+			PageAjouterJuillet maPageAjoutJuillet = new PageAjouterJuillet();
+		}
 	}
 }

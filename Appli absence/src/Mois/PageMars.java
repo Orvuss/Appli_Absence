@@ -7,12 +7,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import Personnes.PersonnesProduction;
+import Secondaire.PageAjouterMars;
 
 /**
  * Classe PageMars
@@ -28,12 +30,16 @@ public class PageMars extends JPanel implements ActionListener{
 	//Panel
 	private JPanel panelPageMars;
 	private JPanel panelChamps;
-	
+	private JPanel panelBouton;
+
 	//Label
 	private JLabel lblTableauMars;
 
 	//JTable
 	private JTable tableau;
+	
+	//JButton
+	private JButton btnAjouter;
 	
 	//JScrollPane
 	private JScrollPane scrollpane;
@@ -46,7 +52,8 @@ public class PageMars extends JPanel implements ActionListener{
 	    //Instanciation des panels
 	    this.panelPageMars = new JPanel();
 	    this.panelChamps = new JPanel();
-	   
+	    this.panelBouton = new JPanel();
+
 	    /**
 	     * Mise en place des background des panels "panelPageMars" et "panelChamps"
 	     */
@@ -59,6 +66,7 @@ public class PageMars extends JPanel implements ActionListener{
 	    //Disposition des panels
 	    this.panelPageMars.setLayout(new BorderLayout());
 	    this.panelChamps.setLayout(new FlowLayout());	    
+	    this.panelBouton.setLayout(new FlowLayout());	    
 
 	    String tdProd = "";
 	    String resultatProd = "";
@@ -2226,13 +2234,18 @@ public class PageMars extends JPanel implements ActionListener{
         this.scrollpane = new JScrollPane(this.tableau);
         this.panelChamps.add(this.scrollpane);
 	    
+        this.btnAjouter = new JButton("Ajouter");
+	    this.btnAjouter.addActionListener(this);
+        
 	    /**
 	     * Ajout des attributs à mes panels
 	     */
 	    //Ajout des attributs aux panels
 	    this.panelPageMars.add(panelChamps, BorderLayout.CENTER);
-	    
+	    this.panelPageMars.add(panelBouton, BorderLayout.SOUTH);
+
 	    this.panelChamps.add(lblTableauMars);
+	    this.panelBouton.add(btnAjouter);
 
         this.panelPageMars.add(this.scrollpane);
 
@@ -2252,5 +2265,8 @@ public class PageMars extends JPanel implements ActionListener{
 	 * Action performed permettant la navigation entre les différentes classe pour permettre l'affichage
 	 */
 	public void actionPerformed(ActionEvent e) {
+		if(e.getSource() == btnAjouter) {
+			PageAjouterMars maPageAjoutMars = new PageAjouterMars();
+		}
 	}
 }
