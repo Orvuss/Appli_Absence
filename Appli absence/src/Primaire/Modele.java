@@ -8,7 +8,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import Mois.Fevrier;
 import Mois.Janvier;
+import Mois.Mars;
 import Mois.Mois;
 import Personnes.Personnes;
 import Personnes.PersonnesProduction;
@@ -567,6 +569,154 @@ public class Modele {
         int count;
         try {
             statement = connexion.prepareStatement( "DELETE FROM janvier WHERE dateDebutJ = ?");
+            statement.setString(1, dateDebut);
+            count = statement.executeUpdate();
+            if (count == 1) {
+                rep = true;
+            }
+        } catch (SQLException erreur) {
+            System.out.println("Erreur de suppression");
+        }
+        return rep;
+    }
+	
+	public static boolean AjouterAffectationFevrier(Date dateDebut, Date dateFin, String affectation, String autre) {
+        boolean rep = true;
+        int count;
+        try {
+        	statement = connexion.prepareStatement("INSERT INTO fevrier VALUES (?,?,?,?);");
+        	statement.setDate(1, dateDebut);
+        	statement.setDate(2, dateFin);
+        	statement.setString(3, affectation);
+        	statement.setString(4, autre);
+            count = statement.executeUpdate();
+        }
+        catch (SQLException erreur) {
+            rep = false;
+            System.out.println("Insertion échoué");
+            erreur.printStackTrace();
+        }
+        return rep;
+    }
+	
+	public static ArrayList<Fevrier> afficherAffectationFevrier(){
+        Modele.connexion();
+        ArrayList <Fevrier> listeFevrier;
+        listeFevrier = new ArrayList<Fevrier>();
+        try {
+            rs = st.executeQuery("SELECT affectationF FROM fevrier");
+            while (rs.next()) {
+                String uneAffectationF = rs.getString(1);
+                listeFevrier.add(new Fevrier(uneAffectationF));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeFevrier;
+    }
+	
+	public static ArrayList<Fevrier> afficherDateDebutFevrier(){
+        Modele.connexion();
+        ArrayList <Fevrier> listeDateDebutFevrier;
+        listeDateDebutFevrier = new ArrayList<Fevrier>();
+        try {
+            rs = st.executeQuery("SELECT * FROM fevrier");
+            while (rs.next()) {
+                String uneDateDebut = rs.getString(1);
+                String uneDateFin = rs.getString(2);
+                String uneAffectation = rs.getString(3);
+                String uneAutreAbsence = rs.getString(4);
+                listeDateDebutFevrier.add(new Fevrier(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeDateDebutFevrier;
+    }
+	
+	public static boolean suppressionAffectationFevrier(String dateDebut) {
+        Modele.connexion();
+        boolean rep; 
+        int nbLogin;
+        rep = false;
+        nbLogin = 0;
+        int count;
+        try {
+            statement = connexion.prepareStatement( "DELETE FROM fevrier WHERE dateDebutF = ?");
+            statement.setString(1, dateDebut);
+            count = statement.executeUpdate();
+            if (count == 1) {
+                rep = true;
+            }
+        } catch (SQLException erreur) {
+            System.out.println("Erreur de suppression");
+        }
+        return rep;
+    }
+	
+	public static boolean AjouterAffectationMars(Date dateDebut, Date dateFin, String affectation, String autre) {
+        boolean rep = true;
+        int count;
+        try {
+        	statement = connexion.prepareStatement("INSERT INTO mars VALUES (?,?,?,?);");
+        	statement.setDate(1, dateDebut);
+        	statement.setDate(2, dateFin);
+        	statement.setString(3, affectation);
+        	statement.setString(4, autre);
+            count = statement.executeUpdate();
+        }
+        catch (SQLException erreur) {
+            rep = false;
+            System.out.println("Insertion échoué");
+            erreur.printStackTrace();
+        }
+        return rep;
+    }
+	
+	public static ArrayList<Mars> afficherAffectationMars(){
+        Modele.connexion();
+        ArrayList <Mars> listeMars;
+        listeMars = new ArrayList<Mars>();
+        try {
+            rs = st.executeQuery("SELECT affectationM FROM mars");
+            while (rs.next()) {
+                String uneAffectationM = rs.getString(1);
+                listeMars.add(new Mars(uneAffectationM));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeMars;
+    }
+	
+	public static ArrayList<Mars> afficherDateDebutMars(){
+        Modele.connexion();
+        ArrayList <Mars> listeDateDebutMars;
+        listeDateDebutMars = new ArrayList<Mars>();
+        try {
+            rs = st.executeQuery("SELECT * FROM mars");
+            while (rs.next()) {
+                String uneDateDebut = rs.getString(1);
+                String uneDateFin = rs.getString(2);
+                String uneAffectation = rs.getString(3);
+                String uneAutreAbsence = rs.getString(4);
+                listeDateDebutMars.add(new Mars(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeDateDebutMars;
+    }
+	
+	public static boolean suppressionAffectationMars(String dateDebut) {
+        Modele.connexion();
+        boolean rep; 
+        int nbLogin;
+        rep = false;
+        nbLogin = 0;
+        int count;
+        try {
+            statement = connexion.prepareStatement( "DELETE FROM mars WHERE dateDebutM = ?");
             statement.setString(1, dateDebut);
             count = statement.executeUpdate();
             if (count == 1) {
