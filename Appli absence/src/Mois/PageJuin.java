@@ -14,8 +14,11 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import Personnes.PersonnesProduction;
+import Primaire.Modele;
 import Secondaire.PageAjouterJuin;
 import Secondaire.PageAjouterMai;
+import Secondaire.PageSupprimerAvril;
+import Secondaire.PageSupprimerJuin;
 
 /**
  * Classe PageJuin
@@ -41,12 +44,14 @@ public class PageJuin extends JPanel implements ActionListener{
 	
 	//JButton
 	private JButton btnAjouter;
+	private JButton btnSupprimer;
+	private JButton btnRefresh;
 	
 	//JScrollPane
 	private JScrollPane scrollpane;
 	
 	//Constructeur
-	public PageJuin(ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor, ArrayList<PersonnesProduction> listePersonnesExplServ, ArrayList<PersonnesProduction> listePersonnesPil, ArrayList<PersonnesProduction> listePersonnesDBA, ArrayList<PersonnesProduction> listePersonnesEdEtArch, ArrayList<PersonnesProduction> listePersonnes3pts, ArrayList<PersonnesProduction> listePersonnesServDesk, ArrayList<PersonnesProduction> listePersonnesChangMEP, ArrayList<PersonnesProduction> listePersonnesInte, ArrayList<PersonnesProduction> listePersonnesInteMF, ArrayList<PersonnesProduction> listePersonnesInteOpen, ArrayList<PersonnesProduction> listePersonnesFlux, ArrayList<PersonnesProduction> listePersonnesSTE, ArrayList<PersonnesProduction> listePersonnesSecurite, ArrayList<PersonnesProduction> listePersonnesSECOP, ArrayList<PersonnesProduction> listePersonnesRSI, ArrayList<PersonnesProduction> listePersonnesSOC, ArrayList<PersonnesProduction> listePersonnesArchiInfraSys, ArrayList<PersonnesProduction> listePersonnesArchiTech, ArrayList<PersonnesProduction> listePersonnesSysteme, ArrayList<PersonnesProduction> listePersonnesRSB, ArrayList<PersonnesProduction> listePersonnesReseaux, ArrayList<PersonnesProduction> listePersonnesServBur, ArrayList<PersonnesProduction> listePersonnesWindows, ArrayList<PersonnesProduction> listePersonnesLinux) {	
+	public PageJuin(ArrayList<Juin> listeJuin, ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor, ArrayList<PersonnesProduction> listePersonnesExplServ, ArrayList<PersonnesProduction> listePersonnesPil, ArrayList<PersonnesProduction> listePersonnesDBA, ArrayList<PersonnesProduction> listePersonnesEdEtArch, ArrayList<PersonnesProduction> listePersonnes3pts, ArrayList<PersonnesProduction> listePersonnesServDesk, ArrayList<PersonnesProduction> listePersonnesChangMEP, ArrayList<PersonnesProduction> listePersonnesInte, ArrayList<PersonnesProduction> listePersonnesInteMF, ArrayList<PersonnesProduction> listePersonnesInteOpen, ArrayList<PersonnesProduction> listePersonnesFlux, ArrayList<PersonnesProduction> listePersonnesSTE, ArrayList<PersonnesProduction> listePersonnesSecurite, ArrayList<PersonnesProduction> listePersonnesSECOP, ArrayList<PersonnesProduction> listePersonnesRSI, ArrayList<PersonnesProduction> listePersonnesSOC, ArrayList<PersonnesProduction> listePersonnesArchiInfraSys, ArrayList<PersonnesProduction> listePersonnesArchiTech, ArrayList<PersonnesProduction> listePersonnesSysteme, ArrayList<PersonnesProduction> listePersonnesRSB, ArrayList<PersonnesProduction> listePersonnesReseaux, ArrayList<PersonnesProduction> listePersonnesServBur, ArrayList<PersonnesProduction> listePersonnesWindows, ArrayList<PersonnesProduction> listePersonnesLinux) {	
 	    /**
 	     * Instanciation de mes panels "panelPageJuin" et "panelChamps"
 	     */
@@ -69,6 +74,11 @@ public class PageJuin extends JPanel implements ActionListener{
 	    this.panelChamps.setLayout(new FlowLayout());	    
 	    this.panelBouton.setLayout(new FlowLayout());	    
 
+	    String resultatMois = "";
+	    for (Juin monJuin: listeJuin) {
+	    	resultatMois += monJuin.getAffectationJ().toString();	
+	    }
+	    
 	    String tdProd = "";
 	    String resultatProd = "";
         for (PersonnesProduction maPersonneProd: listePersonnesProd) {
@@ -76,7 +86,7 @@ public class PageJuin extends JPanel implements ActionListener{
         	tdProd = "<tr align='center'>\r\n"
         			+ "			<td>" + resultatProd + "</td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td>" + resultatMois + "</td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -2236,7 +2246,11 @@ public class PageJuin extends JPanel implements ActionListener{
 	    
         this.btnAjouter = new JButton("Ajouter");
 	    this.btnAjouter.addActionListener(this);
-        
+	    this.btnSupprimer = new JButton("Supprimer");
+	    this.btnSupprimer.addActionListener(this);
+	    this.btnRefresh = new JButton("Refresh");
+	    this.btnRefresh.addActionListener(this);
+	    
 	    /**
 	     * Ajout des attributs à mes panels
 	     */
@@ -2246,7 +2260,9 @@ public class PageJuin extends JPanel implements ActionListener{
 
 	    this.panelChamps.add(lblTableauJuin);
 	    this.panelBouton.add(btnAjouter);
-
+	    this.panelBouton.add(btnSupprimer);
+	    this.panelBouton.add(btnRefresh);
+	    
         this.panelPageJuin.add(this.scrollpane);
 
 	    //Toujours à la fin
@@ -2267,6 +2283,125 @@ public class PageJuin extends JPanel implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == btnAjouter) {
 			PageAjouterJuin maPageAjoutJuin = new PageAjouterJuin();
+		}
+		if(e.getSource() == btnSupprimer) {
+			ArrayList<Juin> listeDateDebutJuin;
+			listeDateDebutJuin = new ArrayList<Juin>();
+			listeDateDebutJuin = Modele.afficherDateDebutJuin();
+			PageSupprimerJuin maPageSupprimerJuin = new PageSupprimerJuin(listeDateDebutJuin);
+		}
+		if(e.getSource() == btnRefresh) {
+			ArrayList<PersonnesProduction> listePersonnesProd;
+			listePersonnesProd = new ArrayList<PersonnesProduction>();
+			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listePersonnesCoor;
+			listePersonnesCoor = new ArrayList<PersonnesProduction>();
+			listePersonnesCoor = Modele.affichagePersonnelCoordinationGlobaleProduction();
+			
+			ArrayList<PersonnesProduction> listePersonnesExplServ;
+			listePersonnesExplServ = new ArrayList<PersonnesProduction>();
+			listePersonnesExplServ = Modele.affichagePersonnelExploitationServices();
+			
+			ArrayList<PersonnesProduction> listePersonnesPil;
+			listePersonnesPil = new ArrayList<PersonnesProduction>();
+			listePersonnesPil = Modele.affichagePersonnelPilotage();
+			
+			ArrayList<PersonnesProduction> listePersonnesDBA;
+			listePersonnesDBA = new ArrayList<PersonnesProduction>();
+			listePersonnesDBA = Modele.affichagePersonnelDbaMetro();
+			
+			ArrayList<PersonnesProduction> listePersonnesEditiqueEtArch;
+			listePersonnesEditiqueEtArch = new ArrayList<PersonnesProduction>();
+			listePersonnesEditiqueEtArch = Modele.affichagePersonnelEditiqueEtArch();
+			
+			ArrayList<PersonnesProduction> listePersonnes3pts;
+			listePersonnes3pts = new ArrayList<PersonnesProduction>();
+			listePersonnes3pts = Modele.affichagePersonnel3points();
+			
+			ArrayList<PersonnesProduction> listePersonnesServDesk;
+			listePersonnesServDesk = new ArrayList<PersonnesProduction>();
+			listePersonnesServDesk = Modele.affichagePersonnelServDesk();
+			
+			ArrayList<PersonnesProduction> listePersonnesChangMEP;
+			listePersonnesChangMEP = new ArrayList<PersonnesProduction>();
+			listePersonnesChangMEP = Modele.affichagePersonnelChangMEP();
+			
+			ArrayList<PersonnesProduction> listePersonnesInte;
+			listePersonnesInte = new ArrayList<PersonnesProduction>();
+			listePersonnesInte = Modele.affichagePersonnelInte();
+			
+			ArrayList<PersonnesProduction> listePersonnesInteMF;
+			listePersonnesInteMF = new ArrayList<PersonnesProduction>();
+			listePersonnesInteMF = Modele.affichagePersonnelInteMF();
+			
+			ArrayList<PersonnesProduction> listePersonnesInteOpen;
+			listePersonnesInteOpen = new ArrayList<PersonnesProduction>();
+			listePersonnesInteOpen = Modele.affichagePersonnelInteOpen();
+			
+			ArrayList<PersonnesProduction> listePersonnesFlux;
+			listePersonnesFlux = new ArrayList<PersonnesProduction>();
+			listePersonnesFlux = Modele.affichagePersonnelFlux();
+			
+			ArrayList<PersonnesProduction> listePersonnesSTE;
+			listePersonnesSTE = new ArrayList<PersonnesProduction>();
+			listePersonnesSTE = Modele.affichagePersonnelSTE();
+			
+			ArrayList<PersonnesProduction> listePersonnesSecurite;
+			listePersonnesSecurite = new ArrayList<PersonnesProduction>();
+			listePersonnesSecurite = Modele.affichagePersonnelSecurite();
+			
+			ArrayList<PersonnesProduction> listePersonnesSECOP;
+			listePersonnesSECOP = new ArrayList<PersonnesProduction>();
+			listePersonnesSECOP = Modele.affichagePersonnelSECOP();
+			
+			ArrayList<PersonnesProduction> listePersonnesRSI;
+			listePersonnesRSI = new ArrayList<PersonnesProduction>();
+			listePersonnesRSI = Modele.affichagePersonnelRSI();
+			
+			ArrayList<PersonnesProduction> listePersonnesSOC;
+			listePersonnesSOC = new ArrayList<PersonnesProduction>();
+			listePersonnesSOC = Modele.affichagePersonnelSOC();
+			
+			ArrayList<PersonnesProduction> listePersonnesArchiInfraSys;
+			listePersonnesArchiInfraSys = new ArrayList<PersonnesProduction>();
+			listePersonnesArchiInfraSys = Modele.affichagePersonnelArchiInfraSys();
+			
+			ArrayList<PersonnesProduction> listePersonnesArchiTech;
+			listePersonnesArchiTech = new ArrayList<PersonnesProduction>();
+			listePersonnesArchiTech = Modele.affichagePersonnelArchiTech();
+			
+			ArrayList<PersonnesProduction> listePersonnesSysteme;
+			listePersonnesSysteme = new ArrayList<PersonnesProduction>();
+			listePersonnesSysteme = Modele.affichagePersonnelSysteme();
+			
+			ArrayList<PersonnesProduction> listePersonnesRSB;
+			listePersonnesRSB = new ArrayList<PersonnesProduction>();
+			listePersonnesRSB = Modele.affichagePersonnelRSB();
+			
+			ArrayList<PersonnesProduction> listePersonnesReseaux;
+			listePersonnesReseaux = new ArrayList<PersonnesProduction>();
+			listePersonnesReseaux = Modele.affichagePersonnelReseaux();
+			
+			ArrayList<PersonnesProduction> listePersonnesServBur;
+			listePersonnesServBur = new ArrayList<PersonnesProduction>();
+			listePersonnesServBur = Modele.affichagePersonnelServBur();
+			
+			ArrayList<PersonnesProduction> listePersonnesWindows;
+			listePersonnesWindows = new ArrayList<PersonnesProduction>();
+			listePersonnesWindows = Modele.affichagePersonnelWindows();
+			
+			ArrayList<PersonnesProduction> listePersonnesLinux;
+			listePersonnesLinux = new ArrayList<PersonnesProduction>();
+			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			
+			ArrayList<Juin> listeJuin;
+			listeJuin = new ArrayList<Juin>();
+			listeJuin = Modele.afficherAffectationJuin();
+			this.panelPageJuin.removeAll();
+			this.panelPageJuin.add(new PageJuin(listeJuin, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuin());
+			this.panelPageJuin.revalidate();
+			this.panelPageJuin.repaint();
 		}
 	}
 }
