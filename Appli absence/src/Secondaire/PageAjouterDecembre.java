@@ -20,6 +20,8 @@ import org.jdatepicker.impl.JDatePickerImpl;
 import org.jdatepicker.impl.SqlDateModel;
 
 import Mois.PageJanvier;
+import Primaire.Accueil;
+import Primaire.Modele;
 /**
  * Classe PageAjouterDecembre
  * @author ldatchi
@@ -43,6 +45,7 @@ public class PageAjouterDecembre extends JFrame implements ActionListener{
 	private JLabel lblDateFin;
 	private JLabel lblAffectation;
 	private JLabel lblAutreAbsence;
+	private JLabel lblInsertion;
 
 	//JComboBox
 	private JComboBox jcbAffectation;
@@ -55,6 +58,7 @@ public class PageAjouterDecembre extends JFrame implements ActionListener{
 	//JButton
 	private JButton btnValider;
 	private JButton btnQuitter;
+	private JButton boutonRefresh;
 	
 	//Constructeur
 	public PageAjouterDecembre() {
@@ -110,7 +114,8 @@ public class PageAjouterDecembre extends JFrame implements ActionListener{
 	    this.lblDateFin = new JLabel("Date de fin : ");
 	    this.lblAffectation = new JLabel("Choisissez l'affectation : ");
 	    this.lblAutreAbsence = new JLabel("Pour autres absences : ");
-	    
+	    this.lblInsertion = new JLabel();
+	    this.lblInsertion.setText("");
 	    //DatePickerDebut
         SqlDateModel model = new SqlDateModel();
         Properties p = new Properties();
@@ -143,7 +148,7 @@ public class PageAjouterDecembre extends JFrame implements ActionListener{
 	    	"<html><p bgcolor='#F8F00A' color='black'>rc</p></html>", 
 	    	"<html><p bgcolor='#C485BF' color='black'>mal</p></html>",
 	    	"<html><p bgcolor='#ED9B4E' color='black'>mat</p></html>",
-	    	"<html><p>≡≡≡</p></html>",
+	    	"<html><p>===</p></html>",
 	    	"<html><p bgcolor='#F3CBA5' color='black'>f</p></html>",
 	    	"<html><p bgcolor='#8F6498' color='white'>tac</p></html>"
 		  }; 
@@ -185,6 +190,8 @@ public class PageAjouterDecembre extends JFrame implements ActionListener{
 	    this.btnValider.addActionListener(this);
 	    this.btnQuitter = new JButton("Quitter");
 	    this.btnQuitter.addActionListener(this);
+	    this.boutonRefresh = new JButton("Refresh");
+	    this.boutonRefresh.addActionListener(this);
 	    
 	    /**
 	     * Ajout des attributs à mes panels
@@ -205,6 +212,7 @@ public class PageAjouterDecembre extends JFrame implements ActionListener{
 	    this.panelChamps.add(jcbAffectation);
 	    this.panelChamps.add(lblAutreAbsence);
 	    this.panelChamps.add(jcbAutreAbsence);
+	    this.panelChamps.add(lblInsertion);
 
 	    this.panelBouton.add(btnValider);
 	    this.panelBouton.add(btnQuitter);
@@ -230,6 +238,15 @@ public class PageAjouterDecembre extends JFrame implements ActionListener{
 		if(e.getSource() == btnValider) {
             java.sql.Date uneDateDebut = (java.sql.Date) PageAjouterDecembre.this.datePicker1.getModel().getValue();
             java.sql.Date uneDateFin = (java.sql.Date) PageAjouterDecembre.this.datePicker2.getModel().getValue();
+            String uneAffectation = jcbAffectation.getSelectedItem().toString();
+            String uneAutreAbsence = jcbAutreAbsence.getSelectedItem().toString();
+            boolean rep = Modele.AjouterAffectationDecembre(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence);
+            if(rep) {
+            	lblInsertion.setText("Insertion effectuée");
+            }
+            else {
+            	lblInsertion.setText("Erreur dans l'insertion");
+            }
 //			if(uneDateHeureDebut == "1") {
 //				System.out.println("Premier test");
 //				jtfRecupLettre = jcbLettre.getSelectedItem().toString();
@@ -241,8 +258,10 @@ public class PageAjouterDecembre extends JFrame implements ActionListener{
 //				System.out.println(jtfRecupLettre);
 //			}
 		}
+		
 		if(e.getSource() == btnQuitter) {
 			this.dispose();
+
 		}
 	}
 }

@@ -18,7 +18,9 @@ import Commentaire.PageALire;
 import Commentaire.PageAffectation;
 import Commentaire.PageCongesScolaires;
 import Commentaire.PageJoursFeries;
+import Mois.Aout;
 import Mois.Avril;
+import Mois.Decembre;
 import Mois.Fevrier;
 import Mois.Janvier;
 import Mois.Juillet;
@@ -26,6 +28,8 @@ import Mois.Juin;
 import Mois.Mai;
 import Mois.Mars;
 import Mois.Mois;
+import Mois.Novembre;
+import Mois.Octobre;
 import Mois.PageAout;
 import Mois.PageAvril;
 import Mois.PageDecembre;
@@ -38,6 +42,7 @@ import Mois.PageMars;
 import Mois.PageNovembre;
 import Mois.PageOctobre;
 import Mois.PageSeptembre;
+import Mois.Septembre;
 import Personnes.PagePersonnes;
 import Personnes.Personnes;
 import Personnes.PersonnesProduction;
@@ -1233,8 +1238,12 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesLinux;
 			listePersonnesLinux = new ArrayList<PersonnesProduction>();
 			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			
+			ArrayList<Aout> listeAout;
+			listeAout = new ArrayList<Aout>();
+			listeAout = Modele.afficherAffectationAout();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageAout(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageAout());
+			this.panelAccueil.add(new PageAout(listeAout, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageAout());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -1342,8 +1351,12 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesLinux;
 			listePersonnesLinux = new ArrayList<PersonnesProduction>();
 			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			
+			ArrayList<Septembre> listeSeptembre;
+			listeSeptembre = new ArrayList<Septembre>();
+			listeSeptembre = Modele.afficherAffectationSeptembre();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageSeptembre(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageSeptembre());
+			this.panelAccueil.add(new PageSeptembre(listeSeptembre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageSeptembre());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -1451,8 +1464,12 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesLinux;
 			listePersonnesLinux = new ArrayList<PersonnesProduction>();
 			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			
+			ArrayList<Octobre> listeOctobre;
+			listeOctobre = new ArrayList<Octobre>();
+			listeOctobre = Modele.afficherAffectationOctobre();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageOctobre(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageOctobre());
+			this.panelAccueil.add(new PageOctobre(listeOctobre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageOctobre());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -1560,8 +1577,12 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesLinux;
 			listePersonnesLinux = new ArrayList<PersonnesProduction>();
 			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			
+			ArrayList<Novembre> listeNovembre;
+			listeNovembre = new ArrayList<Novembre>();
+			listeNovembre = Modele.afficherAffectationNovembre();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageNovembre(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageNovembre());
+			this.panelAccueil.add(new PageNovembre(listeNovembre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageNovembre());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -1669,8 +1690,12 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesLinux;
 			listePersonnesLinux = new ArrayList<PersonnesProduction>();
 			listePersonnesLinux = Modele.affichagePersonnelLinux();
+			
+			ArrayList<Decembre> listeDecembre;
+			listeDecembre = new ArrayList<Decembre>();
+			listeDecembre = Modele.afficherAffectationDecembre();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageDecembre(listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageDecembre());
+			this.panelAccueil.add(new PageDecembre(listeDecembre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageDecembre());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
