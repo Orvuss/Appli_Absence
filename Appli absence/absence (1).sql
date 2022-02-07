@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 31 jan. 2022 à 15:18
+-- Généré le : lun. 07 fév. 2022 à 14:36
 -- Version du serveur : 5.7.36
 -- Version de PHP : 7.4.26
 
@@ -20,6 +20,56 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `absence`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `aout`
+--
+
+DROP TABLE IF EXISTS `aout`;
+CREATE TABLE IF NOT EXISTS `aout` (
+  `dateDebutA` varchar(200) NOT NULL,
+  `dateFinA` varchar(200) NOT NULL,
+  `affectationA` varchar(200) NOT NULL,
+  `autreA` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `avril`
+--
+
+DROP TABLE IF EXISTS `avril`;
+CREATE TABLE IF NOT EXISTS `avril` (
+  `dateDebutA` varchar(200) NOT NULL,
+  `dateFinA` varchar(200) NOT NULL,
+  `affectationA` varchar(200) NOT NULL,
+  `autreA` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `avril`
+--
+
+INSERT INTO `avril` (`dateDebutA`, `dateFinA`, `affectationA`, `autreA`) VALUES
+('2022-02-03', '2022-02-10', '<html><p bgcolor=\'#2FE4D8\' color=\'black\'>cet</p></html>', '<html><p></p></html>'),
+('2022-02-09', '2022-02-16', '<html><p bgcolor=\'#E434DB\' color=\'black\'>tp</p></html>', '<html><p></p></html>');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `decembre`
+--
+
+DROP TABLE IF EXISTS `decembre`;
+CREATE TABLE IF NOT EXISTS `decembre` (
+  `dateDebutD` varchar(200) NOT NULL,
+  `dateFinD` varchar(200) NOT NULL,
+  `affectationD` varchar(200) NOT NULL,
+  `autreD` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -56,12 +106,55 @@ CREATE TABLE IF NOT EXISTS `janvier` (
   `autreJ` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Déchargement des données de la table `janvier`
+-- Structure de la table `juillet`
 --
 
-INSERT INTO `janvier` (`dateDebutJ`, `dateFinJ`, `affectationJ`, `autreJ`) VALUES
-('2021-12-29', '2022-01-13', '<html><p bgcolor=\'#8F6498\' color=\'white\'>tac</p></html>', '<html><p></p></html>');
+DROP TABLE IF EXISTS `juillet`;
+CREATE TABLE IF NOT EXISTS `juillet` (
+  `dateDebutJ` varchar(200) NOT NULL,
+  `dateFinJ` varchar(200) NOT NULL,
+  `affectationJ` varchar(200) NOT NULL,
+  `autreJ` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `juin`
+--
+
+DROP TABLE IF EXISTS `juin`;
+CREATE TABLE IF NOT EXISTS `juin` (
+  `dateDebutJ` varchar(200) NOT NULL,
+  `dateFinJ` varchar(200) NOT NULL,
+  `affectationJ` varchar(200) NOT NULL,
+  `autreJ` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `mai`
+--
+
+DROP TABLE IF EXISTS `mai`;
+CREATE TABLE IF NOT EXISTS `mai` (
+  `dateDebutMai` varchar(200) NOT NULL,
+  `dateFinMai` varchar(200) NOT NULL,
+  `affectationMai` varchar(200) NOT NULL,
+  `autreMai` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `mai`
+--
+
+INSERT INTO `mai` (`dateDebutMai`, `dateFinMai`, `affectationMai`, `autreMai`) VALUES
+('2022-02-09', '2022-02-09', '<html><p bgcolor=\'#8F6498\' color=\'white\'>tac</p></html>', '<html><p></p></html>'),
+('2022-02-16', '2022-02-16', '<html><p bgcolor=\'#F8F00A\' color=\'black\'>rc</p></html>', '<html><p></p></html>');
 
 -- --------------------------------------------------------
 
@@ -75,6 +168,34 @@ CREATE TABLE IF NOT EXISTS `mars` (
   `dateFinM` varchar(200) NOT NULL,
   `affectationM` varchar(200) NOT NULL,
   `autreM` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `novembre`
+--
+
+DROP TABLE IF EXISTS `novembre`;
+CREATE TABLE IF NOT EXISTS `novembre` (
+  `dateDebutN` varchar(200) NOT NULL,
+  `dateFinN` varchar(200) NOT NULL,
+  `affectationN` varchar(200) NOT NULL,
+  `autreN` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `octobre`
+--
+
+DROP TABLE IF EXISTS `octobre`;
+CREATE TABLE IF NOT EXISTS `octobre` (
+  `dateDebutO` varchar(200) NOT NULL,
+  `dateFinO` varchar(200) NOT NULL,
+  `affectationO` varchar(200) NOT NULL,
+  `autreO` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -117,7 +238,7 @@ INSERT INTO `personnel` (`Nom_p`, `Prénom_p`, `Service_p`, `Matricule_p`) VALUE
 ('THIERRY', 'Philippe', 'Integration - STE - GDF - EAR', 'G09307'),
 ('ABOJIAN', 'Laurent', 'Integration MF', 'G03087'),
 ('INETUM', 'SM', 'Integration MF', 'E51679'),
-('RAMENE', 'Daniel', 'Integration MF', 'G00994'),
+('REMENE', 'DANIEL', 'Integration MF', 'G00994'),
 ('LEBLOND', 'Hervé', 'Integration MF', 'G01221'),
 ('GUIGNEBERT', 'Régis', 'Integration MF', 'G01304'),
 ('FERTER', 'Grégory', 'Integration MF', 'G02428'),
@@ -170,6 +291,20 @@ INSERT INTO `personnel` (`Nom_p`, `Prénom_p`, `Service_p`, `Matricule_p`) VALUE
 ('MARLIERE', 'Cyril', 'Linux', 'B50423'),
 ('ELANZ', 'LR', 'Linux', 'E51576'),
 ('HR TEAM', 'RM', 'Linux', 'E51665');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `septembre`
+--
+
+DROP TABLE IF EXISTS `septembre`;
+CREATE TABLE IF NOT EXISTS `septembre` (
+  `dateDebutS` varchar(200) NOT NULL,
+  `dateFinS` varchar(200) NOT NULL,
+  `affectationS` varchar(200) NOT NULL,
+  `autreS` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
