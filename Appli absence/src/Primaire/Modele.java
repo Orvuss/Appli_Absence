@@ -90,6 +90,1248 @@ public class Modele {
         }
         return listePersonnes;
     }
+	//Beghin
+	public static ArrayList<PersonnesProduction> affichageG09308(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09308;
+        listeG09308 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09308'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09308.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09308;
+    }
+	//Delecroix
+	public static ArrayList<PersonnesProduction> affichageG09086(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09086;
+        listeG09086 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09086'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09086.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09086;
+    }
+	//Euraxiel
+	public static ArrayList<PersonnesProduction> affichageE51300(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51300;
+        listeE51300 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51300'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51300.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51300;
+    }
+	//Martin
+	public static ArrayList<PersonnesProduction> affichageG01838(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG01838;
+        listeG01838 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G01838'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG01838.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG01838;
+    }
+	//Cunin
+	public static ArrayList<PersonnesProduction> affichageG09844(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09844;
+        listeG09844 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09844'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09844.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09844;
+    }
+	//COULOMBEL
+	public static ArrayList<PersonnesProduction> affichageG02486(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG02486;
+        listeG02486 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G02486'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG02486.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG02486;
+    }
+	//FOREST
+	public static ArrayList<PersonnesProduction> affichageG09304(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09304;
+        listeG09304 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09304'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09304.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09304;
+    }
+	//INETUM CM
+	public static ArrayList<PersonnesProduction> affichageE51349(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51349;
+        listeE51349 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51349'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51349.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51349;
+    }
+	//INETUM PI
+	public static ArrayList<PersonnesProduction> affichageE51408(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51408;
+        listeE51408 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51408'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51408.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51408;
+    }
+	//BUI
+	public static ArrayList<PersonnesProduction> affichageG09311(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09311;
+        listeG09311 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09311'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09311.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09311;
+    }
+	//PASQUET
+	public static ArrayList<PersonnesProduction> affichageG09513(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09513;
+        listeG09513 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09513'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09513.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09513;
+    }
+	//BAHANI
+	public static ArrayList<PersonnesProduction> affichageG02634(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG02634;
+        listeG02634 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G02634'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG02634.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG02634;
+    }
+	//INETUM BM
+	public static ArrayList<PersonnesProduction> affichageE51634(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51634;
+        listeE51634 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51634'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51634.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51634;
+    }
+	//CARRU
+	public static ArrayList<PersonnesProduction> affichageG09057(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09057;
+        listeG09057 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09057'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09057.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09057;
+    }
+	//OHANA
+	public static ArrayList<PersonnesProduction> affichageG02662(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG02662;
+        listeG02662 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G02662'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG02662.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG02662;
+    }
+	//GLEMAIN
+	public static ArrayList<PersonnesProduction> affichageG09305(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09305;
+        listeG09305 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09305'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09305.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09305;
+    }
+	//INETUM OT
+	public static ArrayList<PersonnesProduction> affichageE51122(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51122;
+        listeE51122 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51122'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51122.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51122;
+    }
+	//INETUM EW
+	public static ArrayList<PersonnesProduction> affichageE51713(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51713;
+        listeE51713 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51713'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51713.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51713;
+    }
+	//THIERRY
+	public static ArrayList<PersonnesProduction> affichageG09307(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09307;
+        listeG09307 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09307'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09307.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09307;
+    }
+	//ABOJIAN
+	public static ArrayList<PersonnesProduction> affichageG03087(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03087;
+        listeG03087 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03087'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03087.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03087;
+    }
+	//INETUM SM
+	public static ArrayList<PersonnesProduction> affichageE51679(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51679;
+        listeE51679 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51679'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51679.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51679;
+    }
+	//RAMENE
+	public static ArrayList<PersonnesProduction> affichageG00994(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG00994;
+        listeG00994 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G00994'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG00994.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG00994;
+    }
+	//LEBLOND
+	public static ArrayList<PersonnesProduction> affichageG01221(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG01221;
+        listeG01221 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G01221'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG01221.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG01221;
+    }
+	//GUIGNEBERT
+	public static ArrayList<PersonnesProduction> affichageG01304(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG01304;
+        listeG01304 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G01304'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG01304.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG01304;
+    }
+	//FERTER
+	public static ArrayList<PersonnesProduction> affichageG02428(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG02428;
+        listeG02428 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G02428'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG02428.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG02428;
+    }
+	//DIDARET
+	public static ArrayList<PersonnesProduction> affichageG09626(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09626;
+        listeG09626 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09626'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09626.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09626;
+    }
+	//INETUM DA
+	public static ArrayList<PersonnesProduction> affichageE51710(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51710;
+        listeE51710 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51710'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51710.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51710;
+    }
+	//SAIDOU
+	public static ArrayList<PersonnesProduction> affichageG03547(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03547;
+        listeG03547 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03547'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03547.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03547;
+    }
+	//INETUM YB
+	public static ArrayList<PersonnesProduction> affichageE51574(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51574;
+        listeE51574 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51574'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51574.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51574;
+    }
+	//INETUM FB
+	public static ArrayList<PersonnesProduction> affichageE51575(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51575;
+        listeE51575 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51575'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51575.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51575;
+    }
+	//BOISSET
+	public static ArrayList<PersonnesProduction> affichageG09566(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09566;
+        listeG09566 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09566'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09566.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09566;
+    }
+	//INETUM CB
+	public static ArrayList<PersonnesProduction> affichageE51126(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51126;
+        listeE51126 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51126'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51126.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51126;
+    }
+	//DUCHAUSSOY
+	public static ArrayList<PersonnesProduction> affichageG01646(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG01646;
+        listeG01646 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G01646'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG01646.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG01646;
+    }
+	//ANOLIS
+	public static ArrayList<PersonnesProduction> affichageE51369(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51369;
+        listeE51369 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51369'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51369.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51369;
+    }
+	//INETUM TP
+	public static ArrayList<PersonnesProduction> affichageE51660(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51660;
+        listeE51660 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51660'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51660.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51660;
+    }
+	//FONTESSE
+	public static ArrayList<PersonnesProduction> affichageB50424(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeB50424;
+        listeB50424 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'B50424'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeB50424.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeB50424;
+    }
+	//GILLE
+	public static ArrayList<PersonnesProduction> affichageG03713(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03713;
+        listeG03713 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03713'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03713.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03713;
+    }
+	//HABACHOU
+	public static ArrayList<PersonnesProduction> affichageG03546(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03546;
+        listeG03546 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03546'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03546.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03546;
+    }
+	//ARDILIO
+	public static ArrayList<PersonnesProduction> affichageG09108(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09108;
+        listeG09108 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09108'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09108.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09108;
+    }
+	//BEYLIER
+	public static ArrayList<PersonnesProduction> affichageG03973(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03973;
+        listeG03973 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03973'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03973.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03973;
+    }
+	//NSIS
+	public static ArrayList<PersonnesProduction> affichageE51427(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51427;
+        listeE51427 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51427'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51427.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51427;
+    }
+	//CATTAINI
+	public static ArrayList<PersonnesProduction> affichageG03459(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03459;
+        listeG03459 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03459'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03459.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03459;
+    }
+	//BIGOT
+	public static ArrayList<PersonnesProduction> affichageG03431(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03431;
+        listeG03431 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03431'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03431.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03431;
+    }
+	//CLINKAST ZZ
+	public static ArrayList<PersonnesProduction> affichageE51659(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51659;
+        listeE51659 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51659'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51659.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51659;
+    }
+	//CLINKAST MA
+	public static ArrayList<PersonnesProduction> affichageE51707(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51707;
+        listeE51707 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51707'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51707.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51707;
+    }
+	//BUTEUX
+	public static ArrayList<PersonnesProduction> affichageG09282(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09282;
+        listeG09282 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09282'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09282.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09282;
+    }
+	//BAUDOIN
+	public static ArrayList<PersonnesProduction> affichageG09262(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09262;
+        listeG09262 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09262'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09262.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09262;
+    }
+	//JEAN
+	public static ArrayList<PersonnesProduction> affichageG02763(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG02763;
+        listeG02763 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G02763'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG02763.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG02763;
+    }
+	//HUMBERT
+	public static ArrayList<PersonnesProduction> affichageG01984(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG01984;
+        listeG01984 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G01984'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG01984.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG01984;
+    }
+	//MENARD
+	public static ArrayList<PersonnesProduction> affichageG09265(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09265;
+        listeG09265 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09265'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09265.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09265;
+    }
+	//RIEUX
+	public static ArrayList<PersonnesProduction> affichageG09104(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09104;
+        listeG09104 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09104'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09104.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09104;
+    }
+	//ROULLAND
+	public static ArrayList<PersonnesProduction> affichageG09641(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09641;
+        listeG09641 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09641'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09641.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09641;
+    }
+	//ADONYS
+	public static ArrayList<PersonnesProduction> affichageE51424(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51424;
+        listeE51424 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51424'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51424.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51424;
+    }
+	//LEROUX
+	public static ArrayList<PersonnesProduction> affichageG02520(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG02520;
+        listeG02520 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G02520'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG02520.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG02520;
+    }
+	//ERDINC
+	public static ArrayList<PersonnesProduction> affichageG02539(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG02539;
+        listeG02539 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G02539'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG02539.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG02539;
+    }
+	//MARCHAND
+	public static ArrayList<PersonnesProduction> affichageG09735(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09735;
+        listeG09735 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09735'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09735.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09735;
+    }
+	//KHY
+	public static ArrayList<PersonnesProduction> affichageG03329(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03329;
+        listeG03329 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03329'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03329.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03329;
+    }
+	//SCC
+	public static ArrayList<PersonnesProduction> affichageE51438(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51438;
+        listeE51438 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51438'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51438.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51438;
+    }
+	//Bouloc
+	public static ArrayList<PersonnesProduction> affichageG03739(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG03739;
+        listeG03739 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G03739'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG03739.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG03739;
+    }
+	//VAN DER CRUYSSEN
+	public static ArrayList<PersonnesProduction> affichageG04030(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG04030;
+        listeG04030 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G04030'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG04030.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG04030;
+    }
+	//HT TEAM
+	public static ArrayList<PersonnesProduction> affichageE51507(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51507;
+        listeE51507 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51507'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51507.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51507;
+    }
+	//CELAD RD
+	public static ArrayList<PersonnesProduction> affichageE51570(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51570;
+        listeE51570 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51570'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51570.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51570;
+    }
+	//CELAD LF
+	public static ArrayList<PersonnesProduction> affichageE51627(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51627;
+        listeE51627 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51627'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51627.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51627;
+    }
+	//CELAD ABA
+	public static ArrayList<PersonnesProduction> affichageE51648(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51648;
+        listeE51648 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51648'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51648.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51648;
+    }
+	//CELAD GK
+	public static ArrayList<PersonnesProduction> affichageE51681(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51681;
+        listeE51681 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51681'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51681.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51681;
+    }
+	//COESSI
+	public static ArrayList<PersonnesProduction> affichageE51533(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51533;
+        listeE51533 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51533'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51533.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51533;
+    }
+	//CELAD ABH
+	public static ArrayList<PersonnesProduction> affichageE5704(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE5704;
+        listeE5704 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E5704'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE5704.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE5704;
+    }
+	//CELAD HF
+	public static ArrayList<PersonnesProduction> affichageE51700(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51700;
+        listeE51700 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51700'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51700.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51700;
+    }
+	//METSYS
+	public static ArrayList<PersonnesProduction> affichageE51705(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51705;
+        listeE51705 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51705'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51705.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51705;
+    }
+	//OLIER
+	public static ArrayList<PersonnesProduction> affichageG09258(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeG09258;
+        listeG09258 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'G09258'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeG09258.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeG09258;
+    }
+	//MARLIERE
+	public static ArrayList<PersonnesProduction> affichageB50423(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeB50423;
+        listeB50423 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'B50423'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeB50423.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeB50423;
+    }
+	//ELANZ
+	public static ArrayList<PersonnesProduction> affichageE51576(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51576;
+        listeE51576 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51576'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51576.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51576;
+    }
+	//HR TEAM
+	public static ArrayList<PersonnesProduction> affichageE51665(){
+        Modele.connexion();
+        ArrayList <PersonnesProduction> listeE51665;
+        listeE51665 = new ArrayList<PersonnesProduction>();
+        try {
+            rs = st.executeQuery("SELECT Nom_p, Prénom_p FROM personnel WHERE Matricule_p = 'E51665'");
+            while (rs.next()) {
+                String nom_p = rs.getString(1);
+                String prenom_p = rs.getString(2);
+                listeE51665.add(new PersonnesProduction(nom_p, prenom_p));
+            }
+        } catch (Exception e) {
+            //TODO: handle exception
+        }
+        return listeE51665;
+    }
+	
 	/**
 	 * Méthode qui permet d'afficher le personnel du service production
 	 * @return
