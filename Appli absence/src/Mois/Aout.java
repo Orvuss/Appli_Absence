@@ -4,16 +4,14 @@ public class Aout {
 	private String dateDebutA;
 	private String dateFinA;
 	private String affectationA;
-	private String autreA;
 	
 	public Aout(String uneAffectationA) {
 		this.affectationA = uneAffectationA;
 	}
-	public Aout(String uneDateDebutA, String uneDateFinA, String uneAffectationA, String uneAutreA) {
+	public Aout(String uneDateDebutA, String uneDateFinA, String uneAffectationA) {
 		this.dateDebutA = uneDateDebutA;
 		this.dateFinA = uneDateFinA;
 		this.affectationA = uneAffectationA;
-		this.autreA = uneAutreA;
 	}
 
 	public String getDateDebutA() {
@@ -36,12 +34,4 @@ public class Aout {
 	public void setAffectationA(String uneAffectationA) {
 		this.affectationA = uneAffectationA;
 	}
-
-	public String getAutreA() {
-		return autreA;
-	}
-	public void setAutreA(String uneAutreA) {
-		this.autreA = uneAutreA;
-	}
-	
 }

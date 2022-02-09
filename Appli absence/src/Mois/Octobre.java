@@ -4,16 +4,14 @@ public class Octobre {
 	private String dateDebutO;
 	private String dateFinO;
 	private String affectationO;
-	private String autreO;
 	
 	public Octobre(String uneAffectationO) {
 		this.affectationO = uneAffectationO;
 	}
-	public Octobre(String uneDateDebutO, String uneDateFinO, String uneAffectationO, String uneAutreO) {
+	public Octobre(String uneDateDebutO, String uneDateFinO, String uneAffectationO) {
 		this.dateDebutO = uneDateDebutO;
 		this.dateFinO = uneDateFinO;
 		this.affectationO = uneAffectationO;
-		this.autreO = uneAutreO;
 	}
 	
 	public String getDateDebutO() {
@@ -35,14 +33,5 @@ public class Octobre {
 	}
 	public void setAffectationO(String uneAffectationO) {
 		this.affectationO = uneAffectationO;
-	}
-	
-	public String getAutreO() {
-		return autreO;
-	}
-	public void setAutreO(String uneAutreO) {
-		this.autreO = uneAutreO;
-	}
-	
-	
+	}	
 }

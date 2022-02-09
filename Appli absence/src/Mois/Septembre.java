@@ -4,16 +4,14 @@ public class Septembre {
 	private String dateDebutS;
 	private String dateFinS;
 	private String affectationS;
-	private String autreS;
 	
 	public Septembre(String uneAffectationS) {
 		this.affectationS = uneAffectationS;
 	}
-	public Septembre(String uneDateDebutS, String uneDateFinS, String uneAffectationS, String uneAutreS) {
+	public Septembre(String uneDateDebutS, String uneDateFinS, String uneAffectationS) {
 		this.dateDebutS = uneDateDebutS;
 		this.dateFinS = uneDateFinS;
 		this.affectationS = uneAffectationS;
-		this.autreS = uneAutreS;
 	}
 
 	public String getDateDebutS() {
@@ -36,12 +34,4 @@ public class Septembre {
 	public void setAffectationS(String uneAffectationS) {
 		this.affectationS = uneAffectationS;
 	}
-	
-	public String getAutreS() {
-		return autreS;
-	}
-	public void setAutreS(String uneAutreS) {
-		this.autreS = uneAutreS;
-	}
-	
 }

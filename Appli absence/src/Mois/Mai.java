@@ -4,16 +4,14 @@ public class Mai {
 	private String dateDebutM;
 	private String dateFinM;
 	private String affectationM;
-	private String autreM;
 	
 	public Mai(String uneAffectationM) {
 		this.affectationM = uneAffectationM;
 	}
-	public Mai(String uneDateDebutM, String uneDateFinM, String uneAffectationM, String uneAutreM) {
+	public Mai(String uneDateDebutM, String uneDateFinM, String uneAffectationM) {
 		this.dateDebutM = uneDateDebutM;
 		this.dateFinM = uneDateFinM;
 		this.affectationM = uneAffectationM;
-		this.autreM = uneAutreM;
 	}
 	
 	public String getDateDebutM() {
@@ -35,12 +33,5 @@ public class Mai {
 	}
 	public void setAffectationM(String uneAffectationM) {
 		this.affectationM = uneAffectationM;
-	}
-
-	public String getAutreM() {
-		return autreM;
-	}
-	public void setAutreM(String uneAutreM) {
-		this.autreM = uneAutreM;
 	}
 }

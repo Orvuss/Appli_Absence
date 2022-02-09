@@ -4,16 +4,14 @@ public class Novembre {
 	private String dateDebutN;
 	private String dateFinN;
 	private String affectationN;
-	private String autreN;
 	
 	public Novembre(String uneAffectationN) {
 		this.affectationN = uneAffectationN;
 	}
-	public Novembre(String uneDateDebutN, String uneDateFinN, String uneAffectationN, String uneAutreN) {
+	public Novembre(String uneDateDebutN, String uneDateFinN, String uneAffectationN) {
 		this.dateDebutN = uneDateDebutN;
 		this.dateFinN = uneDateFinN;
 		this.affectationN = uneAffectationN;
-		this.autreN = uneAutreN;
 	}
 	
 	public String getDateDebutN() {
@@ -35,12 +33,5 @@ public class Novembre {
 	}
 	public void setAffectationN(String uneAffectationN) {
 		this.affectationN = uneAffectationN;
-	}
-	
-	public String getAutreN() {
-		return autreN;
-	}
-	public void setAutreN(String uneAutreN) {
-		this.autreN = uneAutreN;
 	}
 }

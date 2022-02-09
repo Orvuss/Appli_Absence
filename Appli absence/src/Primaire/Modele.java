@@ -1757,15 +1757,14 @@ public class Modele {
         return listePersonnesLinux;
     }
 	
-	public static boolean AjouterAffectationJanvier(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationJanvier(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO janvier VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO janvier VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -1802,8 +1801,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutJanvier.add(new Janvier(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutJanvier.add(new Janvier(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -1831,15 +1829,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationFevrier(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationFevrier(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO fevrier VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO fevrier VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -1876,8 +1873,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutFevrier.add(new Fevrier(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutFevrier.add(new Fevrier(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -1905,15 +1901,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationMars(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationMars(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO mars VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO mars VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -1950,8 +1945,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutMars.add(new Mars(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutMars.add(new Mars(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -1979,15 +1973,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationAvril(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationAvril(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO avril VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO avril VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2024,8 +2017,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutAvril.add(new Avril(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutAvril.add(new Avril(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -2053,15 +2045,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationMai(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationMai(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO mai VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO mai VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2098,8 +2089,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutMai.add(new Mai(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutMai.add(new Mai(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -2127,15 +2117,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationJuin(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationJuin(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO juin VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO juin VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2172,8 +2161,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutJuin.add(new Juin(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutJuin.add(new Juin(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -2201,15 +2189,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationJuillet(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationJuillet(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO juillet VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO juillet VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2246,8 +2233,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutJuillet.add(new Juillet(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutJuillet.add(new Juillet(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -2275,15 +2261,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationAout(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationAout(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO aout VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO aout VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2320,8 +2305,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutAout.add(new Aout(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutAout.add(new Aout(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -2349,15 +2333,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationSeptembre(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationSeptembre(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO septembre VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO septembre VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2394,8 +2377,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutSeptembre.add(new Septembre(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutSeptembre.add(new Septembre(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -2423,15 +2405,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationOctobre(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationOctobre(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO octobre VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO octobre VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2468,8 +2449,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutOctobre.add(new Octobre(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutOctobre.add(new Octobre(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -2497,15 +2477,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationNovembre(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationNovembre(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO novembre VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO novembre VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2542,8 +2521,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutNovembre.add(new Novembre(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutNovembre.add(new Novembre(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
@@ -2571,15 +2549,14 @@ public class Modele {
         return rep;
     }
 	
-	public static boolean AjouterAffectationDecembre(Date dateDebut, Date dateFin, String affectation, String autre) {
+	public static boolean AjouterAffectationDecembre(Date dateDebut, Date dateFin, String affectation) {
         boolean rep = true;
         int count;
         try {
-        	statement = connexion.prepareStatement("INSERT INTO decembre VALUES (?,?,?,?);");
+        	statement = connexion.prepareStatement("INSERT INTO decembre VALUES (?,?,?);");
         	statement.setDate(1, dateDebut);
         	statement.setDate(2, dateFin);
         	statement.setString(3, affectation);
-        	statement.setString(4, autre);
             count = statement.executeUpdate();
         }
         catch (SQLException erreur) {
@@ -2616,8 +2593,7 @@ public class Modele {
                 String uneDateDebut = rs.getString(1);
                 String uneDateFin = rs.getString(2);
                 String uneAffectation = rs.getString(3);
-                String uneAutreAbsence = rs.getString(4);
-                listeDateDebutDecembre.add(new Decembre(uneDateDebut, uneDateFin, uneAffectation, uneAutreAbsence));
+                listeDateDebutDecembre.add(new Decembre(uneDateDebut, uneDateFin, uneAffectation));
             }
         } catch (Exception e) {
             //TODO: handle exception
