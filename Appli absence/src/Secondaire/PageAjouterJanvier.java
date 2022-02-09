@@ -44,7 +44,6 @@ public class PageAjouterJanvier extends JFrame implements ActionListener{
 	private JLabel lblDateDebut;
 	private JLabel lblDateFin;
 	private JLabel lblAffectation;
-	private JLabel lblAutreAbsence;
 	private JLabel lblInsertion;
 
 	//JComboBox
@@ -112,7 +111,6 @@ public class PageAjouterJanvier extends JFrame implements ActionListener{
 	    this.lblDateDebut = new JLabel("Date de debut : ");
 	    this.lblDateFin = new JLabel("Date de fin : ");
 	    this.lblAffectation = new JLabel("Choisissez l'affectation : ");
-	    this.lblAutreAbsence = new JLabel("Pour autres absences : ");
 	    this.lblInsertion = new JLabel();
 	    this.lblInsertion.setText("");
 	    //DatePickerDebut
@@ -204,7 +202,6 @@ public class PageAjouterJanvier extends JFrame implements ActionListener{
 	    this.panelChamps.add(datePicker2);
 	    this.panelChamps.add(lblAffectation);
 	    this.panelChamps.add(jcbAffectation);
-	    this.panelChamps.add(lblAutreAbsence);
 	    this.panelChamps.add(lblInsertion);
 
 	    this.panelBouton.add(btnValider);
