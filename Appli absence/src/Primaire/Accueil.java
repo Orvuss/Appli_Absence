@@ -1964,6 +1964,10 @@ public class Accueil extends JFrame implements ActionListener{
 			this.panelAccueil.repaint();
 		}
 		if(e.getSource().equals(jmiMai)) {
+			ArrayList<PersonnesProduction> listeG09308;
+			listeG09308 = new ArrayList<PersonnesProduction>();
+			listeG09308 = Modele.affichageG09308();
+			
 			ArrayList<PersonnesProduction> listePersonnesProd;
 			listePersonnesProd = new ArrayList<PersonnesProduction>();
 			listePersonnesProd = Modele.affichagePersonnelProduction();
@@ -2071,8 +2075,296 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<Mai> listeMai;
 			listeMai = new ArrayList<Mai>();
 			listeMai = Modele.afficherAffectationMai();
+			
+			ArrayList<PersonnesProduction> listeG09086;
+			listeG09086 = new ArrayList<PersonnesProduction>();
+			listeG09086 = Modele.affichageG09086();
+			
+			ArrayList<PersonnesProduction> listeE51300;
+			listeE51300 = new ArrayList<PersonnesProduction>();
+			listeE51300 = Modele.affichageE51300();
+			
+			ArrayList<PersonnesProduction> listeG01838;
+			listeG01838 = new ArrayList<PersonnesProduction>();
+			listeG01838 = Modele.affichageG01838();
+			
+			ArrayList<PersonnesProduction> listeG09844;
+			listeG09844 = new ArrayList<PersonnesProduction>();
+			listeG09844 = Modele.affichageG09844();
+			
+			ArrayList<PersonnesProduction> listeG02486;
+			listeG02486 = new ArrayList<PersonnesProduction>();
+			listeG02486 = Modele.affichageG02486();
+			
+			ArrayList<PersonnesProduction> listeG09304;
+			listeG09304 = new ArrayList<PersonnesProduction>();
+			listeG09304 = Modele.affichageG09304();
+			
+			ArrayList<PersonnesProduction> listeE51349;
+			listeE51349 = new ArrayList<PersonnesProduction>();
+			listeE51349 = Modele.affichageE51349();
+			
+			ArrayList<PersonnesProduction> listeE51408;
+			listeE51408 = new ArrayList<PersonnesProduction>();
+			listeE51408 = Modele.affichageE51408();
+			
+			ArrayList<PersonnesProduction> listeG09311;
+			listeG09311 = new ArrayList<PersonnesProduction>();
+			listeG09311 = Modele.affichageG09311();
+			
+			ArrayList<PersonnesProduction> listeG09513;
+			listeG09513 = new ArrayList<PersonnesProduction>();
+			listeG09513 = Modele.affichageG09513();
+			
+			ArrayList<PersonnesProduction> listeG02634;
+			listeG02634 = new ArrayList<PersonnesProduction>();
+			listeG02634 = Modele.affichageG02634();
+			
+			ArrayList<PersonnesProduction> listeE51634;
+			listeE51634 = new ArrayList<PersonnesProduction>();
+			listeE51634 = Modele.affichageE51634();
+			
+			ArrayList<PersonnesProduction> listeG09057;
+			listeG09057 = new ArrayList<PersonnesProduction>();
+			listeG09057 = Modele.affichageG09057();
+			
+			ArrayList<PersonnesProduction> listeG02662;
+			listeG02662 = new ArrayList<PersonnesProduction>();
+			listeG02662 = Modele.affichageG02662();
+			
+			ArrayList<PersonnesProduction> listeG09305;
+			listeG09305 = new ArrayList<PersonnesProduction>();
+			listeG09305 = Modele.affichageG09305();
+			
+			ArrayList<PersonnesProduction> listeE51122;
+			listeE51122 = new ArrayList<PersonnesProduction>();
+			listeE51122 = Modele.affichageE51122();
+			
+			ArrayList<PersonnesProduction> listeE51713;
+			listeE51713 = new ArrayList<PersonnesProduction>();
+			listeE51713 = Modele.affichageE51713();
+			
+			ArrayList<PersonnesProduction> listeG09307;
+			listeG09307 = new ArrayList<PersonnesProduction>();
+			listeG09307 = Modele.affichageG09307();
+			
+			ArrayList<PersonnesProduction> listeG03087;
+			listeG03087 = new ArrayList<PersonnesProduction>();
+			listeG03087 = Modele.affichageG03087();
+			
+			ArrayList<PersonnesProduction> listeE51679;
+			listeE51679 = new ArrayList<PersonnesProduction>();
+			listeE51679 = Modele.affichageE51679();
+			
+			ArrayList<PersonnesProduction> listeG00994;
+			listeG00994 = new ArrayList<PersonnesProduction>();
+			listeG00994 = Modele.affichageG00994();
+			
+			ArrayList<PersonnesProduction> listeG01221;
+			listeG01221 = new ArrayList<PersonnesProduction>();
+			listeG01221 = Modele.affichageG01221();
+			
+			ArrayList<PersonnesProduction> listeG01304;
+			listeG01304 = new ArrayList<PersonnesProduction>();
+			listeG01304 = Modele.affichageG01304();
+			
+			ArrayList<PersonnesProduction> listeG02428;
+			listeG02428 = new ArrayList<PersonnesProduction>();
+			listeG02428 = Modele.affichageG02428();
+			
+			ArrayList<PersonnesProduction> listeG09626;
+			listeG09626 = new ArrayList<PersonnesProduction>();
+			listeG09626 = Modele.affichageG09626();
+			
+			ArrayList<PersonnesProduction> listeE51710;
+			listeE51710 = new ArrayList<PersonnesProduction>();
+			listeE51710 = Modele.affichageE51710();
+			
+			ArrayList<PersonnesProduction> listeG03547;
+			listeG03547 = new ArrayList<PersonnesProduction>();
+			listeG03547 = Modele.affichageG03547();
+			
+			ArrayList<PersonnesProduction> listeE51574;
+			listeE51574 = new ArrayList<PersonnesProduction>();
+			listeE51574 = Modele.affichageE51574();
+			
+			ArrayList<PersonnesProduction> listeE51575;
+			listeE51575 = new ArrayList<PersonnesProduction>();
+			listeE51575 = Modele.affichageE51575();
+			
+			ArrayList<PersonnesProduction> listeG09566;
+			listeG09566 = new ArrayList<PersonnesProduction>();
+			listeG09566 = Modele.affichageG09566();
+			
+			ArrayList<PersonnesProduction> listeE51126;
+			listeE51126 = new ArrayList<PersonnesProduction>();
+			listeE51126 = Modele.affichageE51126();
+			
+			ArrayList<PersonnesProduction> listeG01646;
+			listeG01646 = new ArrayList<PersonnesProduction>();
+			listeG01646 = Modele.affichageG01646();
+			
+			ArrayList<PersonnesProduction> listeE51369;
+			listeE51369 = new ArrayList<PersonnesProduction>();
+			listeE51369 = Modele.affichageE51369();
+			
+			ArrayList<PersonnesProduction> listeE51660;
+			listeE51660 = new ArrayList<PersonnesProduction>();
+			listeE51660 = Modele.affichageE51660();
+			
+			ArrayList<PersonnesProduction> listeB50424;
+			listeB50424 = new ArrayList<PersonnesProduction>();
+			listeB50424 = Modele.affichageB50424();
+			
+			ArrayList<PersonnesProduction> listeG03713;
+			listeG03713 = new ArrayList<PersonnesProduction>();
+			listeG03713 = Modele.affichageG03713();
+			
+			ArrayList<PersonnesProduction> listeG03546;
+			listeG03546 = new ArrayList<PersonnesProduction>();
+			listeG03546 = Modele.affichageG03546();
+			
+			ArrayList<PersonnesProduction> listeG09108;
+			listeG09108 = new ArrayList<PersonnesProduction>();
+			listeG09108 = Modele.affichageG09108();
+			
+			ArrayList<PersonnesProduction> listeG03973;
+			listeG03973 = new ArrayList<PersonnesProduction>();
+			listeG03973 = Modele.affichageG03973();
+			
+			ArrayList<PersonnesProduction> listeE51427;
+			listeE51427 = new ArrayList<PersonnesProduction>();
+			listeE51427 = Modele.affichageE51427();
+			
+			ArrayList<PersonnesProduction> listeG03459;
+			listeG03459 = new ArrayList<PersonnesProduction>();
+			listeG03459 = Modele.affichageG03459();
+			
+			ArrayList<PersonnesProduction> listeG03431;
+			listeG03431 = new ArrayList<PersonnesProduction>();
+			listeG03431 = Modele.affichageG03431();
+			
+			ArrayList<PersonnesProduction> listeE51659;
+			listeE51659 = new ArrayList<PersonnesProduction>();
+			listeE51659 = Modele.affichageE51659();
+			
+			ArrayList<PersonnesProduction> listeE51707;
+			listeE51707 = new ArrayList<PersonnesProduction>();
+			listeE51707 = Modele.affichageE51707();
+			
+			ArrayList<PersonnesProduction> listeG09282;
+			listeG09282 = new ArrayList<PersonnesProduction>();
+			listeG09282 = Modele.affichageG09282();
+			
+			ArrayList<PersonnesProduction> listeG09262;
+			listeG09262 = new ArrayList<PersonnesProduction>();
+			listeG09262 = Modele.affichageG09262();
+			
+			ArrayList<PersonnesProduction> listeG02763;
+			listeG02763 = new ArrayList<PersonnesProduction>();
+			listeG02763 = Modele.affichageG02763();
+			
+			ArrayList<PersonnesProduction> listeG01984;
+			listeG01984 = new ArrayList<PersonnesProduction>();
+			listeG01984 = Modele.affichageG01984();
+			
+			ArrayList<PersonnesProduction> listeG09265;
+			listeG09265 = new ArrayList<PersonnesProduction>();
+			listeG09265 = Modele.affichageG09265();
+			
+			ArrayList<PersonnesProduction> listeG09104;
+			listeG09104 = new ArrayList<PersonnesProduction>();
+			listeG09104 = Modele.affichageG09104();
+			
+			ArrayList<PersonnesProduction> listeG09641;
+			listeG09641 = new ArrayList<PersonnesProduction>();
+			listeG09641 = Modele.affichageG09641();
+			
+			ArrayList<PersonnesProduction> listeE51424;
+			listeE51424 = new ArrayList<PersonnesProduction>();
+			listeE51424 = Modele.affichageE51424();
+			
+			ArrayList<PersonnesProduction> listeG02520;
+			listeG02520 = new ArrayList<PersonnesProduction>();
+			listeG02520 = Modele.affichageG02520();
+			
+			ArrayList<PersonnesProduction> listeG02539;
+			listeG02539 = new ArrayList<PersonnesProduction>();
+			listeG02539 = Modele.affichageG02539();
+			
+			ArrayList<PersonnesProduction> listeG09735;
+			listeG09735 = new ArrayList<PersonnesProduction>();
+			listeG09735 = Modele.affichageG09735();
+			
+			ArrayList<PersonnesProduction> listeG03329;
+			listeG03329 = new ArrayList<PersonnesProduction>();
+			listeG03329 = Modele.affichageG03329();
+			
+			ArrayList<PersonnesProduction> listeE51438;
+			listeE51438 = new ArrayList<PersonnesProduction>();
+			listeE51438 = Modele.affichageE51438();
+			
+			ArrayList<PersonnesProduction> listeG03739;
+			listeG03739 = new ArrayList<PersonnesProduction>();
+			listeG03739 = Modele.affichageG03739();
+			
+			ArrayList<PersonnesProduction> listeG04030;
+			listeG04030 = new ArrayList<PersonnesProduction>();
+			listeG04030 = Modele.affichageG04030();
+			
+			ArrayList<PersonnesProduction> listeE51507;
+			listeE51507 = new ArrayList<PersonnesProduction>();
+			listeE51507 = Modele.affichageE51507();
+
+			ArrayList<PersonnesProduction> listeE51570;
+			listeE51570 = new ArrayList<PersonnesProduction>();
+			listeE51570 = Modele.affichageE51570();
+			
+			ArrayList<PersonnesProduction> listeE51627;
+			listeE51627 = new ArrayList<PersonnesProduction>();
+			listeE51627 = Modele.affichageE51627();
+			
+			ArrayList<PersonnesProduction> listeE51648;
+			listeE51648 = new ArrayList<PersonnesProduction>();
+			listeE51648 = Modele.affichageE51648();
+			
+			ArrayList<PersonnesProduction> listeE51681;
+			listeE51681 = new ArrayList<PersonnesProduction>();
+			listeE51681 = Modele.affichageE51681();
+			
+			ArrayList<PersonnesProduction> listeE51533;
+			listeE51533 = new ArrayList<PersonnesProduction>();
+			listeE51533 = Modele.affichageE51533();
+			
+			ArrayList<PersonnesProduction> listeE5704;
+			listeE5704 = new ArrayList<PersonnesProduction>();
+			listeE5704 = Modele.affichageE5704();
+			
+			ArrayList<PersonnesProduction> listeE51700;
+			listeE51700 = new ArrayList<PersonnesProduction>();
+			listeE51700 = Modele.affichageE51700();
+			
+			ArrayList<PersonnesProduction> listeE51705;
+			listeE51705 = new ArrayList<PersonnesProduction>();
+			listeE51705 = Modele.affichageE51705();
+			
+			ArrayList<PersonnesProduction> listeG09258;
+			listeG09258 = new ArrayList<PersonnesProduction>();
+			listeG09258 = Modele.affichageG09258();
+			
+			ArrayList<PersonnesProduction> listeB50423;
+			listeB50423 = new ArrayList<PersonnesProduction>();
+			listeB50423 = Modele.affichageB50423();
+			
+			ArrayList<PersonnesProduction> listeE51576;
+			listeE51576 = new ArrayList<PersonnesProduction>();
+			listeE51576 = Modele.affichageE51576();
+			
+			ArrayList<PersonnesProduction> listeE51665;
+			listeE51665 = new ArrayList<PersonnesProduction>();
+			listeE51665 = Modele.affichageE51665();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageMai(listeMai, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageMai());
+			this.panelAccueil.add(new PageMai(listeE51665 ,listeE51576, listeB50423, listeG09258, listeE51705, listeE51700, listeE5704, listeE51533, listeE51681, listeE51648, listeE51627, listeE51570, listeE51507, listeG04030, listeG03739, listeE51438, listeG03329, listeG09735, listeG02539, listeG02520, listeE51424, listeG09641, listeG09104, listeG09265, listeG01984, listeG02763, listeG09262, listeG09282, listeE51707, listeE51659, listeG03431, listeG03459, listeE51427, listeG03973, listeG09108, listeG03546, listeG03713, listeB50424, listeE51660, listeE51369, listeG01646, listeE51126, listeG09566, listeE51575, listeE51574, listeG03547, listeE51710, listeG09626, listeG02428, listeG01304, listeG01221, listeG00994, listeE51679, listeG03087, listeG09307, listeE51713, listeE51122, listeG09305, listeG02662, listeG09057, listeE51634, listeG02634, listeG09513, listeG09311, listeE51408, listeE51349, listeG09304, listeG02486, listeG09844, listeG01838, listeE51300, listeG09086, listeG09308, listeMai, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageMai());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -2080,6 +2372,10 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesProd;
 			listePersonnesProd = new ArrayList<PersonnesProduction>();
 			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listeG09308;
+			listeG09308 = new ArrayList<PersonnesProduction>();
+			listeG09308 = Modele.affichageG09308();
 			
 			ArrayList<PersonnesProduction> listePersonnesCoor;
 			listePersonnesCoor = new ArrayList<PersonnesProduction>();
@@ -2184,8 +2480,296 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<Juin> listeJuin;
 			listeJuin = new ArrayList<Juin>();
 			listeJuin = Modele.afficherAffectationJuin();
+			
+			ArrayList<PersonnesProduction> listeG09086;
+			listeG09086 = new ArrayList<PersonnesProduction>();
+			listeG09086 = Modele.affichageG09086();
+			
+			ArrayList<PersonnesProduction> listeE51300;
+			listeE51300 = new ArrayList<PersonnesProduction>();
+			listeE51300 = Modele.affichageE51300();
+			
+			ArrayList<PersonnesProduction> listeG01838;
+			listeG01838 = new ArrayList<PersonnesProduction>();
+			listeG01838 = Modele.affichageG01838();
+			
+			ArrayList<PersonnesProduction> listeG09844;
+			listeG09844 = new ArrayList<PersonnesProduction>();
+			listeG09844 = Modele.affichageG09844();
+			
+			ArrayList<PersonnesProduction> listeG02486;
+			listeG02486 = new ArrayList<PersonnesProduction>();
+			listeG02486 = Modele.affichageG02486();
+			
+			ArrayList<PersonnesProduction> listeG09304;
+			listeG09304 = new ArrayList<PersonnesProduction>();
+			listeG09304 = Modele.affichageG09304();
+			
+			ArrayList<PersonnesProduction> listeE51349;
+			listeE51349 = new ArrayList<PersonnesProduction>();
+			listeE51349 = Modele.affichageE51349();
+			
+			ArrayList<PersonnesProduction> listeE51408;
+			listeE51408 = new ArrayList<PersonnesProduction>();
+			listeE51408 = Modele.affichageE51408();
+			
+			ArrayList<PersonnesProduction> listeG09311;
+			listeG09311 = new ArrayList<PersonnesProduction>();
+			listeG09311 = Modele.affichageG09311();
+			
+			ArrayList<PersonnesProduction> listeG09513;
+			listeG09513 = new ArrayList<PersonnesProduction>();
+			listeG09513 = Modele.affichageG09513();
+			
+			ArrayList<PersonnesProduction> listeG02634;
+			listeG02634 = new ArrayList<PersonnesProduction>();
+			listeG02634 = Modele.affichageG02634();
+			
+			ArrayList<PersonnesProduction> listeE51634;
+			listeE51634 = new ArrayList<PersonnesProduction>();
+			listeE51634 = Modele.affichageE51634();
+			
+			ArrayList<PersonnesProduction> listeG09057;
+			listeG09057 = new ArrayList<PersonnesProduction>();
+			listeG09057 = Modele.affichageG09057();
+			
+			ArrayList<PersonnesProduction> listeG02662;
+			listeG02662 = new ArrayList<PersonnesProduction>();
+			listeG02662 = Modele.affichageG02662();
+			
+			ArrayList<PersonnesProduction> listeG09305;
+			listeG09305 = new ArrayList<PersonnesProduction>();
+			listeG09305 = Modele.affichageG09305();
+			
+			ArrayList<PersonnesProduction> listeE51122;
+			listeE51122 = new ArrayList<PersonnesProduction>();
+			listeE51122 = Modele.affichageE51122();
+			
+			ArrayList<PersonnesProduction> listeE51713;
+			listeE51713 = new ArrayList<PersonnesProduction>();
+			listeE51713 = Modele.affichageE51713();
+			
+			ArrayList<PersonnesProduction> listeG09307;
+			listeG09307 = new ArrayList<PersonnesProduction>();
+			listeG09307 = Modele.affichageG09307();
+			
+			ArrayList<PersonnesProduction> listeG03087;
+			listeG03087 = new ArrayList<PersonnesProduction>();
+			listeG03087 = Modele.affichageG03087();
+			
+			ArrayList<PersonnesProduction> listeE51679;
+			listeE51679 = new ArrayList<PersonnesProduction>();
+			listeE51679 = Modele.affichageE51679();
+			
+			ArrayList<PersonnesProduction> listeG00994;
+			listeG00994 = new ArrayList<PersonnesProduction>();
+			listeG00994 = Modele.affichageG00994();
+			
+			ArrayList<PersonnesProduction> listeG01221;
+			listeG01221 = new ArrayList<PersonnesProduction>();
+			listeG01221 = Modele.affichageG01221();
+			
+			ArrayList<PersonnesProduction> listeG01304;
+			listeG01304 = new ArrayList<PersonnesProduction>();
+			listeG01304 = Modele.affichageG01304();
+			
+			ArrayList<PersonnesProduction> listeG02428;
+			listeG02428 = new ArrayList<PersonnesProduction>();
+			listeG02428 = Modele.affichageG02428();
+			
+			ArrayList<PersonnesProduction> listeG09626;
+			listeG09626 = new ArrayList<PersonnesProduction>();
+			listeG09626 = Modele.affichageG09626();
+			
+			ArrayList<PersonnesProduction> listeE51710;
+			listeE51710 = new ArrayList<PersonnesProduction>();
+			listeE51710 = Modele.affichageE51710();
+			
+			ArrayList<PersonnesProduction> listeG03547;
+			listeG03547 = new ArrayList<PersonnesProduction>();
+			listeG03547 = Modele.affichageG03547();
+			
+			ArrayList<PersonnesProduction> listeE51574;
+			listeE51574 = new ArrayList<PersonnesProduction>();
+			listeE51574 = Modele.affichageE51574();
+			
+			ArrayList<PersonnesProduction> listeE51575;
+			listeE51575 = new ArrayList<PersonnesProduction>();
+			listeE51575 = Modele.affichageE51575();
+			
+			ArrayList<PersonnesProduction> listeG09566;
+			listeG09566 = new ArrayList<PersonnesProduction>();
+			listeG09566 = Modele.affichageG09566();
+			
+			ArrayList<PersonnesProduction> listeE51126;
+			listeE51126 = new ArrayList<PersonnesProduction>();
+			listeE51126 = Modele.affichageE51126();
+			
+			ArrayList<PersonnesProduction> listeG01646;
+			listeG01646 = new ArrayList<PersonnesProduction>();
+			listeG01646 = Modele.affichageG01646();
+			
+			ArrayList<PersonnesProduction> listeE51369;
+			listeE51369 = new ArrayList<PersonnesProduction>();
+			listeE51369 = Modele.affichageE51369();
+			
+			ArrayList<PersonnesProduction> listeE51660;
+			listeE51660 = new ArrayList<PersonnesProduction>();
+			listeE51660 = Modele.affichageE51660();
+			
+			ArrayList<PersonnesProduction> listeB50424;
+			listeB50424 = new ArrayList<PersonnesProduction>();
+			listeB50424 = Modele.affichageB50424();
+			
+			ArrayList<PersonnesProduction> listeG03713;
+			listeG03713 = new ArrayList<PersonnesProduction>();
+			listeG03713 = Modele.affichageG03713();
+			
+			ArrayList<PersonnesProduction> listeG03546;
+			listeG03546 = new ArrayList<PersonnesProduction>();
+			listeG03546 = Modele.affichageG03546();
+			
+			ArrayList<PersonnesProduction> listeG09108;
+			listeG09108 = new ArrayList<PersonnesProduction>();
+			listeG09108 = Modele.affichageG09108();
+			
+			ArrayList<PersonnesProduction> listeG03973;
+			listeG03973 = new ArrayList<PersonnesProduction>();
+			listeG03973 = Modele.affichageG03973();
+			
+			ArrayList<PersonnesProduction> listeE51427;
+			listeE51427 = new ArrayList<PersonnesProduction>();
+			listeE51427 = Modele.affichageE51427();
+			
+			ArrayList<PersonnesProduction> listeG03459;
+			listeG03459 = new ArrayList<PersonnesProduction>();
+			listeG03459 = Modele.affichageG03459();
+			
+			ArrayList<PersonnesProduction> listeG03431;
+			listeG03431 = new ArrayList<PersonnesProduction>();
+			listeG03431 = Modele.affichageG03431();
+			
+			ArrayList<PersonnesProduction> listeE51659;
+			listeE51659 = new ArrayList<PersonnesProduction>();
+			listeE51659 = Modele.affichageE51659();
+			
+			ArrayList<PersonnesProduction> listeE51707;
+			listeE51707 = new ArrayList<PersonnesProduction>();
+			listeE51707 = Modele.affichageE51707();
+			
+			ArrayList<PersonnesProduction> listeG09282;
+			listeG09282 = new ArrayList<PersonnesProduction>();
+			listeG09282 = Modele.affichageG09282();
+			
+			ArrayList<PersonnesProduction> listeG09262;
+			listeG09262 = new ArrayList<PersonnesProduction>();
+			listeG09262 = Modele.affichageG09262();
+			
+			ArrayList<PersonnesProduction> listeG02763;
+			listeG02763 = new ArrayList<PersonnesProduction>();
+			listeG02763 = Modele.affichageG02763();
+			
+			ArrayList<PersonnesProduction> listeG01984;
+			listeG01984 = new ArrayList<PersonnesProduction>();
+			listeG01984 = Modele.affichageG01984();
+			
+			ArrayList<PersonnesProduction> listeG09265;
+			listeG09265 = new ArrayList<PersonnesProduction>();
+			listeG09265 = Modele.affichageG09265();
+			
+			ArrayList<PersonnesProduction> listeG09104;
+			listeG09104 = new ArrayList<PersonnesProduction>();
+			listeG09104 = Modele.affichageG09104();
+			
+			ArrayList<PersonnesProduction> listeG09641;
+			listeG09641 = new ArrayList<PersonnesProduction>();
+			listeG09641 = Modele.affichageG09641();
+			
+			ArrayList<PersonnesProduction> listeE51424;
+			listeE51424 = new ArrayList<PersonnesProduction>();
+			listeE51424 = Modele.affichageE51424();
+			
+			ArrayList<PersonnesProduction> listeG02520;
+			listeG02520 = new ArrayList<PersonnesProduction>();
+			listeG02520 = Modele.affichageG02520();
+			
+			ArrayList<PersonnesProduction> listeG02539;
+			listeG02539 = new ArrayList<PersonnesProduction>();
+			listeG02539 = Modele.affichageG02539();
+
+			ArrayList<PersonnesProduction> listeG09735;
+			listeG09735 = new ArrayList<PersonnesProduction>();
+			listeG09735 = Modele.affichageG09735();
+			
+			ArrayList<PersonnesProduction> listeG03329;
+			listeG03329 = new ArrayList<PersonnesProduction>();
+			listeG03329 = Modele.affichageG03329();
+			
+			ArrayList<PersonnesProduction> listeE51438;
+			listeE51438 = new ArrayList<PersonnesProduction>();
+			listeE51438 = Modele.affichageE51438();
+			
+			ArrayList<PersonnesProduction> listeG03739;
+			listeG03739 = new ArrayList<PersonnesProduction>();
+			listeG03739 = Modele.affichageG03739();
+			
+			ArrayList<PersonnesProduction> listeG04030;
+			listeG04030 = new ArrayList<PersonnesProduction>();
+			listeG04030 = Modele.affichageG04030();
+			
+			ArrayList<PersonnesProduction> listeE51507;
+			listeE51507 = new ArrayList<PersonnesProduction>();
+			listeE51507 = Modele.affichageE51507();
+			
+			ArrayList<PersonnesProduction> listeE51570;
+			listeE51570 = new ArrayList<PersonnesProduction>();
+			listeE51570 = Modele.affichageE51570();
+			
+			ArrayList<PersonnesProduction> listeE51627;
+			listeE51627 = new ArrayList<PersonnesProduction>();
+			listeE51627 = Modele.affichageE51627();
+			
+			ArrayList<PersonnesProduction> listeE51648;
+			listeE51648 = new ArrayList<PersonnesProduction>();
+			listeE51648 = Modele.affichageE51648();
+			
+			ArrayList<PersonnesProduction> listeE51681;
+			listeE51681 = new ArrayList<PersonnesProduction>();
+			listeE51681 = Modele.affichageE51681();
+			
+			ArrayList<PersonnesProduction> listeE51533;
+			listeE51533 = new ArrayList<PersonnesProduction>();
+			listeE51533 = Modele.affichageE51533();
+			
+			ArrayList<PersonnesProduction> listeE5704;
+			listeE5704 = new ArrayList<PersonnesProduction>();
+			listeE5704 = Modele.affichageE5704();
+			
+			ArrayList<PersonnesProduction> listeE51700;
+			listeE51700 = new ArrayList<PersonnesProduction>();
+			listeE51700 = Modele.affichageE51700();
+			
+			ArrayList<PersonnesProduction> listeE51705;
+			listeE51705 = new ArrayList<PersonnesProduction>();
+			listeE51705 = Modele.affichageE51705();
+			
+			ArrayList<PersonnesProduction> listeG09258;
+			listeG09258 = new ArrayList<PersonnesProduction>();
+			listeG09258 = Modele.affichageG09258();
+			
+			ArrayList<PersonnesProduction> listeB50423;
+			listeB50423 = new ArrayList<PersonnesProduction>();
+			listeB50423 = Modele.affichageB50423();
+			
+			ArrayList<PersonnesProduction> listeE51576;
+			listeE51576 = new ArrayList<PersonnesProduction>();
+			listeE51576 = Modele.affichageE51576();
+			
+			ArrayList<PersonnesProduction> listeE51665;
+			listeE51665 = new ArrayList<PersonnesProduction>();
+			listeE51665 = Modele.affichageE51665();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageJuin(listeJuin, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuin());
+			this.panelAccueil.add(new PageJuin(listeE51665, listeE51576, listeB50423, listeG09258, listeE51705, listeE51700, listeE5704, listeE51533, listeE51681, listeE51648, listeE51627, listeE51570, listeE51507, listeG04030, listeG03739, listeE51438, listeG03329, listeG09735, listeG02539, listeG02520, listeE51424, listeG09641, listeG09104, listeG09265, listeG01984, listeG02763, listeG09262, listeG09282, listeE51707, listeE51659, listeG03431, listeG03459, listeE51427, listeG03973, listeG09108, listeG03546, listeG03713, listeB50424, listeE51660, listeE51369, listeG01646, listeE51126, listeG09566, listeE51575, listeE51574, listeG03547, listeE51710, listeG09626, listeG02428, listeG01304, listeG01221, listeG00994, listeE51679, listeG03087, listeG09307, listeE51713, listeE51122, listeG09305, listeG02662, listeG09057, listeE51634, listeG02634, listeG09513, listeG09311, listeE51408, listeE51349, listeG09304, listeG02486, listeG09844, listeG01838, listeE51300, listeG09086, listeG09308, listeJuin, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuin());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -2193,6 +2777,10 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesProd;
 			listePersonnesProd = new ArrayList<PersonnesProduction>();
 			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listeG09308;
+			listeG09308 = new ArrayList<PersonnesProduction>();
+			listeG09308 = Modele.affichageG09308();
 			
 			ArrayList<PersonnesProduction> listePersonnesCoor;
 			listePersonnesCoor = new ArrayList<PersonnesProduction>();
@@ -2297,8 +2885,296 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<Juillet> listeJuillet;
 			listeJuillet = new ArrayList<Juillet>();
 			listeJuillet = Modele.afficherAffectationJuillet();
+			
+			ArrayList<PersonnesProduction> listeG09086;
+			listeG09086 = new ArrayList<PersonnesProduction>();
+			listeG09086 = Modele.affichageG09086();
+			
+			ArrayList<PersonnesProduction> listeE51300;
+			listeE51300 = new ArrayList<PersonnesProduction>();
+			listeE51300 = Modele.affichageE51300();
+			
+			ArrayList<PersonnesProduction> listeG01838;
+			listeG01838 = new ArrayList<PersonnesProduction>();
+			listeG01838 = Modele.affichageG01838();
+			
+			ArrayList<PersonnesProduction> listeG09844;
+			listeG09844 = new ArrayList<PersonnesProduction>();
+			listeG09844 = Modele.affichageG09844();
+			
+			ArrayList<PersonnesProduction> listeG02486;
+			listeG02486 = new ArrayList<PersonnesProduction>();
+			listeG02486 = Modele.affichageG02486();
+			
+			ArrayList<PersonnesProduction> listeG09304;
+			listeG09304 = new ArrayList<PersonnesProduction>();
+			listeG09304 = Modele.affichageG09304();
+			
+			ArrayList<PersonnesProduction> listeE51349;
+			listeE51349 = new ArrayList<PersonnesProduction>();
+			listeE51349 = Modele.affichageE51349();
+			
+			ArrayList<PersonnesProduction> listeE51408;
+			listeE51408 = new ArrayList<PersonnesProduction>();
+			listeE51408 = Modele.affichageE51408();
+			
+			ArrayList<PersonnesProduction> listeG09311;
+			listeG09311 = new ArrayList<PersonnesProduction>();
+			listeG09311 = Modele.affichageG09311();
+			
+			ArrayList<PersonnesProduction> listeG09513;
+			listeG09513 = new ArrayList<PersonnesProduction>();
+			listeG09513 = Modele.affichageG09513();
+			
+			ArrayList<PersonnesProduction> listeG02634;
+			listeG02634 = new ArrayList<PersonnesProduction>();
+			listeG02634 = Modele.affichageG02634();
+			
+			ArrayList<PersonnesProduction> listeE51634;
+			listeE51634 = new ArrayList<PersonnesProduction>();
+			listeE51634 = Modele.affichageE51634();
+			
+			ArrayList<PersonnesProduction> listeG09057;
+			listeG09057 = new ArrayList<PersonnesProduction>();
+			listeG09057 = Modele.affichageG09057();
+			
+			ArrayList<PersonnesProduction> listeG02662;
+			listeG02662 = new ArrayList<PersonnesProduction>();
+			listeG02662 = Modele.affichageG02662();
+			
+			ArrayList<PersonnesProduction> listeG09305;
+			listeG09305 = new ArrayList<PersonnesProduction>();
+			listeG09305 = Modele.affichageG09305();
+			
+			ArrayList<PersonnesProduction> listeE51122;
+			listeE51122 = new ArrayList<PersonnesProduction>();
+			listeE51122 = Modele.affichageE51122();
+			
+			ArrayList<PersonnesProduction> listeE51713;
+			listeE51713 = new ArrayList<PersonnesProduction>();
+			listeE51713 = Modele.affichageE51713();
+			
+			ArrayList<PersonnesProduction> listeG09307;
+			listeG09307 = new ArrayList<PersonnesProduction>();
+			listeG09307 = Modele.affichageG09307();
+			
+			ArrayList<PersonnesProduction> listeG03087;
+			listeG03087 = new ArrayList<PersonnesProduction>();
+			listeG03087 = Modele.affichageG03087();
+			
+			ArrayList<PersonnesProduction> listeE51679;
+			listeE51679 = new ArrayList<PersonnesProduction>();
+			listeE51679 = Modele.affichageE51679();
+			
+			ArrayList<PersonnesProduction> listeG00994;
+			listeG00994 = new ArrayList<PersonnesProduction>();
+			listeG00994 = Modele.affichageG00994();
+			
+			ArrayList<PersonnesProduction> listeG01221;
+			listeG01221 = new ArrayList<PersonnesProduction>();
+			listeG01221 = Modele.affichageG01221();
+			
+			ArrayList<PersonnesProduction> listeG01304;
+			listeG01304 = new ArrayList<PersonnesProduction>();
+			listeG01304 = Modele.affichageG01304();
+			
+			ArrayList<PersonnesProduction> listeG02428;
+			listeG02428 = new ArrayList<PersonnesProduction>();
+			listeG02428 = Modele.affichageG02428();
+			
+			ArrayList<PersonnesProduction> listeG09626;
+			listeG09626 = new ArrayList<PersonnesProduction>();
+			listeG09626 = Modele.affichageG09626();
+			
+			ArrayList<PersonnesProduction> listeE51710;
+			listeE51710 = new ArrayList<PersonnesProduction>();
+			listeE51710 = Modele.affichageE51710();
+			
+			ArrayList<PersonnesProduction> listeG03547;
+			listeG03547 = new ArrayList<PersonnesProduction>();
+			listeG03547 = Modele.affichageG03547();
+			
+			ArrayList<PersonnesProduction> listeE51574;
+			listeE51574 = new ArrayList<PersonnesProduction>();
+			listeE51574 = Modele.affichageE51574();
+			
+			ArrayList<PersonnesProduction> listeE51575;
+			listeE51575 = new ArrayList<PersonnesProduction>();
+			listeE51575 = Modele.affichageE51575();
+			
+			ArrayList<PersonnesProduction> listeG09566;
+			listeG09566 = new ArrayList<PersonnesProduction>();
+			listeG09566 = Modele.affichageG09566();
+			
+			ArrayList<PersonnesProduction> listeE51126;
+			listeE51126 = new ArrayList<PersonnesProduction>();
+			listeE51126 = Modele.affichageE51126();
+			
+			ArrayList<PersonnesProduction> listeG01646;
+			listeG01646 = new ArrayList<PersonnesProduction>();
+			listeG01646 = Modele.affichageG01646();
+			
+			ArrayList<PersonnesProduction> listeE51369;
+			listeE51369 = new ArrayList<PersonnesProduction>();
+			listeE51369 = Modele.affichageE51369();
+			
+			ArrayList<PersonnesProduction> listeE51660;
+			listeE51660 = new ArrayList<PersonnesProduction>();
+			listeE51660 = Modele.affichageE51660();
+			
+			ArrayList<PersonnesProduction> listeB50424;
+			listeB50424 = new ArrayList<PersonnesProduction>();
+			listeB50424 = Modele.affichageB50424();
+			
+			ArrayList<PersonnesProduction> listeG03713;
+			listeG03713 = new ArrayList<PersonnesProduction>();
+			listeG03713 = Modele.affichageG03713();
+			
+			ArrayList<PersonnesProduction> listeG03546;
+			listeG03546 = new ArrayList<PersonnesProduction>();
+			listeG03546 = Modele.affichageG03546();
+			
+			ArrayList<PersonnesProduction> listeG09108;
+			listeG09108 = new ArrayList<PersonnesProduction>();
+			listeG09108 = Modele.affichageG09108();
+			
+			ArrayList<PersonnesProduction> listeG03973;
+			listeG03973 = new ArrayList<PersonnesProduction>();
+			listeG03973 = Modele.affichageG03973();
+			
+			ArrayList<PersonnesProduction> listeE51427;
+			listeE51427 = new ArrayList<PersonnesProduction>();
+			listeE51427 = Modele.affichageE51427();
+			
+			ArrayList<PersonnesProduction> listeG03459;
+			listeG03459 = new ArrayList<PersonnesProduction>();
+			listeG03459 = Modele.affichageG03459();
+			
+			ArrayList<PersonnesProduction> listeG03431;
+			listeG03431 = new ArrayList<PersonnesProduction>();
+			listeG03431 = Modele.affichageG03431();
+			
+			ArrayList<PersonnesProduction> listeE51659;
+			listeE51659 = new ArrayList<PersonnesProduction>();
+			listeE51659 = Modele.affichageE51659();
+			
+			ArrayList<PersonnesProduction> listeE51707;
+			listeE51707 = new ArrayList<PersonnesProduction>();
+			listeE51707 = Modele.affichageE51707();
+			
+			ArrayList<PersonnesProduction> listeG09282;
+			listeG09282 = new ArrayList<PersonnesProduction>();
+			listeG09282 = Modele.affichageG09282();
+			
+			ArrayList<PersonnesProduction> listeG09262;
+			listeG09262 = new ArrayList<PersonnesProduction>();
+			listeG09262 = Modele.affichageG09262();
+			
+			ArrayList<PersonnesProduction> listeG02763;
+			listeG02763 = new ArrayList<PersonnesProduction>();
+			listeG02763 = Modele.affichageG02763();
+			
+			ArrayList<PersonnesProduction> listeG01984;
+			listeG01984 = new ArrayList<PersonnesProduction>();
+			listeG01984 = Modele.affichageG01984();
+			
+			ArrayList<PersonnesProduction> listeG09265;
+			listeG09265 = new ArrayList<PersonnesProduction>();
+			listeG09265 = Modele.affichageG09265();
+			
+			ArrayList<PersonnesProduction> listeG09104;
+			listeG09104 = new ArrayList<PersonnesProduction>();
+			listeG09104 = Modele.affichageG09104();
+			
+			ArrayList<PersonnesProduction> listeG09641;
+			listeG09641 = new ArrayList<PersonnesProduction>();
+			listeG09641 = Modele.affichageG09641();
+			
+			ArrayList<PersonnesProduction> listeE51424;
+			listeE51424 = new ArrayList<PersonnesProduction>();
+			listeE51424 = Modele.affichageE51424();
+			
+			ArrayList<PersonnesProduction> listeG02520;
+			listeG02520 = new ArrayList<PersonnesProduction>();
+			listeG02520 = Modele.affichageG02520();
+			
+			ArrayList<PersonnesProduction> listeG02539;
+			listeG02539 = new ArrayList<PersonnesProduction>();
+			listeG02539 = Modele.affichageG02539();
+
+			ArrayList<PersonnesProduction> listeG09735;
+			listeG09735 = new ArrayList<PersonnesProduction>();
+			listeG09735 = Modele.affichageG09735();
+			
+			ArrayList<PersonnesProduction> listeG03329;
+			listeG03329 = new ArrayList<PersonnesProduction>();
+			listeG03329 = Modele.affichageG03329();
+			
+			ArrayList<PersonnesProduction> listeE51438;
+			listeE51438 = new ArrayList<PersonnesProduction>();
+			listeE51438 = Modele.affichageE51438();
+			
+			ArrayList<PersonnesProduction> listeG03739;
+			listeG03739 = new ArrayList<PersonnesProduction>();
+			listeG03739 = Modele.affichageG03739();
+			
+			ArrayList<PersonnesProduction> listeG04030;
+			listeG04030 = new ArrayList<PersonnesProduction>();
+			listeG04030 = Modele.affichageG04030();
+			
+			ArrayList<PersonnesProduction> listeE51507;
+			listeE51507 = new ArrayList<PersonnesProduction>();
+			listeE51507 = Modele.affichageE51507();
+			
+			ArrayList<PersonnesProduction> listeE51570;
+			listeE51570 = new ArrayList<PersonnesProduction>();
+			listeE51570 = Modele.affichageE51570();
+			
+			ArrayList<PersonnesProduction> listeE51627;
+			listeE51627 = new ArrayList<PersonnesProduction>();
+			listeE51627 = Modele.affichageE51627();
+			
+			ArrayList<PersonnesProduction> listeE51648;
+			listeE51648 = new ArrayList<PersonnesProduction>();
+			listeE51648 = Modele.affichageE51648();
+			
+			ArrayList<PersonnesProduction> listeE51681;
+			listeE51681 = new ArrayList<PersonnesProduction>();
+			listeE51681 = Modele.affichageE51681();
+			
+			ArrayList<PersonnesProduction> listeE51533;
+			listeE51533 = new ArrayList<PersonnesProduction>();
+			listeE51533 = Modele.affichageE51533();
+			
+			ArrayList<PersonnesProduction> listeE5704;
+			listeE5704 = new ArrayList<PersonnesProduction>();
+			listeE5704 = Modele.affichageE5704();
+			
+			ArrayList<PersonnesProduction> listeE51700;
+			listeE51700 = new ArrayList<PersonnesProduction>();
+			listeE51700 = Modele.affichageE51700();
+			
+			ArrayList<PersonnesProduction> listeE51705;
+			listeE51705 = new ArrayList<PersonnesProduction>();
+			listeE51705 = Modele.affichageE51705();
+			
+			ArrayList<PersonnesProduction> listeG09258;
+			listeG09258 = new ArrayList<PersonnesProduction>();
+			listeG09258 = Modele.affichageG09258();
+			
+			ArrayList<PersonnesProduction> listeB50423;
+			listeB50423 = new ArrayList<PersonnesProduction>();
+			listeB50423 = Modele.affichageB50423();
+			
+			ArrayList<PersonnesProduction> listeE51576;
+			listeE51576 = new ArrayList<PersonnesProduction>();
+			listeE51576 = Modele.affichageE51576();
+			
+			ArrayList<PersonnesProduction> listeE51665;
+			listeE51665 = new ArrayList<PersonnesProduction>();
+			listeE51665 = Modele.affichageE51665();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageJuillet(listeJuillet, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuillet());
+			this.panelAccueil.add(new PageJuillet(listeE51665, listeE51576, listeB50423, listeG09258, listeE51705, listeE51700, listeE5704, listeE51533, listeE51681, listeE51648, listeE51627, listeE51570, listeE51507, listeG04030, listeG03739, listeE51438, listeG03329, listeG09735, listeG02539, listeG02520, listeE51424, listeG09641, listeG09104, listeG09265, listeG01984, listeG02763, listeG09262, listeG09282, listeE51707, listeE51659, listeG03431, listeG03459, listeE51427, listeG03973, listeG09108, listeG03546, listeG03713, listeB50424, listeE51660, listeE51369, listeG01646, listeE51126, listeG09566, listeE51575, listeE51574, listeG03547, listeE51710, listeG09626, listeG02428, listeG01304, listeG01221, listeG00994, listeE51679, listeG03087, listeG09307, listeE51713, listeE51122, listeG09305, listeG02662, listeG09057, listeE51634, listeG02634, listeG09513, listeG09311, listeE51408, listeE51349, listeG09304, listeG02486, listeG09844, listeG01838, listeE51300, listeG09086, listeG09308, listeJuillet, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuillet());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -2306,6 +3182,10 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesProd;
 			listePersonnesProd = new ArrayList<PersonnesProduction>();
 			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listeG09308;
+			listeG09308 = new ArrayList<PersonnesProduction>();
+			listeG09308 = Modele.affichageG09308();
 			
 			ArrayList<PersonnesProduction> listePersonnesCoor;
 			listePersonnesCoor = new ArrayList<PersonnesProduction>();
@@ -2410,8 +3290,296 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<Aout> listeAout;
 			listeAout = new ArrayList<Aout>();
 			listeAout = Modele.afficherAffectationAout();
+			
+			ArrayList<PersonnesProduction> listeG09086;
+			listeG09086 = new ArrayList<PersonnesProduction>();
+			listeG09086 = Modele.affichageG09086();
+			
+			ArrayList<PersonnesProduction> listeE51300;
+			listeE51300 = new ArrayList<PersonnesProduction>();
+			listeE51300 = Modele.affichageE51300();
+			
+			ArrayList<PersonnesProduction> listeG01838;
+			listeG01838 = new ArrayList<PersonnesProduction>();
+			listeG01838 = Modele.affichageG01838();
+			
+			ArrayList<PersonnesProduction> listeG09844;
+			listeG09844 = new ArrayList<PersonnesProduction>();
+			listeG09844 = Modele.affichageG09844();
+			
+			ArrayList<PersonnesProduction> listeG02486;
+			listeG02486 = new ArrayList<PersonnesProduction>();
+			listeG02486 = Modele.affichageG02486();
+			
+			ArrayList<PersonnesProduction> listeG09304;
+			listeG09304 = new ArrayList<PersonnesProduction>();
+			listeG09304 = Modele.affichageG09304();
+			
+			ArrayList<PersonnesProduction> listeE51349;
+			listeE51349 = new ArrayList<PersonnesProduction>();
+			listeE51349 = Modele.affichageE51349();
+			
+			ArrayList<PersonnesProduction> listeE51408;
+			listeE51408 = new ArrayList<PersonnesProduction>();
+			listeE51408 = Modele.affichageE51408();
+			
+			ArrayList<PersonnesProduction> listeG09311;
+			listeG09311 = new ArrayList<PersonnesProduction>();
+			listeG09311 = Modele.affichageG09311();
+			
+			ArrayList<PersonnesProduction> listeG09513;
+			listeG09513 = new ArrayList<PersonnesProduction>();
+			listeG09513 = Modele.affichageG09513();
+			
+			ArrayList<PersonnesProduction> listeG02634;
+			listeG02634 = new ArrayList<PersonnesProduction>();
+			listeG02634 = Modele.affichageG02634();
+			
+			ArrayList<PersonnesProduction> listeE51634;
+			listeE51634 = new ArrayList<PersonnesProduction>();
+			listeE51634 = Modele.affichageE51634();
+			
+			ArrayList<PersonnesProduction> listeG09057;
+			listeG09057 = new ArrayList<PersonnesProduction>();
+			listeG09057 = Modele.affichageG09057();
+			
+			ArrayList<PersonnesProduction> listeG02662;
+			listeG02662 = new ArrayList<PersonnesProduction>();
+			listeG02662 = Modele.affichageG02662();
+			
+			ArrayList<PersonnesProduction> listeG09305;
+			listeG09305 = new ArrayList<PersonnesProduction>();
+			listeG09305 = Modele.affichageG09305();
+			
+			ArrayList<PersonnesProduction> listeE51122;
+			listeE51122 = new ArrayList<PersonnesProduction>();
+			listeE51122 = Modele.affichageE51122();
+			
+			ArrayList<PersonnesProduction> listeE51713;
+			listeE51713 = new ArrayList<PersonnesProduction>();
+			listeE51713 = Modele.affichageE51713();
+			
+			ArrayList<PersonnesProduction> listeG09307;
+			listeG09307 = new ArrayList<PersonnesProduction>();
+			listeG09307 = Modele.affichageG09307();
+			
+			ArrayList<PersonnesProduction> listeG03087;
+			listeG03087 = new ArrayList<PersonnesProduction>();
+			listeG03087 = Modele.affichageG03087();
+			
+			ArrayList<PersonnesProduction> listeE51679;
+			listeE51679 = new ArrayList<PersonnesProduction>();
+			listeE51679 = Modele.affichageE51679();
+			
+			ArrayList<PersonnesProduction> listeG00994;
+			listeG00994 = new ArrayList<PersonnesProduction>();
+			listeG00994 = Modele.affichageG00994();
+			
+			ArrayList<PersonnesProduction> listeG01221;
+			listeG01221 = new ArrayList<PersonnesProduction>();
+			listeG01221 = Modele.affichageG01221();
+			
+			ArrayList<PersonnesProduction> listeG01304;
+			listeG01304 = new ArrayList<PersonnesProduction>();
+			listeG01304 = Modele.affichageG01304();
+			
+			ArrayList<PersonnesProduction> listeG02428;
+			listeG02428 = new ArrayList<PersonnesProduction>();
+			listeG02428 = Modele.affichageG02428();
+			
+			ArrayList<PersonnesProduction> listeG09626;
+			listeG09626 = new ArrayList<PersonnesProduction>();
+			listeG09626 = Modele.affichageG09626();
+			
+			ArrayList<PersonnesProduction> listeE51710;
+			listeE51710 = new ArrayList<PersonnesProduction>();
+			listeE51710 = Modele.affichageE51710();
+			
+			ArrayList<PersonnesProduction> listeG03547;
+			listeG03547 = new ArrayList<PersonnesProduction>();
+			listeG03547 = Modele.affichageG03547();
+			
+			ArrayList<PersonnesProduction> listeE51574;
+			listeE51574 = new ArrayList<PersonnesProduction>();
+			listeE51574 = Modele.affichageE51574();
+			
+			ArrayList<PersonnesProduction> listeE51575;
+			listeE51575 = new ArrayList<PersonnesProduction>();
+			listeE51575 = Modele.affichageE51575();
+			
+			ArrayList<PersonnesProduction> listeG09566;
+			listeG09566 = new ArrayList<PersonnesProduction>();
+			listeG09566 = Modele.affichageG09566();
+			
+			ArrayList<PersonnesProduction> listeE51126;
+			listeE51126 = new ArrayList<PersonnesProduction>();
+			listeE51126 = Modele.affichageE51126();
+			
+			ArrayList<PersonnesProduction> listeG01646;
+			listeG01646 = new ArrayList<PersonnesProduction>();
+			listeG01646 = Modele.affichageG01646();
+			
+			ArrayList<PersonnesProduction> listeE51369;
+			listeE51369 = new ArrayList<PersonnesProduction>();
+			listeE51369 = Modele.affichageE51369();
+			
+			ArrayList<PersonnesProduction> listeE51660;
+			listeE51660 = new ArrayList<PersonnesProduction>();
+			listeE51660 = Modele.affichageE51660();
+			
+			ArrayList<PersonnesProduction> listeB50424;
+			listeB50424 = new ArrayList<PersonnesProduction>();
+			listeB50424 = Modele.affichageB50424();
+			
+			ArrayList<PersonnesProduction> listeG03713;
+			listeG03713 = new ArrayList<PersonnesProduction>();
+			listeG03713 = Modele.affichageG03713();
+			
+			ArrayList<PersonnesProduction> listeG03546;
+			listeG03546 = new ArrayList<PersonnesProduction>();
+			listeG03546 = Modele.affichageG03546();
+			
+			ArrayList<PersonnesProduction> listeG09108;
+			listeG09108 = new ArrayList<PersonnesProduction>();
+			listeG09108 = Modele.affichageG09108();
+			
+			ArrayList<PersonnesProduction> listeG03973;
+			listeG03973 = new ArrayList<PersonnesProduction>();
+			listeG03973 = Modele.affichageG03973();
+			
+			ArrayList<PersonnesProduction> listeE51427;
+			listeE51427 = new ArrayList<PersonnesProduction>();
+			listeE51427 = Modele.affichageE51427();
+			
+			ArrayList<PersonnesProduction> listeG03459;
+			listeG03459 = new ArrayList<PersonnesProduction>();
+			listeG03459 = Modele.affichageG03459();
+			
+			ArrayList<PersonnesProduction> listeG03431;
+			listeG03431 = new ArrayList<PersonnesProduction>();
+			listeG03431 = Modele.affichageG03431();
+			
+			ArrayList<PersonnesProduction> listeE51659;
+			listeE51659 = new ArrayList<PersonnesProduction>();
+			listeE51659 = Modele.affichageE51659();
+			
+			ArrayList<PersonnesProduction> listeE51707;
+			listeE51707 = new ArrayList<PersonnesProduction>();
+			listeE51707 = Modele.affichageE51707();
+			
+			ArrayList<PersonnesProduction> listeG09282;
+			listeG09282 = new ArrayList<PersonnesProduction>();
+			listeG09282 = Modele.affichageG09282();
+			
+			ArrayList<PersonnesProduction> listeG09262;
+			listeG09262 = new ArrayList<PersonnesProduction>();
+			listeG09262 = Modele.affichageG09262();
+			
+			ArrayList<PersonnesProduction> listeG02763;
+			listeG02763 = new ArrayList<PersonnesProduction>();
+			listeG02763 = Modele.affichageG02763();
+			
+			ArrayList<PersonnesProduction> listeG01984;
+			listeG01984 = new ArrayList<PersonnesProduction>();
+			listeG01984 = Modele.affichageG01984();
+			
+			ArrayList<PersonnesProduction> listeG09265;
+			listeG09265 = new ArrayList<PersonnesProduction>();
+			listeG09265 = Modele.affichageG09265();
+			
+			ArrayList<PersonnesProduction> listeG09104;
+			listeG09104 = new ArrayList<PersonnesProduction>();
+			listeG09104 = Modele.affichageG09104();
+			
+			ArrayList<PersonnesProduction> listeG09641;
+			listeG09641 = new ArrayList<PersonnesProduction>();
+			listeG09641 = Modele.affichageG09641();
+			
+			ArrayList<PersonnesProduction> listeE51424;
+			listeE51424 = new ArrayList<PersonnesProduction>();
+			listeE51424 = Modele.affichageE51424();
+			
+			ArrayList<PersonnesProduction> listeG02520;
+			listeG02520 = new ArrayList<PersonnesProduction>();
+			listeG02520 = Modele.affichageG02520();
+			
+			ArrayList<PersonnesProduction> listeG02539;
+			listeG02539 = new ArrayList<PersonnesProduction>();
+			listeG02539 = Modele.affichageG02539();
+
+			ArrayList<PersonnesProduction> listeG09735;
+			listeG09735 = new ArrayList<PersonnesProduction>();
+			listeG09735 = Modele.affichageG09735();
+			
+			ArrayList<PersonnesProduction> listeG03329;
+			listeG03329 = new ArrayList<PersonnesProduction>();
+			listeG03329 = Modele.affichageG03329();
+			
+			ArrayList<PersonnesProduction> listeE51438;
+			listeE51438 = new ArrayList<PersonnesProduction>();
+			listeE51438 = Modele.affichageE51438();
+			
+			ArrayList<PersonnesProduction> listeG03739;
+			listeG03739 = new ArrayList<PersonnesProduction>();
+			listeG03739 = Modele.affichageG03739();
+			
+			ArrayList<PersonnesProduction> listeG04030;
+			listeG04030 = new ArrayList<PersonnesProduction>();
+			listeG04030 = Modele.affichageG04030();
+			
+			ArrayList<PersonnesProduction> listeE51507;
+			listeE51507 = new ArrayList<PersonnesProduction>();
+			listeE51507 = Modele.affichageE51507();
+			
+			ArrayList<PersonnesProduction> listeE51570;
+			listeE51570 = new ArrayList<PersonnesProduction>();
+			listeE51570 = Modele.affichageE51570();
+			
+			ArrayList<PersonnesProduction> listeE51627;
+			listeE51627 = new ArrayList<PersonnesProduction>();
+			listeE51627 = Modele.affichageE51627();
+			
+			ArrayList<PersonnesProduction> listeE51648;
+			listeE51648 = new ArrayList<PersonnesProduction>();
+			listeE51648 = Modele.affichageE51648();
+			
+			ArrayList<PersonnesProduction> listeE51681;
+			listeE51681 = new ArrayList<PersonnesProduction>();
+			listeE51681 = Modele.affichageE51681();
+			
+			ArrayList<PersonnesProduction> listeE51533;
+			listeE51533 = new ArrayList<PersonnesProduction>();
+			listeE51533 = Modele.affichageE51533();
+			
+			ArrayList<PersonnesProduction> listeE5704;
+			listeE5704 = new ArrayList<PersonnesProduction>();
+			listeE5704 = Modele.affichageE5704();
+			
+			ArrayList<PersonnesProduction> listeE51700;
+			listeE51700 = new ArrayList<PersonnesProduction>();
+			listeE51700 = Modele.affichageE51700();
+			
+			ArrayList<PersonnesProduction> listeE51705;
+			listeE51705 = new ArrayList<PersonnesProduction>();
+			listeE51705 = Modele.affichageE51705();
+			
+			ArrayList<PersonnesProduction> listeG09258;
+			listeG09258 = new ArrayList<PersonnesProduction>();
+			listeG09258 = Modele.affichageG09258();
+			
+			ArrayList<PersonnesProduction> listeB50423;
+			listeB50423 = new ArrayList<PersonnesProduction>();
+			listeB50423 = Modele.affichageB50423();
+			
+			ArrayList<PersonnesProduction> listeE51576;
+			listeE51576 = new ArrayList<PersonnesProduction>();
+			listeE51576 = Modele.affichageE51576();
+			
+			ArrayList<PersonnesProduction> listeE51665;
+			listeE51665 = new ArrayList<PersonnesProduction>();
+			listeE51665 = Modele.affichageE51665();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageAout(listeAout, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageAout());
+			this.panelAccueil.add(new PageAout(listeE51665, listeE51576, listeB50423, listeG09258, listeE51705, listeE51700, listeE5704, listeE51533, listeE51681, listeE51648, listeE51627, listeE51570, listeE51507, listeG04030, listeG03739, listeE51438, listeG03329, listeG09735, listeG02539, listeG02520, listeE51424, listeG09641, listeG09104, listeG09265, listeG01984, listeG02763, listeG09262, listeG09282, listeE51707, listeE51659, listeG03431, listeG03459, listeE51427, listeG03973, listeG09108, listeG03546, listeG03713, listeB50424, listeE51660, listeE51369, listeG01646, listeE51126, listeG09566, listeE51575, listeE51574, listeG03547, listeE51710, listeG09626, listeG02428, listeG01304, listeG01221, listeG00994, listeE51679, listeG03087, listeG09307, listeE51713, listeE51122, listeG09305, listeG02662, listeG09057, listeE51634, listeG02634, listeG09513, listeG09311, listeE51408, listeE51349, listeG09304, listeG02486, listeG09844, listeG01838, listeE51300, listeG09086, listeG09308, listeAout, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageAout());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -2419,6 +3587,10 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesProd;
 			listePersonnesProd = new ArrayList<PersonnesProduction>();
 			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listeG09308;
+			listeG09308 = new ArrayList<PersonnesProduction>();
+			listeG09308 = Modele.affichageG09308();
 			
 			ArrayList<PersonnesProduction> listePersonnesCoor;
 			listePersonnesCoor = new ArrayList<PersonnesProduction>();
@@ -2523,8 +3695,296 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<Septembre> listeSeptembre;
 			listeSeptembre = new ArrayList<Septembre>();
 			listeSeptembre = Modele.afficherAffectationSeptembre();
+			
+			ArrayList<PersonnesProduction> listeG09086;
+			listeG09086 = new ArrayList<PersonnesProduction>();
+			listeG09086 = Modele.affichageG09086();
+			
+			ArrayList<PersonnesProduction> listeE51300;
+			listeE51300 = new ArrayList<PersonnesProduction>();
+			listeE51300 = Modele.affichageE51300();
+			
+			ArrayList<PersonnesProduction> listeG01838;
+			listeG01838 = new ArrayList<PersonnesProduction>();
+			listeG01838 = Modele.affichageG01838();
+			
+			ArrayList<PersonnesProduction> listeG09844;
+			listeG09844 = new ArrayList<PersonnesProduction>();
+			listeG09844 = Modele.affichageG09844();
+			
+			ArrayList<PersonnesProduction> listeG02486;
+			listeG02486 = new ArrayList<PersonnesProduction>();
+			listeG02486 = Modele.affichageG02486();
+			
+			ArrayList<PersonnesProduction> listeG09304;
+			listeG09304 = new ArrayList<PersonnesProduction>();
+			listeG09304 = Modele.affichageG09304();
+			
+			ArrayList<PersonnesProduction> listeE51349;
+			listeE51349 = new ArrayList<PersonnesProduction>();
+			listeE51349 = Modele.affichageE51349();
+			
+			ArrayList<PersonnesProduction> listeE51408;
+			listeE51408 = new ArrayList<PersonnesProduction>();
+			listeE51408 = Modele.affichageE51408();
+			
+			ArrayList<PersonnesProduction> listeG09311;
+			listeG09311 = new ArrayList<PersonnesProduction>();
+			listeG09311 = Modele.affichageG09311();
+			
+			ArrayList<PersonnesProduction> listeG09513;
+			listeG09513 = new ArrayList<PersonnesProduction>();
+			listeG09513 = Modele.affichageG09513();
+			
+			ArrayList<PersonnesProduction> listeG02634;
+			listeG02634 = new ArrayList<PersonnesProduction>();
+			listeG02634 = Modele.affichageG02634();
+			
+			ArrayList<PersonnesProduction> listeE51634;
+			listeE51634 = new ArrayList<PersonnesProduction>();
+			listeE51634 = Modele.affichageE51634();
+			
+			ArrayList<PersonnesProduction> listeG09057;
+			listeG09057 = new ArrayList<PersonnesProduction>();
+			listeG09057 = Modele.affichageG09057();
+			
+			ArrayList<PersonnesProduction> listeG02662;
+			listeG02662 = new ArrayList<PersonnesProduction>();
+			listeG02662 = Modele.affichageG02662();
+			
+			ArrayList<PersonnesProduction> listeG09305;
+			listeG09305 = new ArrayList<PersonnesProduction>();
+			listeG09305 = Modele.affichageG09305();
+			
+			ArrayList<PersonnesProduction> listeE51122;
+			listeE51122 = new ArrayList<PersonnesProduction>();
+			listeE51122 = Modele.affichageE51122();
+			
+			ArrayList<PersonnesProduction> listeE51713;
+			listeE51713 = new ArrayList<PersonnesProduction>();
+			listeE51713 = Modele.affichageE51713();
+			
+			ArrayList<PersonnesProduction> listeG09307;
+			listeG09307 = new ArrayList<PersonnesProduction>();
+			listeG09307 = Modele.affichageG09307();
+			
+			ArrayList<PersonnesProduction> listeG03087;
+			listeG03087 = new ArrayList<PersonnesProduction>();
+			listeG03087 = Modele.affichageG03087();
+			
+			ArrayList<PersonnesProduction> listeE51679;
+			listeE51679 = new ArrayList<PersonnesProduction>();
+			listeE51679 = Modele.affichageE51679();
+			
+			ArrayList<PersonnesProduction> listeG00994;
+			listeG00994 = new ArrayList<PersonnesProduction>();
+			listeG00994 = Modele.affichageG00994();
+			
+			ArrayList<PersonnesProduction> listeG01221;
+			listeG01221 = new ArrayList<PersonnesProduction>();
+			listeG01221 = Modele.affichageG01221();
+			
+			ArrayList<PersonnesProduction> listeG01304;
+			listeG01304 = new ArrayList<PersonnesProduction>();
+			listeG01304 = Modele.affichageG01304();
+			
+			ArrayList<PersonnesProduction> listeG02428;
+			listeG02428 = new ArrayList<PersonnesProduction>();
+			listeG02428 = Modele.affichageG02428();
+			
+			ArrayList<PersonnesProduction> listeG09626;
+			listeG09626 = new ArrayList<PersonnesProduction>();
+			listeG09626 = Modele.affichageG09626();
+			
+			ArrayList<PersonnesProduction> listeE51710;
+			listeE51710 = new ArrayList<PersonnesProduction>();
+			listeE51710 = Modele.affichageE51710();
+			
+			ArrayList<PersonnesProduction> listeG03547;
+			listeG03547 = new ArrayList<PersonnesProduction>();
+			listeG03547 = Modele.affichageG03547();
+			
+			ArrayList<PersonnesProduction> listeE51574;
+			listeE51574 = new ArrayList<PersonnesProduction>();
+			listeE51574 = Modele.affichageE51574();
+			
+			ArrayList<PersonnesProduction> listeE51575;
+			listeE51575 = new ArrayList<PersonnesProduction>();
+			listeE51575 = Modele.affichageE51575();
+			
+			ArrayList<PersonnesProduction> listeG09566;
+			listeG09566 = new ArrayList<PersonnesProduction>();
+			listeG09566 = Modele.affichageG09566();
+			
+			ArrayList<PersonnesProduction> listeE51126;
+			listeE51126 = new ArrayList<PersonnesProduction>();
+			listeE51126 = Modele.affichageE51126();
+			
+			ArrayList<PersonnesProduction> listeG01646;
+			listeG01646 = new ArrayList<PersonnesProduction>();
+			listeG01646 = Modele.affichageG01646();
+			
+			ArrayList<PersonnesProduction> listeE51369;
+			listeE51369 = new ArrayList<PersonnesProduction>();
+			listeE51369 = Modele.affichageE51369();
+			
+			ArrayList<PersonnesProduction> listeE51660;
+			listeE51660 = new ArrayList<PersonnesProduction>();
+			listeE51660 = Modele.affichageE51660();
+			
+			ArrayList<PersonnesProduction> listeB50424;
+			listeB50424 = new ArrayList<PersonnesProduction>();
+			listeB50424 = Modele.affichageB50424();
+			
+			ArrayList<PersonnesProduction> listeG03713;
+			listeG03713 = new ArrayList<PersonnesProduction>();
+			listeG03713 = Modele.affichageG03713();
+			
+			ArrayList<PersonnesProduction> listeG03546;
+			listeG03546 = new ArrayList<PersonnesProduction>();
+			listeG03546 = Modele.affichageG03546();
+			
+			ArrayList<PersonnesProduction> listeG09108;
+			listeG09108 = new ArrayList<PersonnesProduction>();
+			listeG09108 = Modele.affichageG09108();
+			
+			ArrayList<PersonnesProduction> listeG03973;
+			listeG03973 = new ArrayList<PersonnesProduction>();
+			listeG03973 = Modele.affichageG03973();
+			
+			ArrayList<PersonnesProduction> listeE51427;
+			listeE51427 = new ArrayList<PersonnesProduction>();
+			listeE51427 = Modele.affichageE51427();
+			
+			ArrayList<PersonnesProduction> listeG03459;
+			listeG03459 = new ArrayList<PersonnesProduction>();
+			listeG03459 = Modele.affichageG03459();
+			
+			ArrayList<PersonnesProduction> listeG03431;
+			listeG03431 = new ArrayList<PersonnesProduction>();
+			listeG03431 = Modele.affichageG03431();
+			
+			ArrayList<PersonnesProduction> listeE51659;
+			listeE51659 = new ArrayList<PersonnesProduction>();
+			listeE51659 = Modele.affichageE51659();
+			
+			ArrayList<PersonnesProduction> listeE51707;
+			listeE51707 = new ArrayList<PersonnesProduction>();
+			listeE51707 = Modele.affichageE51707();
+			
+			ArrayList<PersonnesProduction> listeG09282;
+			listeG09282 = new ArrayList<PersonnesProduction>();
+			listeG09282 = Modele.affichageG09282();
+			
+			ArrayList<PersonnesProduction> listeG09262;
+			listeG09262 = new ArrayList<PersonnesProduction>();
+			listeG09262 = Modele.affichageG09262();
+			
+			ArrayList<PersonnesProduction> listeG02763;
+			listeG02763 = new ArrayList<PersonnesProduction>();
+			listeG02763 = Modele.affichageG02763();
+			
+			ArrayList<PersonnesProduction> listeG01984;
+			listeG01984 = new ArrayList<PersonnesProduction>();
+			listeG01984 = Modele.affichageG01984();
+			
+			ArrayList<PersonnesProduction> listeG09265;
+			listeG09265 = new ArrayList<PersonnesProduction>();
+			listeG09265 = Modele.affichageG09265();
+			
+			ArrayList<PersonnesProduction> listeG09104;
+			listeG09104 = new ArrayList<PersonnesProduction>();
+			listeG09104 = Modele.affichageG09104();
+			
+			ArrayList<PersonnesProduction> listeG09641;
+			listeG09641 = new ArrayList<PersonnesProduction>();
+			listeG09641 = Modele.affichageG09641();
+			
+			ArrayList<PersonnesProduction> listeE51424;
+			listeE51424 = new ArrayList<PersonnesProduction>();
+			listeE51424 = Modele.affichageE51424();
+			
+			ArrayList<PersonnesProduction> listeG02520;
+			listeG02520 = new ArrayList<PersonnesProduction>();
+			listeG02520 = Modele.affichageG02520();
+			
+			ArrayList<PersonnesProduction> listeG02539;
+			listeG02539 = new ArrayList<PersonnesProduction>();
+			listeG02539 = Modele.affichageG02539();
+
+			ArrayList<PersonnesProduction> listeG09735;
+			listeG09735 = new ArrayList<PersonnesProduction>();
+			listeG09735 = Modele.affichageG09735();
+			
+			ArrayList<PersonnesProduction> listeG03329;
+			listeG03329 = new ArrayList<PersonnesProduction>();
+			listeG03329 = Modele.affichageG03329();
+			
+			ArrayList<PersonnesProduction> listeE51438;
+			listeE51438 = new ArrayList<PersonnesProduction>();
+			listeE51438 = Modele.affichageE51438();
+			
+			ArrayList<PersonnesProduction> listeG03739;
+			listeG03739 = new ArrayList<PersonnesProduction>();
+			listeG03739 = Modele.affichageG03739();
+			
+			ArrayList<PersonnesProduction> listeG04030;
+			listeG04030 = new ArrayList<PersonnesProduction>();
+			listeG04030 = Modele.affichageG04030();
+			
+			ArrayList<PersonnesProduction> listeE51507;
+			listeE51507 = new ArrayList<PersonnesProduction>();
+			listeE51507 = Modele.affichageE51507();
+			
+			ArrayList<PersonnesProduction> listeE51570;
+			listeE51570 = new ArrayList<PersonnesProduction>();
+			listeE51570 = Modele.affichageE51570();
+			
+			ArrayList<PersonnesProduction> listeE51627;
+			listeE51627 = new ArrayList<PersonnesProduction>();
+			listeE51627 = Modele.affichageE51627();
+			
+			ArrayList<PersonnesProduction> listeE51648;
+			listeE51648 = new ArrayList<PersonnesProduction>();
+			listeE51648 = Modele.affichageE51648();
+			
+			ArrayList<PersonnesProduction> listeE51681;
+			listeE51681 = new ArrayList<PersonnesProduction>();
+			listeE51681 = Modele.affichageE51681();
+			
+			ArrayList<PersonnesProduction> listeE51533;
+			listeE51533 = new ArrayList<PersonnesProduction>();
+			listeE51533 = Modele.affichageE51533();
+			
+			ArrayList<PersonnesProduction> listeE5704;
+			listeE5704 = new ArrayList<PersonnesProduction>();
+			listeE5704 = Modele.affichageE5704();
+			
+			ArrayList<PersonnesProduction> listeE51700;
+			listeE51700 = new ArrayList<PersonnesProduction>();
+			listeE51700 = Modele.affichageE51700();
+			
+			ArrayList<PersonnesProduction> listeE51705;
+			listeE51705 = new ArrayList<PersonnesProduction>();
+			listeE51705 = Modele.affichageE51705();
+			
+			ArrayList<PersonnesProduction> listeG09258;
+			listeG09258 = new ArrayList<PersonnesProduction>();
+			listeG09258 = Modele.affichageG09258();
+			
+			ArrayList<PersonnesProduction> listeB50423;
+			listeB50423 = new ArrayList<PersonnesProduction>();
+			listeB50423 = Modele.affichageB50423();
+			
+			ArrayList<PersonnesProduction> listeE51576;
+			listeE51576 = new ArrayList<PersonnesProduction>();
+			listeE51576 = Modele.affichageE51576();
+			
+			ArrayList<PersonnesProduction> listeE51665;
+			listeE51665 = new ArrayList<PersonnesProduction>();
+			listeE51665 = Modele.affichageE51665();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageSeptembre(listeSeptembre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageSeptembre());
+			this.panelAccueil.add(new PageSeptembre(listeE51665, listeE51576, listeB50423, listeG09258, listeE51705, listeE51700, listeE5704, listeE51533, listeE51681, listeE51648, listeE51627, listeE51570, listeE51507, listeG04030, listeG03739, listeE51438, listeG03329, listeG09735, listeG02539, listeG02520, listeE51424, listeG09641, listeG09104, listeG09265, listeG01984, listeG02763, listeG09262, listeG09282, listeE51707, listeE51659, listeG03431, listeG03459, listeE51427, listeG03973, listeG09108, listeG03546, listeG03713, listeB50424, listeE51660, listeE51369, listeG01646, listeE51126, listeG09566, listeE51575, listeE51574, listeG03547, listeE51710, listeG09626, listeG02428, listeG01304, listeG01221, listeG00994, listeE51679, listeG03087, listeG09307, listeE51713, listeE51122, listeG09305, listeG02662, listeG09057, listeE51634, listeG02634, listeG09513, listeG09311, listeE51408, listeE51349, listeG09304, listeG02486, listeG09844, listeG01838, listeE51300, listeG09086, listeG09308, listeSeptembre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageSeptembre());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -2532,6 +3992,10 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesProd;
 			listePersonnesProd = new ArrayList<PersonnesProduction>();
 			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listeG09308;
+			listeG09308 = new ArrayList<PersonnesProduction>();
+			listeG09308 = Modele.affichageG09308();
 			
 			ArrayList<PersonnesProduction> listePersonnesCoor;
 			listePersonnesCoor = new ArrayList<PersonnesProduction>();
@@ -2636,8 +4100,296 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<Octobre> listeOctobre;
 			listeOctobre = new ArrayList<Octobre>();
 			listeOctobre = Modele.afficherAffectationOctobre();
+			
+			ArrayList<PersonnesProduction> listeG09086;
+			listeG09086 = new ArrayList<PersonnesProduction>();
+			listeG09086 = Modele.affichageG09086();
+			
+			ArrayList<PersonnesProduction> listeE51300;
+			listeE51300 = new ArrayList<PersonnesProduction>();
+			listeE51300 = Modele.affichageE51300();
+			
+			ArrayList<PersonnesProduction> listeG01838;
+			listeG01838 = new ArrayList<PersonnesProduction>();
+			listeG01838 = Modele.affichageG01838();
+			
+			ArrayList<PersonnesProduction> listeG09844;
+			listeG09844 = new ArrayList<PersonnesProduction>();
+			listeG09844 = Modele.affichageG09844();
+			
+			ArrayList<PersonnesProduction> listeG02486;
+			listeG02486 = new ArrayList<PersonnesProduction>();
+			listeG02486 = Modele.affichageG02486();
+			
+			ArrayList<PersonnesProduction> listeG09304;
+			listeG09304 = new ArrayList<PersonnesProduction>();
+			listeG09304 = Modele.affichageG09304();
+			
+			ArrayList<PersonnesProduction> listeE51349;
+			listeE51349 = new ArrayList<PersonnesProduction>();
+			listeE51349 = Modele.affichageE51349();
+			
+			ArrayList<PersonnesProduction> listeE51408;
+			listeE51408 = new ArrayList<PersonnesProduction>();
+			listeE51408 = Modele.affichageE51408();
+			
+			ArrayList<PersonnesProduction> listeG09311;
+			listeG09311 = new ArrayList<PersonnesProduction>();
+			listeG09311 = Modele.affichageG09311();
+			
+			ArrayList<PersonnesProduction> listeG09513;
+			listeG09513 = new ArrayList<PersonnesProduction>();
+			listeG09513 = Modele.affichageG09513();
+			
+			ArrayList<PersonnesProduction> listeG02634;
+			listeG02634 = new ArrayList<PersonnesProduction>();
+			listeG02634 = Modele.affichageG02634();
+			
+			ArrayList<PersonnesProduction> listeE51634;
+			listeE51634 = new ArrayList<PersonnesProduction>();
+			listeE51634 = Modele.affichageE51634();
+			
+			ArrayList<PersonnesProduction> listeG09057;
+			listeG09057 = new ArrayList<PersonnesProduction>();
+			listeG09057 = Modele.affichageG09057();
+			
+			ArrayList<PersonnesProduction> listeG02662;
+			listeG02662 = new ArrayList<PersonnesProduction>();
+			listeG02662 = Modele.affichageG02662();
+			
+			ArrayList<PersonnesProduction> listeG09305;
+			listeG09305 = new ArrayList<PersonnesProduction>();
+			listeG09305 = Modele.affichageG09305();
+			
+			ArrayList<PersonnesProduction> listeE51122;
+			listeE51122 = new ArrayList<PersonnesProduction>();
+			listeE51122 = Modele.affichageE51122();
+			
+			ArrayList<PersonnesProduction> listeE51713;
+			listeE51713 = new ArrayList<PersonnesProduction>();
+			listeE51713 = Modele.affichageE51713();
+			
+			ArrayList<PersonnesProduction> listeG09307;
+			listeG09307 = new ArrayList<PersonnesProduction>();
+			listeG09307 = Modele.affichageG09307();
+			
+			ArrayList<PersonnesProduction> listeG03087;
+			listeG03087 = new ArrayList<PersonnesProduction>();
+			listeG03087 = Modele.affichageG03087();
+			
+			ArrayList<PersonnesProduction> listeE51679;
+			listeE51679 = new ArrayList<PersonnesProduction>();
+			listeE51679 = Modele.affichageE51679();
+			
+			ArrayList<PersonnesProduction> listeG00994;
+			listeG00994 = new ArrayList<PersonnesProduction>();
+			listeG00994 = Modele.affichageG00994();
+			
+			ArrayList<PersonnesProduction> listeG01221;
+			listeG01221 = new ArrayList<PersonnesProduction>();
+			listeG01221 = Modele.affichageG01221();
+			
+			ArrayList<PersonnesProduction> listeG01304;
+			listeG01304 = new ArrayList<PersonnesProduction>();
+			listeG01304 = Modele.affichageG01304();
+			
+			ArrayList<PersonnesProduction> listeG02428;
+			listeG02428 = new ArrayList<PersonnesProduction>();
+			listeG02428 = Modele.affichageG02428();
+			
+			ArrayList<PersonnesProduction> listeG09626;
+			listeG09626 = new ArrayList<PersonnesProduction>();
+			listeG09626 = Modele.affichageG09626();
+			
+			ArrayList<PersonnesProduction> listeE51710;
+			listeE51710 = new ArrayList<PersonnesProduction>();
+			listeE51710 = Modele.affichageE51710();
+			
+			ArrayList<PersonnesProduction> listeG03547;
+			listeG03547 = new ArrayList<PersonnesProduction>();
+			listeG03547 = Modele.affichageG03547();
+			
+			ArrayList<PersonnesProduction> listeE51574;
+			listeE51574 = new ArrayList<PersonnesProduction>();
+			listeE51574 = Modele.affichageE51574();
+			
+			ArrayList<PersonnesProduction> listeE51575;
+			listeE51575 = new ArrayList<PersonnesProduction>();
+			listeE51575 = Modele.affichageE51575();
+			
+			ArrayList<PersonnesProduction> listeG09566;
+			listeG09566 = new ArrayList<PersonnesProduction>();
+			listeG09566 = Modele.affichageG09566();
+			
+			ArrayList<PersonnesProduction> listeE51126;
+			listeE51126 = new ArrayList<PersonnesProduction>();
+			listeE51126 = Modele.affichageE51126();
+			
+			ArrayList<PersonnesProduction> listeG01646;
+			listeG01646 = new ArrayList<PersonnesProduction>();
+			listeG01646 = Modele.affichageG01646();
+			
+			ArrayList<PersonnesProduction> listeE51369;
+			listeE51369 = new ArrayList<PersonnesProduction>();
+			listeE51369 = Modele.affichageE51369();
+			
+			ArrayList<PersonnesProduction> listeE51660;
+			listeE51660 = new ArrayList<PersonnesProduction>();
+			listeE51660 = Modele.affichageE51660();
+			
+			ArrayList<PersonnesProduction> listeB50424;
+			listeB50424 = new ArrayList<PersonnesProduction>();
+			listeB50424 = Modele.affichageB50424();
+			
+			ArrayList<PersonnesProduction> listeG03713;
+			listeG03713 = new ArrayList<PersonnesProduction>();
+			listeG03713 = Modele.affichageG03713();
+			
+			ArrayList<PersonnesProduction> listeG03546;
+			listeG03546 = new ArrayList<PersonnesProduction>();
+			listeG03546 = Modele.affichageG03546();
+			
+			ArrayList<PersonnesProduction> listeG09108;
+			listeG09108 = new ArrayList<PersonnesProduction>();
+			listeG09108 = Modele.affichageG09108();
+			
+			ArrayList<PersonnesProduction> listeG03973;
+			listeG03973 = new ArrayList<PersonnesProduction>();
+			listeG03973 = Modele.affichageG03973();
+			
+			ArrayList<PersonnesProduction> listeE51427;
+			listeE51427 = new ArrayList<PersonnesProduction>();
+			listeE51427 = Modele.affichageE51427();
+			
+			ArrayList<PersonnesProduction> listeG03459;
+			listeG03459 = new ArrayList<PersonnesProduction>();
+			listeG03459 = Modele.affichageG03459();
+			
+			ArrayList<PersonnesProduction> listeG03431;
+			listeG03431 = new ArrayList<PersonnesProduction>();
+			listeG03431 = Modele.affichageG03431();
+			
+			ArrayList<PersonnesProduction> listeE51659;
+			listeE51659 = new ArrayList<PersonnesProduction>();
+			listeE51659 = Modele.affichageE51659();
+			
+			ArrayList<PersonnesProduction> listeE51707;
+			listeE51707 = new ArrayList<PersonnesProduction>();
+			listeE51707 = Modele.affichageE51707();
+			
+			ArrayList<PersonnesProduction> listeG09282;
+			listeG09282 = new ArrayList<PersonnesProduction>();
+			listeG09282 = Modele.affichageG09282();
+			
+			ArrayList<PersonnesProduction> listeG09262;
+			listeG09262 = new ArrayList<PersonnesProduction>();
+			listeG09262 = Modele.affichageG09262();
+			
+			ArrayList<PersonnesProduction> listeG02763;
+			listeG02763 = new ArrayList<PersonnesProduction>();
+			listeG02763 = Modele.affichageG02763();
+			
+			ArrayList<PersonnesProduction> listeG01984;
+			listeG01984 = new ArrayList<PersonnesProduction>();
+			listeG01984 = Modele.affichageG01984();
+			
+			ArrayList<PersonnesProduction> listeG09265;
+			listeG09265 = new ArrayList<PersonnesProduction>();
+			listeG09265 = Modele.affichageG09265();
+			
+			ArrayList<PersonnesProduction> listeG09104;
+			listeG09104 = new ArrayList<PersonnesProduction>();
+			listeG09104 = Modele.affichageG09104();
+			
+			ArrayList<PersonnesProduction> listeG09641;
+			listeG09641 = new ArrayList<PersonnesProduction>();
+			listeG09641 = Modele.affichageG09641();
+			
+			ArrayList<PersonnesProduction> listeE51424;
+			listeE51424 = new ArrayList<PersonnesProduction>();
+			listeE51424 = Modele.affichageE51424();
+			
+			ArrayList<PersonnesProduction> listeG02520;
+			listeG02520 = new ArrayList<PersonnesProduction>();
+			listeG02520 = Modele.affichageG02520();
+			
+			ArrayList<PersonnesProduction> listeG02539;
+			listeG02539 = new ArrayList<PersonnesProduction>();
+			listeG02539 = Modele.affichageG02539();
+
+			ArrayList<PersonnesProduction> listeG09735;
+			listeG09735 = new ArrayList<PersonnesProduction>();
+			listeG09735 = Modele.affichageG09735();
+			
+			ArrayList<PersonnesProduction> listeG03329;
+			listeG03329 = new ArrayList<PersonnesProduction>();
+			listeG03329 = Modele.affichageG03329();
+			
+			ArrayList<PersonnesProduction> listeE51438;
+			listeE51438 = new ArrayList<PersonnesProduction>();
+			listeE51438 = Modele.affichageE51438();
+			
+			ArrayList<PersonnesProduction> listeG03739;
+			listeG03739 = new ArrayList<PersonnesProduction>();
+			listeG03739 = Modele.affichageG03739();
+			
+			ArrayList<PersonnesProduction> listeG04030;
+			listeG04030 = new ArrayList<PersonnesProduction>();
+			listeG04030 = Modele.affichageG04030();
+			
+			ArrayList<PersonnesProduction> listeE51507;
+			listeE51507 = new ArrayList<PersonnesProduction>();
+			listeE51507 = Modele.affichageE51507();
+			
+			ArrayList<PersonnesProduction> listeE51570;
+			listeE51570 = new ArrayList<PersonnesProduction>();
+			listeE51570 = Modele.affichageE51570();
+			
+			ArrayList<PersonnesProduction> listeE51627;
+			listeE51627 = new ArrayList<PersonnesProduction>();
+			listeE51627 = Modele.affichageE51627();
+			
+			ArrayList<PersonnesProduction> listeE51648;
+			listeE51648 = new ArrayList<PersonnesProduction>();
+			listeE51648 = Modele.affichageE51648();
+			
+			ArrayList<PersonnesProduction> listeE51681;
+			listeE51681 = new ArrayList<PersonnesProduction>();
+			listeE51681 = Modele.affichageE51681();
+			
+			ArrayList<PersonnesProduction> listeE51533;
+			listeE51533 = new ArrayList<PersonnesProduction>();
+			listeE51533 = Modele.affichageE51533();
+			
+			ArrayList<PersonnesProduction> listeE5704;
+			listeE5704 = new ArrayList<PersonnesProduction>();
+			listeE5704 = Modele.affichageE5704();
+			
+			ArrayList<PersonnesProduction> listeE51700;
+			listeE51700 = new ArrayList<PersonnesProduction>();
+			listeE51700 = Modele.affichageE51700();
+			
+			ArrayList<PersonnesProduction> listeE51705;
+			listeE51705 = new ArrayList<PersonnesProduction>();
+			listeE51705 = Modele.affichageE51705();
+			
+			ArrayList<PersonnesProduction> listeG09258;
+			listeG09258 = new ArrayList<PersonnesProduction>();
+			listeG09258 = Modele.affichageG09258();
+			
+			ArrayList<PersonnesProduction> listeB50423;
+			listeB50423 = new ArrayList<PersonnesProduction>();
+			listeB50423 = Modele.affichageB50423();
+			
+			ArrayList<PersonnesProduction> listeE51576;
+			listeE51576 = new ArrayList<PersonnesProduction>();
+			listeE51576 = Modele.affichageE51576();
+			
+			ArrayList<PersonnesProduction> listeE51665;
+			listeE51665 = new ArrayList<PersonnesProduction>();
+			listeE51665 = Modele.affichageE51665();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageOctobre(listeOctobre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageOctobre());
+			this.panelAccueil.add(new PageOctobre(listeE51665, listeE51576, listeB50423, listeG09258, listeE51705, listeE51700, listeE5704, listeE51533, listeE51681, listeE51648, listeE51627, listeE51570, listeE51507, listeG04030, listeG03739, listeE51438, listeG03329, listeG09735, listeG02539, listeG02520, listeE51424, listeG09641, listeG09104, listeG09265, listeG01984, listeG02763, listeG09262, listeG09282, listeE51707, listeE51659, listeG03431, listeG03459, listeE51427, listeG03973, listeG09108, listeG03546, listeG03713, listeB50424, listeE51660, listeE51369, listeG01646, listeE51126, listeG09566, listeE51575, listeE51574, listeG03547, listeE51710, listeG09626, listeG02428, listeG01304, listeG01221, listeG00994, listeE51679, listeG03087, listeG09307, listeE51713, listeE51122, listeG09305, listeG02662, listeG09057, listeE51634, listeG02634, listeG09513, listeG09311, listeE51408, listeE51349, listeG09304, listeG02486, listeG09844, listeG01838, listeE51300, listeG09086, listeG09308, listeOctobre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageOctobre());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}
@@ -2645,6 +4397,10 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesProd;
 			listePersonnesProd = new ArrayList<PersonnesProduction>();
 			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listeG09308;
+			listeG09308 = new ArrayList<PersonnesProduction>();
+			listeG09308 = Modele.affichageG09308();
 			
 			ArrayList<PersonnesProduction> listePersonnesCoor;
 			listePersonnesCoor = new ArrayList<PersonnesProduction>();
@@ -2749,8 +4505,296 @@ public class Accueil extends JFrame implements ActionListener{
 			ArrayList<Novembre> listeNovembre;
 			listeNovembre = new ArrayList<Novembre>();
 			listeNovembre = Modele.afficherAffectationNovembre();
+			
+			ArrayList<PersonnesProduction> listeG09086;
+			listeG09086 = new ArrayList<PersonnesProduction>();
+			listeG09086 = Modele.affichageG09086();
+			
+			ArrayList<PersonnesProduction> listeE51300;
+			listeE51300 = new ArrayList<PersonnesProduction>();
+			listeE51300 = Modele.affichageE51300();
+			
+			ArrayList<PersonnesProduction> listeG01838;
+			listeG01838 = new ArrayList<PersonnesProduction>();
+			listeG01838 = Modele.affichageG01838();
+			
+			ArrayList<PersonnesProduction> listeG09844;
+			listeG09844 = new ArrayList<PersonnesProduction>();
+			listeG09844 = Modele.affichageG09844();
+			
+			ArrayList<PersonnesProduction> listeG02486;
+			listeG02486 = new ArrayList<PersonnesProduction>();
+			listeG02486 = Modele.affichageG02486();
+			
+			ArrayList<PersonnesProduction> listeG09304;
+			listeG09304 = new ArrayList<PersonnesProduction>();
+			listeG09304 = Modele.affichageG09304();
+			
+			ArrayList<PersonnesProduction> listeE51349;
+			listeE51349 = new ArrayList<PersonnesProduction>();
+			listeE51349 = Modele.affichageE51349();
+			
+			ArrayList<PersonnesProduction> listeE51408;
+			listeE51408 = new ArrayList<PersonnesProduction>();
+			listeE51408 = Modele.affichageE51408();
+			
+			ArrayList<PersonnesProduction> listeG09311;
+			listeG09311 = new ArrayList<PersonnesProduction>();
+			listeG09311 = Modele.affichageG09311();
+			
+			ArrayList<PersonnesProduction> listeG09513;
+			listeG09513 = new ArrayList<PersonnesProduction>();
+			listeG09513 = Modele.affichageG09513();
+			
+			ArrayList<PersonnesProduction> listeG02634;
+			listeG02634 = new ArrayList<PersonnesProduction>();
+			listeG02634 = Modele.affichageG02634();
+			
+			ArrayList<PersonnesProduction> listeE51634;
+			listeE51634 = new ArrayList<PersonnesProduction>();
+			listeE51634 = Modele.affichageE51634();
+			
+			ArrayList<PersonnesProduction> listeG09057;
+			listeG09057 = new ArrayList<PersonnesProduction>();
+			listeG09057 = Modele.affichageG09057();
+			
+			ArrayList<PersonnesProduction> listeG02662;
+			listeG02662 = new ArrayList<PersonnesProduction>();
+			listeG02662 = Modele.affichageG02662();
+			
+			ArrayList<PersonnesProduction> listeG09305;
+			listeG09305 = new ArrayList<PersonnesProduction>();
+			listeG09305 = Modele.affichageG09305();
+			
+			ArrayList<PersonnesProduction> listeE51122;
+			listeE51122 = new ArrayList<PersonnesProduction>();
+			listeE51122 = Modele.affichageE51122();
+			
+			ArrayList<PersonnesProduction> listeE51713;
+			listeE51713 = new ArrayList<PersonnesProduction>();
+			listeE51713 = Modele.affichageE51713();
+			
+			ArrayList<PersonnesProduction> listeG09307;
+			listeG09307 = new ArrayList<PersonnesProduction>();
+			listeG09307 = Modele.affichageG09307();
+			
+			ArrayList<PersonnesProduction> listeG03087;
+			listeG03087 = new ArrayList<PersonnesProduction>();
+			listeG03087 = Modele.affichageG03087();
+			
+			ArrayList<PersonnesProduction> listeE51679;
+			listeE51679 = new ArrayList<PersonnesProduction>();
+			listeE51679 = Modele.affichageE51679();
+			
+			ArrayList<PersonnesProduction> listeG00994;
+			listeG00994 = new ArrayList<PersonnesProduction>();
+			listeG00994 = Modele.affichageG00994();
+			
+			ArrayList<PersonnesProduction> listeG01221;
+			listeG01221 = new ArrayList<PersonnesProduction>();
+			listeG01221 = Modele.affichageG01221();
+			
+			ArrayList<PersonnesProduction> listeG01304;
+			listeG01304 = new ArrayList<PersonnesProduction>();
+			listeG01304 = Modele.affichageG01304();
+			
+			ArrayList<PersonnesProduction> listeG02428;
+			listeG02428 = new ArrayList<PersonnesProduction>();
+			listeG02428 = Modele.affichageG02428();
+			
+			ArrayList<PersonnesProduction> listeG09626;
+			listeG09626 = new ArrayList<PersonnesProduction>();
+			listeG09626 = Modele.affichageG09626();
+			
+			ArrayList<PersonnesProduction> listeE51710;
+			listeE51710 = new ArrayList<PersonnesProduction>();
+			listeE51710 = Modele.affichageE51710();
+			
+			ArrayList<PersonnesProduction> listeG03547;
+			listeG03547 = new ArrayList<PersonnesProduction>();
+			listeG03547 = Modele.affichageG03547();
+			
+			ArrayList<PersonnesProduction> listeE51574;
+			listeE51574 = new ArrayList<PersonnesProduction>();
+			listeE51574 = Modele.affichageE51574();
+			
+			ArrayList<PersonnesProduction> listeE51575;
+			listeE51575 = new ArrayList<PersonnesProduction>();
+			listeE51575 = Modele.affichageE51575();
+			
+			ArrayList<PersonnesProduction> listeG09566;
+			listeG09566 = new ArrayList<PersonnesProduction>();
+			listeG09566 = Modele.affichageG09566();
+			
+			ArrayList<PersonnesProduction> listeE51126;
+			listeE51126 = new ArrayList<PersonnesProduction>();
+			listeE51126 = Modele.affichageE51126();
+			
+			ArrayList<PersonnesProduction> listeG01646;
+			listeG01646 = new ArrayList<PersonnesProduction>();
+			listeG01646 = Modele.affichageG01646();
+			
+			ArrayList<PersonnesProduction> listeE51369;
+			listeE51369 = new ArrayList<PersonnesProduction>();
+			listeE51369 = Modele.affichageE51369();
+			
+			ArrayList<PersonnesProduction> listeE51660;
+			listeE51660 = new ArrayList<PersonnesProduction>();
+			listeE51660 = Modele.affichageE51660();
+			
+			ArrayList<PersonnesProduction> listeB50424;
+			listeB50424 = new ArrayList<PersonnesProduction>();
+			listeB50424 = Modele.affichageB50424();
+			
+			ArrayList<PersonnesProduction> listeG03713;
+			listeG03713 = new ArrayList<PersonnesProduction>();
+			listeG03713 = Modele.affichageG03713();
+			
+			ArrayList<PersonnesProduction> listeG03546;
+			listeG03546 = new ArrayList<PersonnesProduction>();
+			listeG03546 = Modele.affichageG03546();
+			
+			ArrayList<PersonnesProduction> listeG09108;
+			listeG09108 = new ArrayList<PersonnesProduction>();
+			listeG09108 = Modele.affichageG09108();
+			
+			ArrayList<PersonnesProduction> listeG03973;
+			listeG03973 = new ArrayList<PersonnesProduction>();
+			listeG03973 = Modele.affichageG03973();
+			
+			ArrayList<PersonnesProduction> listeE51427;
+			listeE51427 = new ArrayList<PersonnesProduction>();
+			listeE51427 = Modele.affichageE51427();
+			
+			ArrayList<PersonnesProduction> listeG03459;
+			listeG03459 = new ArrayList<PersonnesProduction>();
+			listeG03459 = Modele.affichageG03459();
+			
+			ArrayList<PersonnesProduction> listeG03431;
+			listeG03431 = new ArrayList<PersonnesProduction>();
+			listeG03431 = Modele.affichageG03431();
+			
+			ArrayList<PersonnesProduction> listeE51659;
+			listeE51659 = new ArrayList<PersonnesProduction>();
+			listeE51659 = Modele.affichageE51659();
+			
+			ArrayList<PersonnesProduction> listeE51707;
+			listeE51707 = new ArrayList<PersonnesProduction>();
+			listeE51707 = Modele.affichageE51707();
+			
+			ArrayList<PersonnesProduction> listeG09282;
+			listeG09282 = new ArrayList<PersonnesProduction>();
+			listeG09282 = Modele.affichageG09282();
+			
+			ArrayList<PersonnesProduction> listeG09262;
+			listeG09262 = new ArrayList<PersonnesProduction>();
+			listeG09262 = Modele.affichageG09262();
+			
+			ArrayList<PersonnesProduction> listeG02763;
+			listeG02763 = new ArrayList<PersonnesProduction>();
+			listeG02763 = Modele.affichageG02763();
+			
+			ArrayList<PersonnesProduction> listeG01984;
+			listeG01984 = new ArrayList<PersonnesProduction>();
+			listeG01984 = Modele.affichageG01984();
+			
+			ArrayList<PersonnesProduction> listeG09265;
+			listeG09265 = new ArrayList<PersonnesProduction>();
+			listeG09265 = Modele.affichageG09265();
+			
+			ArrayList<PersonnesProduction> listeG09104;
+			listeG09104 = new ArrayList<PersonnesProduction>();
+			listeG09104 = Modele.affichageG09104();
+			
+			ArrayList<PersonnesProduction> listeG09641;
+			listeG09641 = new ArrayList<PersonnesProduction>();
+			listeG09641 = Modele.affichageG09641();
+			
+			ArrayList<PersonnesProduction> listeE51424;
+			listeE51424 = new ArrayList<PersonnesProduction>();
+			listeE51424 = Modele.affichageE51424();
+			
+			ArrayList<PersonnesProduction> listeG02520;
+			listeG02520 = new ArrayList<PersonnesProduction>();
+			listeG02520 = Modele.affichageG02520();
+			
+			ArrayList<PersonnesProduction> listeG02539;
+			listeG02539 = new ArrayList<PersonnesProduction>();
+			listeG02539 = Modele.affichageG02539();
+
+			ArrayList<PersonnesProduction> listeG09735;
+			listeG09735 = new ArrayList<PersonnesProduction>();
+			listeG09735 = Modele.affichageG09735();
+			
+			ArrayList<PersonnesProduction> listeG03329;
+			listeG03329 = new ArrayList<PersonnesProduction>();
+			listeG03329 = Modele.affichageG03329();
+			
+			ArrayList<PersonnesProduction> listeE51438;
+			listeE51438 = new ArrayList<PersonnesProduction>();
+			listeE51438 = Modele.affichageE51438();
+			
+			ArrayList<PersonnesProduction> listeG03739;
+			listeG03739 = new ArrayList<PersonnesProduction>();
+			listeG03739 = Modele.affichageG03739();
+			
+			ArrayList<PersonnesProduction> listeG04030;
+			listeG04030 = new ArrayList<PersonnesProduction>();
+			listeG04030 = Modele.affichageG04030();
+			
+			ArrayList<PersonnesProduction> listeE51507;
+			listeE51507 = new ArrayList<PersonnesProduction>();
+			listeE51507 = Modele.affichageE51507();
+			
+			ArrayList<PersonnesProduction> listeE51570;
+			listeE51570 = new ArrayList<PersonnesProduction>();
+			listeE51570 = Modele.affichageE51570();
+			
+			ArrayList<PersonnesProduction> listeE51627;
+			listeE51627 = new ArrayList<PersonnesProduction>();
+			listeE51627 = Modele.affichageE51627();
+			
+			ArrayList<PersonnesProduction> listeE51648;
+			listeE51648 = new ArrayList<PersonnesProduction>();
+			listeE51648 = Modele.affichageE51648();
+			
+			ArrayList<PersonnesProduction> listeE51681;
+			listeE51681 = new ArrayList<PersonnesProduction>();
+			listeE51681 = Modele.affichageE51681();
+			
+			ArrayList<PersonnesProduction> listeE51533;
+			listeE51533 = new ArrayList<PersonnesProduction>();
+			listeE51533 = Modele.affichageE51533();
+			
+			ArrayList<PersonnesProduction> listeE5704;
+			listeE5704 = new ArrayList<PersonnesProduction>();
+			listeE5704 = Modele.affichageE5704();
+			
+			ArrayList<PersonnesProduction> listeE51700;
+			listeE51700 = new ArrayList<PersonnesProduction>();
+			listeE51700 = Modele.affichageE51700();
+			
+			ArrayList<PersonnesProduction> listeE51705;
+			listeE51705 = new ArrayList<PersonnesProduction>();
+			listeE51705 = Modele.affichageE51705();
+			
+			ArrayList<PersonnesProduction> listeG09258;
+			listeG09258 = new ArrayList<PersonnesProduction>();
+			listeG09258 = Modele.affichageG09258();
+			
+			ArrayList<PersonnesProduction> listeB50423;
+			listeB50423 = new ArrayList<PersonnesProduction>();
+			listeB50423 = Modele.affichageB50423();
+			
+			ArrayList<PersonnesProduction> listeE51576;
+			listeE51576 = new ArrayList<PersonnesProduction>();
+			listeE51576 = Modele.affichageE51576();
+			
+			ArrayList<PersonnesProduction> listeE51665;
+			listeE51665 = new ArrayList<PersonnesProduction>();
+			listeE51665 = Modele.affichageE51665();
 			this.panelAccueil.removeAll();
-			this.panelAccueil.add(new PageNovembre(listeNovembre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageNovembre());
+			this.panelAccueil.add(new PageNovembre(listeE51665, listeE51576, listeB50423, listeG09258, listeE51705, listeE51700, listeE5704, listeE51533, listeE51681, listeE51648, listeE51627, listeE51570, listeE51507, listeG04030, listeG03739, listeE51438, listeG03329, listeG09735, listeG02539, listeG02520, listeE51424, listeG09641, listeG09104, listeG09265, listeG01984, listeG02763, listeG09262, listeG09282, listeE51707, listeE51659, listeG03431, listeG03459, listeE51427, listeG03973, listeG09108, listeG03546, listeG03713, listeB50424, listeE51660, listeE51369, listeG01646, listeE51126, listeG09566, listeE51575, listeE51574, listeG03547, listeE51710, listeG09626, listeG02428, listeG01304, listeG01221, listeG00994, listeE51679, listeG03087, listeG09307, listeE51713, listeE51122, listeG09305, listeG02662, listeG09057, listeE51634, listeG02634, listeG09513, listeG09311, listeE51408, listeE51349, listeG09304, listeG02486, listeG09844, listeG01838, listeE51300, listeG09086, listeG09308, listeNovembre, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageNovembre());
 			this.panelAccueil.revalidate();
 			this.panelAccueil.repaint();
 		}

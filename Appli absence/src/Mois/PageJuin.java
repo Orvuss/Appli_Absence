@@ -51,7 +51,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	private JScrollPane scrollpane;
 	
 	//Constructeur
-	public PageJuin(ArrayList<Juin> listeJuin, ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor, ArrayList<PersonnesProduction> listePersonnesExplServ, ArrayList<PersonnesProduction> listePersonnesPil, ArrayList<PersonnesProduction> listePersonnesDBA, ArrayList<PersonnesProduction> listePersonnesEdEtArch, ArrayList<PersonnesProduction> listePersonnes3pts, ArrayList<PersonnesProduction> listePersonnesServDesk, ArrayList<PersonnesProduction> listePersonnesChangMEP, ArrayList<PersonnesProduction> listePersonnesInte, ArrayList<PersonnesProduction> listePersonnesInteMF, ArrayList<PersonnesProduction> listePersonnesInteOpen, ArrayList<PersonnesProduction> listePersonnesFlux, ArrayList<PersonnesProduction> listePersonnesSTE, ArrayList<PersonnesProduction> listePersonnesSecurite, ArrayList<PersonnesProduction> listePersonnesSECOP, ArrayList<PersonnesProduction> listePersonnesRSI, ArrayList<PersonnesProduction> listePersonnesSOC, ArrayList<PersonnesProduction> listePersonnesArchiInfraSys, ArrayList<PersonnesProduction> listePersonnesArchiTech, ArrayList<PersonnesProduction> listePersonnesSysteme, ArrayList<PersonnesProduction> listePersonnesRSB, ArrayList<PersonnesProduction> listePersonnesReseaux, ArrayList<PersonnesProduction> listePersonnesServBur, ArrayList<PersonnesProduction> listePersonnesWindows, ArrayList<PersonnesProduction> listePersonnesLinux) {	
+	public PageJuin(ArrayList <PersonnesProduction> listeE51665, ArrayList <PersonnesProduction> listeE51576, ArrayList <PersonnesProduction> listeB50423, ArrayList <PersonnesProduction> listeG09258, ArrayList <PersonnesProduction> listeE51705, ArrayList <PersonnesProduction> listeE51700, ArrayList <PersonnesProduction> listeE5704, ArrayList <PersonnesProduction> listeE51533, ArrayList <PersonnesProduction> listeE51681, ArrayList <PersonnesProduction> listeE51648, ArrayList <PersonnesProduction> listeE51627, ArrayList <PersonnesProduction> listeE51570, ArrayList <PersonnesProduction> listeE51507, ArrayList <PersonnesProduction> listeG04030, ArrayList <PersonnesProduction> listeG03739, ArrayList <PersonnesProduction> listeE51438, ArrayList <PersonnesProduction> listeG03329, ArrayList <PersonnesProduction> listeG09735, ArrayList <PersonnesProduction> listeG02539, ArrayList <PersonnesProduction> listeG02520, ArrayList <PersonnesProduction> listeE51424, ArrayList <PersonnesProduction> listeG09641, ArrayList <PersonnesProduction> listeG09104, ArrayList <PersonnesProduction> listeG09265, ArrayList <PersonnesProduction> listeG01984, ArrayList <PersonnesProduction> listeG02763, ArrayList <PersonnesProduction> listeG09262, ArrayList <PersonnesProduction> listeG09282, ArrayList <PersonnesProduction> listeE51707, ArrayList <PersonnesProduction> listeE51659, ArrayList <PersonnesProduction> listeG03431, ArrayList <PersonnesProduction> listeG03459, ArrayList <PersonnesProduction> listeE51427, ArrayList <PersonnesProduction> listeG03973, ArrayList <PersonnesProduction> listeG09108, ArrayList <PersonnesProduction> listeG03546, ArrayList <PersonnesProduction> listeG03713, ArrayList <PersonnesProduction> listeB50424, ArrayList <PersonnesProduction> listeE51660, ArrayList <PersonnesProduction> listeE51369, ArrayList <PersonnesProduction> listeG01646, ArrayList <PersonnesProduction> listeE51126, ArrayList <PersonnesProduction> listeG09566, ArrayList <PersonnesProduction> listeE51575, ArrayList <PersonnesProduction> listeE51574, ArrayList <PersonnesProduction> listeG03547, ArrayList <PersonnesProduction> listeE51710, ArrayList <PersonnesProduction> listeG09626, ArrayList <PersonnesProduction> listeG02428, ArrayList <PersonnesProduction> listeG01304, ArrayList <PersonnesProduction> listeG01221, ArrayList <PersonnesProduction> listeG00994, ArrayList <PersonnesProduction> listeE51679, ArrayList <PersonnesProduction> listeG03087, ArrayList <PersonnesProduction> listeG09307, ArrayList <PersonnesProduction> listeE51713, ArrayList <PersonnesProduction> listeE51122, ArrayList <PersonnesProduction> listeG09305, ArrayList <PersonnesProduction> listeG02662, ArrayList <PersonnesProduction> listeG09057, ArrayList <PersonnesProduction> listeE51634, ArrayList <PersonnesProduction> listeG02634, ArrayList <PersonnesProduction> listeG09513, ArrayList <PersonnesProduction> listeG09311, ArrayList <PersonnesProduction> listeE51408, ArrayList <PersonnesProduction> listeE51349, ArrayList <PersonnesProduction> listeG09304, ArrayList <PersonnesProduction> listeG02486, ArrayList <PersonnesProduction> listeG09844, ArrayList <PersonnesProduction> listeG01838, ArrayList <PersonnesProduction> listeE51300, ArrayList <PersonnesProduction> listeG09086, ArrayList <PersonnesProduction> listeG09308, ArrayList<Juin> listeJuin, ArrayList<PersonnesProduction> listePersonnesProd, ArrayList<PersonnesProduction> listePersonnesCoor, ArrayList<PersonnesProduction> listePersonnesExplServ, ArrayList<PersonnesProduction> listePersonnesPil, ArrayList<PersonnesProduction> listePersonnesDBA, ArrayList<PersonnesProduction> listePersonnesEdEtArch, ArrayList<PersonnesProduction> listePersonnes3pts, ArrayList<PersonnesProduction> listePersonnesServDesk, ArrayList<PersonnesProduction> listePersonnesChangMEP, ArrayList<PersonnesProduction> listePersonnesInte, ArrayList<PersonnesProduction> listePersonnesInteMF, ArrayList<PersonnesProduction> listePersonnesInteOpen, ArrayList<PersonnesProduction> listePersonnesFlux, ArrayList<PersonnesProduction> listePersonnesSTE, ArrayList<PersonnesProduction> listePersonnesSecurite, ArrayList<PersonnesProduction> listePersonnesSECOP, ArrayList<PersonnesProduction> listePersonnesRSI, ArrayList<PersonnesProduction> listePersonnesSOC, ArrayList<PersonnesProduction> listePersonnesArchiInfraSys, ArrayList<PersonnesProduction> listePersonnesArchiTech, ArrayList<PersonnesProduction> listePersonnesSysteme, ArrayList<PersonnesProduction> listePersonnesRSB, ArrayList<PersonnesProduction> listePersonnesReseaux, ArrayList<PersonnesProduction> listePersonnesServBur, ArrayList<PersonnesProduction> listePersonnesWindows, ArrayList<PersonnesProduction> listePersonnesLinux) {	
 	    /**
 	     * Instanciation de mes panels "panelPageJuin" et "panelChamps"
 	     */
@@ -77,6 +77,348 @@ public class PageJuin extends JPanel implements ActionListener{
 	    String resultatMois = "";
 	    for (Juin monJuin: listeJuin) {
 	    	resultatMois += monJuin.getAffectationJ().toString();	
+	    }
+	    
+	  //Eric Beghin
+	    String G09308 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09308) {
+	    	G09308 += maPersonneProd.toString();
+	    }
+	    
+	    //Laure Delecroix & LC Euraxiel
+	    String G09086 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09086) {
+	    	G09086 += maPersonneProd.toString();
+	    }
+	    String E51300 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51300) {
+	    	E51300 += maPersonneProd.toString();
+	    }
+	    
+	    //Martin
+	    String G01838 = "";
+	    for(PersonnesProduction maPersonneProd: listeG01838) {
+	    	G01838 += maPersonneProd.toString();
+	    }
+	    
+	    //Cunin
+	    String G09844 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09844) {
+	    	G09844 += maPersonneProd.toString();
+	    }
+	    
+	    //Coulombel, FOREST, INETUM CM & INETUM PI
+	    String G02486 = "";
+	    for(PersonnesProduction maPersonneProd: listeG02486) {
+	    	G02486 += maPersonneProd.toString();
+	    }
+	    String G09304 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09304) {
+	    	G09304 += maPersonneProd.toString();
+	    }
+	    String E51349 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51349) {
+	    	E51349 += maPersonneProd.toString();
+	    }
+	    String E51408 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51408) {
+	    	E51408 += maPersonneProd.toString();
+	    }
+	    
+	    //Bui & PASQUET
+	    String G09311 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09311) {
+	    	G09311 += maPersonneProd.toString();
+	    }
+	    String G09513 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09513) {
+	    	G09513 += maPersonneProd.toString();
+	    }
+	    
+	    //BAHANI & INETUM BM
+	    String G02634 = "";
+	    for(PersonnesProduction maPersonneProd: listeG02634) {
+	    	G02634 += maPersonneProd.toString();
+	    }
+	    String E51634 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51634) {
+	    	E51634 += maPersonneProd.toString();
+	    }
+	    
+	    //CARRU & OHANA
+	    String G09057 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09057) {
+	    	G09057 += maPersonneProd.toString();
+	    }
+	    String G02662 = "";
+	    for(PersonnesProduction maPersonneProd: listeG02662) {
+	    	G02662 += maPersonneProd.toString();
+	    }
+	    
+	    //GLEMAIN
+	    String G09305 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09305) {
+	    	G09305 += maPersonneProd.toString();
+	    }
+	    String E51122 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51122) {
+	    	E51122 += maPersonneProd.toString();
+	    }
+	    String E51713 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51713) {
+	    	E51713 += maPersonneProd.toString();
+	    }
+	    
+	    //THIERRY
+	    String G09307 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09307) {
+	    	G09307 += maPersonneProd.toString();
+	    }
+	    
+	    //ABOJIAN, INETUM SM, RAMENE, LEBLOND, GUIGNEBERT, FERTER, DIDARET & INETUM DA
+	    String G03087 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03087) {
+	    	G03087 += maPersonneProd.toString();
+	    }
+	    String E51679 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51679) {
+	    	E51679 += maPersonneProd.toString();
+	    }
+	    String G00994 = "";
+	    for(PersonnesProduction maPersonneProd: listeG00994) {
+	    	G00994 += maPersonneProd.toString();
+	    }
+	    String G01221 = "";
+	    for(PersonnesProduction maPersonneProd: listeG01221) {
+	    	G01221 += maPersonneProd.toString();
+	    }
+	    String G01304 = "";
+	    for(PersonnesProduction maPersonneProd: listeG01304) {
+	    	G01304 += maPersonneProd.toString();
+	    }
+	    String G02428 = "";
+	    for(PersonnesProduction maPersonneProd: listeG02428) {
+	    	G02428 += maPersonneProd.toString();
+	    }
+	    String G09626 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09626) {
+	    	G09626 += maPersonneProd.toString();
+	    }
+	    String E51710 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51710) {
+	    	E51710 += maPersonneProd.toString();
+	    }
+	    
+	    //SAIDOU, INETUM YB & INETUM FB
+	    String G03547 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03547) {
+	    	G03547 += maPersonneProd.toString();
+	    }
+	    String E51574 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51574) {
+	    	E51574 += maPersonneProd.toString();
+	    }
+	    String E51575 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51575) {
+	    	E51575 += maPersonneProd.toString();
+	    }
+	    
+	    //BOISSET & INETUM CB
+	    String G09566 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09566) {
+	    	G09566 += maPersonneProd.toString();
+	    }
+	    String E51126 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51126) {
+	    	E51126 += maPersonneProd.toString();
+	    }
+	    
+	    //DUCHAUSSOY, ANOLIS & INETUM TP
+	    String G01646 = "";
+	    for(PersonnesProduction maPersonneProd: listeG01646) {
+	    	G01646 += maPersonneProd.toString();
+	    }
+	    String E51369 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51369) {
+	    	E51369 += maPersonneProd.toString();
+	    }
+	    String E51660 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51660) {
+	    	E51660 += maPersonneProd.toString();
+	    }
+	    
+	    //FONTESSE
+	    String B50424 = "";
+	    for(PersonnesProduction maPersonneProd: listeB50424) {
+	    	B50424 += maPersonneProd.toString();
+	    }
+	    
+	    //GILLE, HABACHOU, ARDILIO, BEYLIER & NSIS
+	    String G03713 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03713) {
+	    	G03713 += maPersonneProd.toString();
+	    }
+	    String G03546 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03546) {
+	    	G03546 += maPersonneProd.toString();
+	    }
+	    String G09108 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09108) {
+	    	G09108 += maPersonneProd.toString();
+	    }
+	    String G03973 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03973) {
+	    	G03973 += maPersonneProd.toString();
+	    }
+	    String E51427 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51427) {
+	    	E51427 += maPersonneProd.toString();
+	    }
+	    
+	    //CATTAINI
+	    String G03459 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03459) {
+	    	G03459 += maPersonneProd.toString();
+	    }
+	    
+	    //BIGOT, CLINKAST ZZ & CLINKAST MA
+	    String G03431 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03431) {
+	    	G03431 += maPersonneProd.toString();
+	    }
+	    String E51659 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51659) {
+	    	E51659 += maPersonneProd.toString();
+	    }
+	    String E51707 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51707) {
+	    	E51707 += maPersonneProd.toString();
+	    }
+	    
+	    //BUTEUX
+	    String G09282 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09282) {
+	    	G09282 += maPersonneProd.toString();
+	    }
+	    
+	    //BAUDOIN
+	    String G09262 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09262) {
+	    	G09262 += maPersonneProd.toString();
+	    }
+	    
+	    //JEAN, HUMBERT, MENARD, RIEUX, ROULLAND & ADONYS
+	    String G02763 = "";
+	    for(PersonnesProduction maPersonneProd: listeG02763) {
+	    	G02763 += maPersonneProd.toString();
+	    }
+	    String G01984 = "";
+	    for(PersonnesProduction maPersonneProd: listeG01984) {
+	    	G01984 += maPersonneProd.toString();
+	    }
+	    String G09265 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09265) {
+	    	G09265 += maPersonneProd.toString();
+	    }
+	    String G09104 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09104) {
+	    	G09104 += maPersonneProd.toString();
+	    }
+	    String G09641 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09641) {
+	    	G09641 += maPersonneProd.toString();
+	    }
+	    String E51424 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51424) {
+	    	E51424 += maPersonneProd.toString();
+	    }
+	    
+	    //LEROUX
+	    String G02520 = "";
+	    for(PersonnesProduction maPersonneProd: listeG02520) {
+	    	G02520 += maPersonneProd.toString();
+	    }
+	    
+	    //ERDINC, MARCHAND, KHY & SCC
+	    String G02539 = "";
+	    for(PersonnesProduction maPersonneProd: listeG02539) {
+	    	G02539 += maPersonneProd.toString();
+	    }
+	    String G09735 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09735) {
+	    	G09735 += maPersonneProd.toString();
+	    }
+	    String G03329 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03329) {
+	    	G03329 += maPersonneProd.toString();
+	    }
+	    String E51438 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51438) {
+	    	E51438 += maPersonneProd.toString();
+	    }
+	    
+	    //Bouloc, VAN DER CRUYSSEN, HT TEAM, CELAD RD, CELAD LF, CELAD, ABA, CELAD GK, COESSI, CELAD ABH, CELAD HF, METSYS
+	    String G03739 = "";
+	    for(PersonnesProduction maPersonneProd: listeG03739) {
+	    	G03739 += maPersonneProd.toString();
+	    }
+	    String G04030 = "";
+	    for(PersonnesProduction maPersonneProd: listeG04030) {
+	    	G04030 += maPersonneProd.toString();
+	    }
+	    String E51507 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51507) {
+	    	E51507 += maPersonneProd.toString();
+	    }
+	    String E51570 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51570) {
+	    	E51570 += maPersonneProd.toString();
+	    }
+	    String E51627 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51627) {
+	    	E51627 += maPersonneProd.toString();
+	    }
+	    String E51648 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51648) {
+	    	E51648 += maPersonneProd.toString();
+	    }
+	    String E51681 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51681) {
+	    	E51681 += maPersonneProd.toString();
+	    }
+	    String E51533 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51533) {
+	    	E51533 += maPersonneProd.toString();
+	    }
+	    String E5704 = "";
+	    for(PersonnesProduction maPersonneProd: listeE5704) {
+	    	E5704 += maPersonneProd.toString();
+	    }
+	    String E51700 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51700) {
+	    	E51700 += maPersonneProd.toString();
+	    }
+	    String E51705 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51705) {
+	    	E51705 += maPersonneProd.toString();
+	    }
+	    
+	    //OLIER, MARLIERE, ELANZ & HR TEAM
+	    String G09258 = "";
+	    for(PersonnesProduction maPersonneProd: listeG09258) {
+	    	G09258 += maPersonneProd.toString();
+	    }
+	    String B50423 = "";
+	    for(PersonnesProduction maPersonneProd: listeB50423) {
+	    	B50423 += maPersonneProd.toString();
+	    }
+	    String E51576 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51576) {
+	    	E51576 += maPersonneProd.toString();
+	    }
+	    String E51665 = "";
+	    for(PersonnesProduction maPersonneProd: listeE51665) {
+	    	E51665 += maPersonneProd.toString();
 	    }
 	    
 	    String tdProd = "";
@@ -126,7 +468,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneCoor: listePersonnesCoor) {
         	resultatCoor += maPersonneCoor.toString();
         	tdCoor = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatCoor + "</td>\r\n"
+        			+ "			<td>" + G09086 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -160,7 +502,43 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51300 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatExplServ = "";
@@ -252,7 +630,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneDBA: listePersonnesDBA) {
         	resultatDBA += maPersonneDBA.toString();
         	tdDBA = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatDBA + "</td>\r\n"
+        			+ "			<td>" + G02486 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -286,7 +664,115 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G09304 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51349 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51408 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatEdEtArch = "";
@@ -294,7 +780,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneEdEtArch: listePersonnesEdEtArch) {
         	resultatEdEtArch += maPersonneEdEtArch.toString();
         	tdEdEtArch = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatEdEtArch + "</td>\r\n"
+        			+ "			<td>" + G09311 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -328,7 +814,43 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G09513 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultat3Pts = "";
@@ -336,7 +858,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonne3Pts: listePersonnes3pts) {
         	resultat3Pts += maPersonne3Pts.toString();
         	td3Pts = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultat3Pts + "</td>\r\n"
+        			+ "			<td>" + G02634 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -370,7 +892,43 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51634 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatServDesk = "";
@@ -378,7 +936,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneServDesk: listePersonnesServDesk) {
         	resultatServDesk += maPersonneServDesk.toString();
         	tdServDesk = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatServDesk + "</td>\r\n"
+        			+ "			<td>" + G09057 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -412,7 +970,43 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G02662 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatChangMEP = "";
@@ -420,7 +1014,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneChangMEP: listePersonnesChangMEP) {
         	resultatChangMEP += maPersonneChangMEP.toString();
         	tdChangMEP = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatChangMEP + "</td>\r\n"
+        			+ "			<td>" + G09305 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -454,7 +1048,79 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51122 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51713 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatInte = "";
@@ -504,7 +1170,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneInteMF: listePersonnesInteMF) {
         	resultatInteMF += maPersonneInteMF.toString();
         	tdInteMF = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatInteMF + "</td>\r\n"
+        			+ "			<td>" + G03087 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -538,7 +1204,259 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51679 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G00994 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G01221 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G01304 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G02428 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G09626 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51710 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatInteOpen = "";
@@ -546,7 +1464,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneInteOpen: listePersonnesInteOpen) {
         	resultatInteOpen += maPersonneInteOpen.toString();
         	tdInteOpen = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatInteOpen + "</td>\r\n"
+        			+ "			<td>" + G03547 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -580,7 +1498,79 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51574 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51575 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatFlux= "";
@@ -588,7 +1578,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneFlux: listePersonnesFlux) {
         	resultatFlux += maPersonneFlux.toString();
         	tdFlux = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatFlux + "</td>\r\n"
+        			+ "			<td>" + G09566 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -622,7 +1612,43 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51126 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatSTE= "";
@@ -630,7 +1656,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneSTE: listePersonnesSTE) {
         	resultatSTE += maPersonneSTE.toString();
         	tdSTE = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatSTE + "</td>\r\n"
+        			+ "			<td>" + G01646 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -664,7 +1690,79 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51369 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51660 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatSecurite = "";
@@ -714,7 +1812,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneSECOP: listePersonnesSECOP) {
         	resultatSECOP += maPersonneSECOP.toString();
         	tdSECOP = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatSECOP + "</td>\r\n"
+        			+ "			<td>" + G03713 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -748,7 +1846,151 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G03546 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G09108 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G03973 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51427 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatRSI = "";
@@ -798,7 +2040,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneSOC: listePersonnesSOC) {
         	resultatSOC += maPersonneSOC.toString();
         	tdSOC = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatSOC + "</td>\r\n"
+        			+ "			<td>" + G03431 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -832,7 +2074,79 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51659 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51707 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatArchiInfraSys = "";
@@ -924,7 +2238,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneSysteme : listePersonnesSysteme) {
         	resultatSysteme += maPersonneSysteme.toString();
         	tdSysteme = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatSysteme + "</td>\r\n"
+        			+ "			<td>" + G02763 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -958,7 +2272,187 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G01984 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G09265 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G09104 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G09641 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51424 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatRSB = "";
@@ -1008,7 +2502,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneReseaux : listePersonnesReseaux) {
         	resultatReseaux += maPersonneReseaux.toString();
         	tdReseaux = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatReseaux + "</td>\r\n"
+        			+ "			<td>" + G02539 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1042,7 +2536,115 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G09735 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G03329 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51438 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatServBur = "";
@@ -1092,7 +2694,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneWindows : listePersonnesWindows) {
         	resultatWindows += maPersonneWindows.toString();
         	tdWindows = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatWindows + "</td>\r\n"
+        			+ "			<td>" + G03739 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1126,7 +2728,367 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + G04030 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51507 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51570 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51627 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51648 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51681 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51533 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E5704 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51700 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51705 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
         String resultatLinux = "";
@@ -1134,7 +3096,7 @@ public class PageJuin extends JPanel implements ActionListener{
         for (PersonnesProduction maPersonneLinux : listePersonnesLinux) {
         	resultatLinux += maPersonneLinux.toString();
         	tdLinux = "<tr align='center'>\r\n"
-        			+ "			<td>" + resultatLinux + "</td>\r\n"
+        			+ "			<td>" + G09258 + "</td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
@@ -1168,7 +3130,115 @@ public class PageJuin extends JPanel implements ActionListener{
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td></td>\r\n"
         			+ "			<td></td>\r\n"
-        			+ "		</tr>";
+        			+ "		</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + B50423 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51576 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>"
+        			+ "<tr align='center'>\r\n"
+        			+ "			<td>" + E51665 + "</td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'>jf</td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td bgcolor='#28C7E3'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "			<td></td>\r\n"
+        			+ "</tr>";
         }
         
 	    String texte = "<html>\r\n"
@@ -1348,7 +3418,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdCoor + tdCoor + ""
+	    		+ "		</tr>" + tdCoor + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#F6D309' color='black'>Exploitation & Services</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1456,7 +3526,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdDBA + tdDBA + tdDBA + tdDBA + ""
+	    		+ "		</tr>" + tdDBA + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Editique et Archivage</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1492,7 +3562,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdEdEtArch + tdEdEtArch + ""
+	    		+ "		</tr>" + tdEdEtArch + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>....</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1528,7 +3598,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + td3Pts + td3Pts + ""
+	    		+ "		</tr>" + td3Pts + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Service Desk</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1564,7 +3634,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdServDesk + tdServDesk + ""
+	    		+ "		</tr>" + tdServDesk + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Changement, MEP</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1600,7 +3670,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdChangMEP + tdChangMEP + tdChangMEP + ""
+	    		+ "		</tr>" + tdChangMEP + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Integration - STE - GDF - EAR</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1672,7 +3742,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdInteMF + tdInteMF + tdInteMF + tdInteMF + tdInteMF + tdInteMF + tdInteMF + tdInteMF + ""
+	    		+ "		</tr>" + tdInteMF + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Integration Open</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1708,7 +3778,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdInteOpen + tdInteOpen + tdInteOpen + ""
+	    		+ "		</tr>" + tdInteOpen + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Flux</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1744,7 +3814,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdFlux + tdFlux + ""
+	    		+ "		</tr>" + tdFlux + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>STE</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1780,7 +3850,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdSTE + tdSTE + tdSTE + ""
+	    		+ "		</tr>" + tdSTE + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Securite</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1852,7 +3922,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdSECOP + tdSECOP + tdSECOP + tdSECOP + tdSECOP + ""
+	    		+ "		</tr>" + tdSECOP + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>RSI</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -1924,7 +3994,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdSOC + tdSOC + tdSOC + ""
+	    		+ "		</tr>" + tdSOC + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Architecture Infra & Systeme</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -2032,7 +4102,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>" + tdSysteme + tdSysteme + tdSysteme + tdSysteme + tdSysteme + tdSysteme + ""
+	    		+ "		</tr>" + tdSysteme + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Reseaux, Serveurs, Bureautique</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -2104,7 +4174,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>\r\n" + tdReseaux + tdReseaux + tdReseaux + tdReseaux + ""
+	    		+ "		</tr>\r\n" + tdReseaux + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Serveurs et Bureautique</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -2176,7 +4246,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>\r\n" + tdWindows + tdWindows + tdWindows + tdWindows + tdWindows + tdWindows + tdWindows + tdWindows + tdWindows + tdWindows + tdWindows + ""
+	    		+ "		</tr>\r\n" + tdWindows + ""
 	    		+ "<tr align='center'>\r\n"
 	    		+ "			<td bgcolor='#28C7E3' color='black'>Linux</td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'></td>\r\n"
@@ -2212,7 +4282,7 @@ public class PageJuin extends JPanel implements ActionListener{
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
 	    		+ "			<td bgcolor='#28C7E3'> </td>\r\n"
-	    		+ "		</tr>\r\n" + tdLinux + tdLinux + tdLinux + tdLinux + ""
+	    		+ "		</tr>\r\n" + tdLinux + ""
 	    		+ "	</table>\r\n"
 	    		+ "</html>";
 	    
@@ -2294,6 +4364,10 @@ public class PageJuin extends JPanel implements ActionListener{
 			ArrayList<PersonnesProduction> listePersonnesProd;
 			listePersonnesProd = new ArrayList<PersonnesProduction>();
 			listePersonnesProd = Modele.affichagePersonnelProduction();
+			
+			ArrayList<PersonnesProduction> listeG09308;
+			listeG09308 = new ArrayList<PersonnesProduction>();
+			listeG09308 = Modele.affichageG09308();
 			
 			ArrayList<PersonnesProduction> listePersonnesCoor;
 			listePersonnesCoor = new ArrayList<PersonnesProduction>();
@@ -2398,8 +4472,296 @@ public class PageJuin extends JPanel implements ActionListener{
 			ArrayList<Juin> listeJuin;
 			listeJuin = new ArrayList<Juin>();
 			listeJuin = Modele.afficherAffectationJuin();
+			
+			ArrayList<PersonnesProduction> listeG09086;
+			listeG09086 = new ArrayList<PersonnesProduction>();
+			listeG09086 = Modele.affichageG09086();
+			
+			ArrayList<PersonnesProduction> listeE51300;
+			listeE51300 = new ArrayList<PersonnesProduction>();
+			listeE51300 = Modele.affichageE51300();
+			
+			ArrayList<PersonnesProduction> listeG01838;
+			listeG01838 = new ArrayList<PersonnesProduction>();
+			listeG01838 = Modele.affichageG01838();
+			
+			ArrayList<PersonnesProduction> listeG09844;
+			listeG09844 = new ArrayList<PersonnesProduction>();
+			listeG09844 = Modele.affichageG09844();
+			
+			ArrayList<PersonnesProduction> listeG02486;
+			listeG02486 = new ArrayList<PersonnesProduction>();
+			listeG02486 = Modele.affichageG02486();
+			
+			ArrayList<PersonnesProduction> listeG09304;
+			listeG09304 = new ArrayList<PersonnesProduction>();
+			listeG09304 = Modele.affichageG09304();
+			
+			ArrayList<PersonnesProduction> listeE51349;
+			listeE51349 = new ArrayList<PersonnesProduction>();
+			listeE51349 = Modele.affichageE51349();
+			
+			ArrayList<PersonnesProduction> listeE51408;
+			listeE51408 = new ArrayList<PersonnesProduction>();
+			listeE51408 = Modele.affichageE51408();
+			
+			ArrayList<PersonnesProduction> listeG09311;
+			listeG09311 = new ArrayList<PersonnesProduction>();
+			listeG09311 = Modele.affichageG09311();
+			
+			ArrayList<PersonnesProduction> listeG09513;
+			listeG09513 = new ArrayList<PersonnesProduction>();
+			listeG09513 = Modele.affichageG09513();
+			
+			ArrayList<PersonnesProduction> listeG02634;
+			listeG02634 = new ArrayList<PersonnesProduction>();
+			listeG02634 = Modele.affichageG02634();
+			
+			ArrayList<PersonnesProduction> listeE51634;
+			listeE51634 = new ArrayList<PersonnesProduction>();
+			listeE51634 = Modele.affichageE51634();
+			
+			ArrayList<PersonnesProduction> listeG09057;
+			listeG09057 = new ArrayList<PersonnesProduction>();
+			listeG09057 = Modele.affichageG09057();
+			
+			ArrayList<PersonnesProduction> listeG02662;
+			listeG02662 = new ArrayList<PersonnesProduction>();
+			listeG02662 = Modele.affichageG02662();
+			
+			ArrayList<PersonnesProduction> listeG09305;
+			listeG09305 = new ArrayList<PersonnesProduction>();
+			listeG09305 = Modele.affichageG09305();
+			
+			ArrayList<PersonnesProduction> listeE51122;
+			listeE51122 = new ArrayList<PersonnesProduction>();
+			listeE51122 = Modele.affichageE51122();
+			
+			ArrayList<PersonnesProduction> listeE51713;
+			listeE51713 = new ArrayList<PersonnesProduction>();
+			listeE51713 = Modele.affichageE51713();
+			
+			ArrayList<PersonnesProduction> listeG09307;
+			listeG09307 = new ArrayList<PersonnesProduction>();
+			listeG09307 = Modele.affichageG09307();
+			
+			ArrayList<PersonnesProduction> listeG03087;
+			listeG03087 = new ArrayList<PersonnesProduction>();
+			listeG03087 = Modele.affichageG03087();
+			
+			ArrayList<PersonnesProduction> listeE51679;
+			listeE51679 = new ArrayList<PersonnesProduction>();
+			listeE51679 = Modele.affichageE51679();
+			
+			ArrayList<PersonnesProduction> listeG00994;
+			listeG00994 = new ArrayList<PersonnesProduction>();
+			listeG00994 = Modele.affichageG00994();
+			
+			ArrayList<PersonnesProduction> listeG01221;
+			listeG01221 = new ArrayList<PersonnesProduction>();
+			listeG01221 = Modele.affichageG01221();
+			
+			ArrayList<PersonnesProduction> listeG01304;
+			listeG01304 = new ArrayList<PersonnesProduction>();
+			listeG01304 = Modele.affichageG01304();
+			
+			ArrayList<PersonnesProduction> listeG02428;
+			listeG02428 = new ArrayList<PersonnesProduction>();
+			listeG02428 = Modele.affichageG02428();
+			
+			ArrayList<PersonnesProduction> listeG09626;
+			listeG09626 = new ArrayList<PersonnesProduction>();
+			listeG09626 = Modele.affichageG09626();
+			
+			ArrayList<PersonnesProduction> listeE51710;
+			listeE51710 = new ArrayList<PersonnesProduction>();
+			listeE51710 = Modele.affichageE51710();
+			
+			ArrayList<PersonnesProduction> listeG03547;
+			listeG03547 = new ArrayList<PersonnesProduction>();
+			listeG03547 = Modele.affichageG03547();
+			
+			ArrayList<PersonnesProduction> listeE51574;
+			listeE51574 = new ArrayList<PersonnesProduction>();
+			listeE51574 = Modele.affichageE51574();
+			
+			ArrayList<PersonnesProduction> listeE51575;
+			listeE51575 = new ArrayList<PersonnesProduction>();
+			listeE51575 = Modele.affichageE51575();
+			
+			ArrayList<PersonnesProduction> listeG09566;
+			listeG09566 = new ArrayList<PersonnesProduction>();
+			listeG09566 = Modele.affichageG09566();
+			
+			ArrayList<PersonnesProduction> listeE51126;
+			listeE51126 = new ArrayList<PersonnesProduction>();
+			listeE51126 = Modele.affichageE51126();
+			
+			ArrayList<PersonnesProduction> listeG01646;
+			listeG01646 = new ArrayList<PersonnesProduction>();
+			listeG01646 = Modele.affichageG01646();
+			
+			ArrayList<PersonnesProduction> listeE51369;
+			listeE51369 = new ArrayList<PersonnesProduction>();
+			listeE51369 = Modele.affichageE51369();
+			
+			ArrayList<PersonnesProduction> listeE51660;
+			listeE51660 = new ArrayList<PersonnesProduction>();
+			listeE51660 = Modele.affichageE51660();
+			
+			ArrayList<PersonnesProduction> listeB50424;
+			listeB50424 = new ArrayList<PersonnesProduction>();
+			listeB50424 = Modele.affichageB50424();
+			
+			ArrayList<PersonnesProduction> listeG03713;
+			listeG03713 = new ArrayList<PersonnesProduction>();
+			listeG03713 = Modele.affichageG03713();
+			
+			ArrayList<PersonnesProduction> listeG03546;
+			listeG03546 = new ArrayList<PersonnesProduction>();
+			listeG03546 = Modele.affichageG03546();
+			
+			ArrayList<PersonnesProduction> listeG09108;
+			listeG09108 = new ArrayList<PersonnesProduction>();
+			listeG09108 = Modele.affichageG09108();
+			
+			ArrayList<PersonnesProduction> listeG03973;
+			listeG03973 = new ArrayList<PersonnesProduction>();
+			listeG03973 = Modele.affichageG03973();
+			
+			ArrayList<PersonnesProduction> listeE51427;
+			listeE51427 = new ArrayList<PersonnesProduction>();
+			listeE51427 = Modele.affichageE51427();
+			
+			ArrayList<PersonnesProduction> listeG03459;
+			listeG03459 = new ArrayList<PersonnesProduction>();
+			listeG03459 = Modele.affichageG03459();
+			
+			ArrayList<PersonnesProduction> listeG03431;
+			listeG03431 = new ArrayList<PersonnesProduction>();
+			listeG03431 = Modele.affichageG03431();
+			
+			ArrayList<PersonnesProduction> listeE51659;
+			listeE51659 = new ArrayList<PersonnesProduction>();
+			listeE51659 = Modele.affichageE51659();
+			
+			ArrayList<PersonnesProduction> listeE51707;
+			listeE51707 = new ArrayList<PersonnesProduction>();
+			listeE51707 = Modele.affichageE51707();
+			
+			ArrayList<PersonnesProduction> listeG09282;
+			listeG09282 = new ArrayList<PersonnesProduction>();
+			listeG09282 = Modele.affichageG09282();
+			
+			ArrayList<PersonnesProduction> listeG09262;
+			listeG09262 = new ArrayList<PersonnesProduction>();
+			listeG09262 = Modele.affichageG09262();
+			
+			ArrayList<PersonnesProduction> listeG02763;
+			listeG02763 = new ArrayList<PersonnesProduction>();
+			listeG02763 = Modele.affichageG02763();
+			
+			ArrayList<PersonnesProduction> listeG01984;
+			listeG01984 = new ArrayList<PersonnesProduction>();
+			listeG01984 = Modele.affichageG01984();
+			
+			ArrayList<PersonnesProduction> listeG09265;
+			listeG09265 = new ArrayList<PersonnesProduction>();
+			listeG09265 = Modele.affichageG09265();
+			
+			ArrayList<PersonnesProduction> listeG09104;
+			listeG09104 = new ArrayList<PersonnesProduction>();
+			listeG09104 = Modele.affichageG09104();
+			
+			ArrayList<PersonnesProduction> listeG09641;
+			listeG09641 = new ArrayList<PersonnesProduction>();
+			listeG09641 = Modele.affichageG09641();
+			
+			ArrayList<PersonnesProduction> listeE51424;
+			listeE51424 = new ArrayList<PersonnesProduction>();
+			listeE51424 = Modele.affichageE51424();
+			
+			ArrayList<PersonnesProduction> listeG02520;
+			listeG02520 = new ArrayList<PersonnesProduction>();
+			listeG02520 = Modele.affichageG02520();
+			
+			ArrayList<PersonnesProduction> listeG02539;
+			listeG02539 = new ArrayList<PersonnesProduction>();
+			listeG02539 = Modele.affichageG02539();
+
+			ArrayList<PersonnesProduction> listeG09735;
+			listeG09735 = new ArrayList<PersonnesProduction>();
+			listeG09735 = Modele.affichageG09735();
+			
+			ArrayList<PersonnesProduction> listeG03329;
+			listeG03329 = new ArrayList<PersonnesProduction>();
+			listeG03329 = Modele.affichageG03329();
+			
+			ArrayList<PersonnesProduction> listeE51438;
+			listeE51438 = new ArrayList<PersonnesProduction>();
+			listeE51438 = Modele.affichageE51438();
+			
+			ArrayList<PersonnesProduction> listeG03739;
+			listeG03739 = new ArrayList<PersonnesProduction>();
+			listeG03739 = Modele.affichageG03739();
+			
+			ArrayList<PersonnesProduction> listeG04030;
+			listeG04030 = new ArrayList<PersonnesProduction>();
+			listeG04030 = Modele.affichageG04030();
+			
+			ArrayList<PersonnesProduction> listeE51507;
+			listeE51507 = new ArrayList<PersonnesProduction>();
+			listeE51507 = Modele.affichageE51507();
+			
+			ArrayList<PersonnesProduction> listeE51570;
+			listeE51570 = new ArrayList<PersonnesProduction>();
+			listeE51570 = Modele.affichageE51570();
+			
+			ArrayList<PersonnesProduction> listeE51627;
+			listeE51627 = new ArrayList<PersonnesProduction>();
+			listeE51627 = Modele.affichageE51627();
+			
+			ArrayList<PersonnesProduction> listeE51648;
+			listeE51648 = new ArrayList<PersonnesProduction>();
+			listeE51648 = Modele.affichageE51648();
+			
+			ArrayList<PersonnesProduction> listeE51681;
+			listeE51681 = new ArrayList<PersonnesProduction>();
+			listeE51681 = Modele.affichageE51681();
+			
+			ArrayList<PersonnesProduction> listeE51533;
+			listeE51533 = new ArrayList<PersonnesProduction>();
+			listeE51533 = Modele.affichageE51533();
+			
+			ArrayList<PersonnesProduction> listeE5704;
+			listeE5704 = new ArrayList<PersonnesProduction>();
+			listeE5704 = Modele.affichageE5704();
+			
+			ArrayList<PersonnesProduction> listeE51700;
+			listeE51700 = new ArrayList<PersonnesProduction>();
+			listeE51700 = Modele.affichageE51700();
+			
+			ArrayList<PersonnesProduction> listeE51705;
+			listeE51705 = new ArrayList<PersonnesProduction>();
+			listeE51705 = Modele.affichageE51705();
+			
+			ArrayList<PersonnesProduction> listeG09258;
+			listeG09258 = new ArrayList<PersonnesProduction>();
+			listeG09258 = Modele.affichageG09258();
+			
+			ArrayList<PersonnesProduction> listeB50423;
+			listeB50423 = new ArrayList<PersonnesProduction>();
+			listeB50423 = Modele.affichageB50423();
+			
+			ArrayList<PersonnesProduction> listeE51576;
+			listeE51576 = new ArrayList<PersonnesProduction>();
+			listeE51576 = Modele.affichageE51576();
+			
+			ArrayList<PersonnesProduction> listeE51665;
+			listeE51665 = new ArrayList<PersonnesProduction>();
+			listeE51665 = Modele.affichageE51665();
 			this.panelPageJuin.removeAll();
-			this.panelPageJuin.add(new PageJuin(listeJuin, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuin());
+			this.panelPageJuin.add(new PageJuin(listeE51665, listeE51576, listeB50423, listeG09258, listeE51705, listeE51700, listeE5704, listeE51533, listeE51681, listeE51648, listeE51627, listeE51570, listeE51507, listeG04030, listeG03739, listeE51438, listeG03329, listeG09735, listeG02539, listeG02520, listeE51424, listeG09641, listeG09104, listeG09265, listeG01984, listeG02763, listeG09262, listeG09282, listeE51707, listeE51659, listeG03431, listeG03459, listeE51427, listeG03973, listeG09108, listeG03546, listeG03713, listeB50424, listeE51660, listeE51369, listeG01646, listeE51126, listeG09566, listeE51575, listeE51574, listeG03547, listeE51710, listeG09626, listeG02428, listeG01304, listeG01221, listeG00994, listeE51679, listeG03087, listeG09307, listeE51713, listeE51122, listeG09305, listeG02662, listeG09057, listeE51634, listeG02634, listeG09513, listeG09311, listeE51408, listeE51349, listeG09304, listeG02486, listeG09844, listeG01838, listeE51300, listeG09086, listeG09308, listeJuin, listePersonnesProd, listePersonnesCoor, listePersonnesExplServ, listePersonnesPil, listePersonnesDBA,listePersonnesEditiqueEtArch, listePersonnes3pts, listePersonnesServDesk, listePersonnesChangMEP, listePersonnesInte, listePersonnesInteMF, listePersonnesInteOpen, listePersonnesFlux, listePersonnesSTE, listePersonnesSecurite, listePersonnesSECOP, listePersonnesRSI, listePersonnesSOC, listePersonnesArchiInfraSys, listePersonnesArchiTech, listePersonnesSysteme, listePersonnesRSB, listePersonnesReseaux, listePersonnesServBur, listePersonnesWindows, listePersonnesLinux).getMonPanelPageJuin());
 			this.panelPageJuin.revalidate();
 			this.panelPageJuin.repaint();
 		}
