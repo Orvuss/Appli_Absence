@@ -79,6 +79,8 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    	resultatMois += monJanvier.getAffectationJ().toString();	
 	    }
 	    
+	    
+	    
 	    //Eric Beghin
 	    String G09308 = "";
 	    for(PersonnesProduction maPersonneProd: listeG09308) {
