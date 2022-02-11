@@ -46,7 +46,7 @@ public class PageJanvier extends JPanel implements ActionListener{
 	private JButton btnAjouter;
 	private JButton btnSupprimer;
 	private JButton btnRefresh;
-
+	
 	//JScrollPane
 	private JScrollPane scrollpane;
 	
@@ -73,13 +73,6 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    this.panelPageJanvier.setLayout(new BorderLayout());
 	    this.panelChamps.setLayout(new FlowLayout());	    
 	    this.panelBouton.setLayout(new FlowLayout());	    
-
-	    String resultatMois = "";
-	    for (Janvier monJanvier: listeJanvier) {
-	    	resultatMois += monJanvier.getAffectationJ().toString();	
-	    }
-	    
-	    
 	    
 	    //Eric Beghin
 	    String G09308 = "";
@@ -423,6 +416,20 @@ public class PageJanvier extends JPanel implements ActionListener{
 	    	E51665 += maPersonneProd.toString();
 	    }
 	    
+	    
+	    String resultatMois1 = "";
+	    for (Janvier monJanvier: listeJanvier) {
+	    	if(monJanvier.getDateDebutJ() == "2022-01-01") {
+	    		resultatMois1 += monJanvier.getAffectationJ().toString();
+	    	}
+	    }
+	    String resultatMois2 = "";
+	    for (Janvier monJanvier: listeJanvier) {
+	    	if(monJanvier.getDateDebutJ() == "2022-01-02") {
+	    		resultatMois2 += monJanvier.getAffectationJ().toString();
+	    	}
+	    }
+	    
 	    String tdProd = "";
 	    String resultatProd = "";
         for (PersonnesProduction maPersonneProd: listePersonnesProd) {
@@ -432,8 +439,8 @@ public class PageJanvier extends JPanel implements ActionListener{
         			+ "			<td></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
         			+ "			<td bgcolor='#28C7E3'></td>\r\n"
-        			+ "			<td>" + resultatMois + "</td>\r\n"
-        			+ "			<td><input type='text' size='2'></td>\r\n"
+        			+ "			<td>" + resultatMois1 + "</td>\r\n"
+        			+ "			<td>" + resultatMois2 + "</td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
         			+ "			<td><input type='text' size='2'></td>\r\n"
